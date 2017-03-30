@@ -6,7 +6,7 @@
     <title>SADA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../inc/favicon.png">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
         body {
@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="../home.php" class="navbar-brand">Home</a>
+          <a href="../home.php" class="navbar-brand">SADA</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          
@@ -53,7 +53,6 @@
                 <ul class="dropdown-menu">
                     <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
                     <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
-
                 </ul>
             </li>
           </ul>
@@ -69,9 +68,9 @@
             </li>
           </ul>
 
-	<a href="../sobre.php" class="navbar-brand">Sobre</a>
+	<a href="../sobre.php">Sobre</a>
 
-        </div><!--/.navbar-collapse -->
+        </div>
       </div>
     </nav>
 
