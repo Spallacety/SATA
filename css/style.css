@@ -2,10 +2,10 @@
 Custom CSS for project
 */
 
-.row-centered {
+.row-center {
     text-align:center;
 }
-.col-centered {
+.col-center {
     display:inline-block;
     float:none;
     /* reset the text-align */
