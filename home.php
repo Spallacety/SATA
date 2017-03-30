@@ -124,10 +124,12 @@
 			echo  "<br/>";
 			echo  "<br/>";
 						
-			echo "Você não tem permissão para visualizar esta página. 
+			echo "<div class='row row-center'>Você não tem permissão para visualizar esta página.</div>
 			<br/>
 			<br/>
-			<a href = 'index.php'>Acesse Aqui!!</a>";
+			<div class='row row-center'>
+			    <a class='btn btn-primary' href = 'index.php'>Acesse aqui</a>
+      </div>";
 			
 			echo  "<br/>";
 			echo  "<br/>";
