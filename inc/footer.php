@@ -1,7 +1,7 @@
   </main>
 
   <hr>
-  <footer class="container">
+  <footer class="container row-center">
     <p>&copy; LIMS - Laboratory of Innovation on Multimedia Systems</p>
   </footer>
 
