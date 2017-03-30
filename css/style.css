@@ -2,6 +2,11 @@
 Custom CSS for project
 */
 
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
 .row-center {
     text-align:center;
 }
@@ -13,21 +18,4 @@ Custom CSS for project
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
-}
-
-.copyright {
-  min-height:40px;
-  background-color:#000000;
-}
-
-.footerleft {
-  margin-top:50px;
-  padding:0 36px;
-}
-
-.logofooter {
-  margin-bottom:10px;
-  font-size:25px;
-  color:#000;
-  font-weight:700;
 }
