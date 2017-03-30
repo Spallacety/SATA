@@ -128,7 +128,7 @@
 			<br/>
 			<br/>
 			<div class='row row-center'>
-			    <a class='btn btn-primary' href = 'index.php'>Acesse aqui</a>
+			    <a class='btn btn-primary' href = 'index.php'>Fazer login</a>
       </div>";
 			
 			echo  "<br/>";

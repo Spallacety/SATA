@@ -33,43 +33,29 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Cadastros <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-		    <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-		    <li><a href="../cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-		    <li><a href="../cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
-                </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav">          
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
+		        <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
+		        <li><a href="../cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
+		        <li><a href="../cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
+              </ul>
+            </li>       
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Avaliações <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
-                    <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
-                </ul>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Avaliações <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
+                <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
+              </ul>
             </li>
-          </ul>
-
-	<ul class="nav navbar-nav">          
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    Resultados <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
-                </ul>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resultados <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
+              </ul>
             </li>
+            <li><a href="../sobre.php">Sobre</a></li>
           </ul>
-
-	<a href="../sobre.php">Sobre</a>
-
         </div>
       </div>
     </nav>
