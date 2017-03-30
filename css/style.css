@@ -5,6 +5,7 @@ Custom CSS for project
 .row-center {
     text-align:center;
 }
+
 .col-center {
     display:inline-block;
     float:none;
@@ -12,4 +13,21 @@ Custom CSS for project
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+.copyright {
+  min-height:40px;
+  background-color:#000000;
+}
+
+.footerleft {
+  margin-top:50px;
+  padding:0 36px;
+}
+
+.logofooter {
+  margin-bottom:10px;
+  font-size:25px;
+  color:#000;
+  font-weight:700;
 }
