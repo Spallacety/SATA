@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>home.php" class="navbar-brand">Home</a>
+          <a href="../home.php" class="navbar-brand">Home</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          

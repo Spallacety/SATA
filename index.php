@@ -4,19 +4,19 @@
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
-<h1>Sistema de Acompanhamento ao Diagnóstico de Autismo</h1>
+<h2>Sistema de Acompanhamento ao Diagnóstico de Autismo</h2>
 <hr/>
-<div id = "form" >
-  <form action = "home.php" method = "post">
-    <div class="row" >        
-    <div class="col-md-4">
+<div id="form">
+  <form action="home.php" method="post">
+    <div class="row row-centered">
+    <div class="col-md-4 col-centered">
     <label for = "usuario">Usuário:</label>
     <input class="form-control" type = "text" name = "usuario" required />
     </div>
     </div>
     </br>
-    <div class="row">        
-    <div class="col-md-4">
+    <div class="row row-centered">        
+    <div class="col-md-4 col-centered">
     <label for = "senha">Senha:</label>
     <input class="form-control" type = "password" name = "senha" required />
     </div>
