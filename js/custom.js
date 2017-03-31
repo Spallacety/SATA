@@ -16,6 +16,7 @@ $(document).ready(function() {
   $('.modal').modal({
     dismissible: false
   });
+  $(".button-collapse").sideNav();
 });
 
 function abrirModalSobre(){

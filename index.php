@@ -6,7 +6,7 @@
 
 <div class="row row-center">
   <h4 class="main-text-color center">Sistema de Acompanhamento ao Diagnóstico de Autismo</h4>
-  <hr/>
+  <hr>
 </div>
 <div id="form">
   <form action="home.php" method="post">
@@ -24,10 +24,11 @@
       </div>
       <div class="col s2 m3 l4"></div>
     </div>
-    </br>
+    <br>
     <div class="row center">
       <input id="login-button" class="btn waves-effect waves-light main-color" type="submit" value="Acessar"></input>
     </div>
+    <br>
   </form>
 </div>
 

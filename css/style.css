@@ -34,8 +34,12 @@ ul{
   box-shadow: 0 1px 0 0 #1a237e;
 }
 
-.main-text-color{
+.main-text{
   color: #1a237e !important;
+}
+
+.secundary-text{
+  color: #ffff8d !important;
 }
 
 .main-color {
