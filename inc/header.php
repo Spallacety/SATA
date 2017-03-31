@@ -23,18 +23,6 @@
             <li><a class="secondary-text" href="#!" onClick="abrirModalSobre();">Sobre</a></li>
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-            <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-            <li><a href="../cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-            <li><a href="../cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
-            <li class="divider"></li>
-            <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
-            <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
-            <li class="divider"></li>
-            <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
-          </ul>
-
           <ul id="dropdownCadastros" class="dropdown-content">
             <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
             <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
