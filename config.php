@@ -1,12 +1,12 @@
 <?php
 /** O nome do banco de dados*/
-define('DB_NAME', 'sadalims');
+define('DB_NAME', 'epiz_19901727_sada');
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'root');
+define('DB_USER', 'epiz_19901727');
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', '3h0B4p5n');
 /** nome do host do MySQL */
-define('DB_HOST', 'localhost:3306');
+define('DB_HOST', 'sql312.byetcluster.com');
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
