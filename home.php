@@ -121,7 +121,7 @@
 			include(HEADER_TEMPLATE);
 			
 			echo  "<br/>";
-			echo  "<br/>"
+			echo  "<br/>";
 						
 			echo "<div class='row center'><p class='center'>Você não tem permissão para visualizar esta página.</p></div>
 			<br/>

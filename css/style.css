@@ -14,11 +14,19 @@ hr {
   border-top: 1px solid #ccc;
 }
 
-.col-center {
-    display:inline-block;
-    float:none;
-    text-align:left;
-    margin-right:-4px;
+.input-field input[type=text]:focus + label {
+  color: #1a237e;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #1a237e;
+  box-shadow: 0 1px 0 0 #1a237e;
+}
+.input-field input[type=password]:focus + label {
+  color: #1a237e;
+}
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #1a237e;
+  box-shadow: 0 1px 0 0 #1a237e;
 }
 
 .main-text-color{
@@ -27,9 +35,4 @@ hr {
 
 .main-color {
   background-color: #1a237e !important;
-}
-
-.main-input-color {
-  border-bottom: 1px solid #1a237e;
-  box-shadow: 0 1px 0 0 #1a237e;
 }
