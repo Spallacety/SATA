@@ -1,12 +1,12 @@
 <?php
 /** O nome do banco de dados*/
-define('DB_NAME', 'epiz_19901727_sada');
+define('DB_NAME', 'sadalims');
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'epiz_19901727');
+define('DB_USER', 'root');
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '3h0B4p5n');
+define('DB_PASSWORD', '123456');
 /** nome do host do MySQL */
-define('DB_HOST', 'sql312.epizy.com');
+define('DB_HOST', 'localhost:3306');
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
