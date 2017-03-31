@@ -7,16 +7,17 @@ body {
     padding-bottom: 20px;
 }
 
-.row-center {
-    text-align:center;
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
 }
 
 .col-center {
     display:inline-block;
     float:none;
-    /* reset the text-align */
     text-align:left;
-    /* inline-block space fix */
     margin-right:-4px;
 }
 

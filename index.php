@@ -11,7 +11,7 @@
 <div id="form">
   <form action="home.php" method="post">
     <div class="row center">
-      <div class="col s6">
+      <div class="col s6 col-center">
         <div class="input-field">
           <input id="usuario" type="text">
           <label for="usuario">Usuário</label>
@@ -25,7 +25,7 @@
     </div>
     </br>
     <div class="row center">
-      <input id="login-button" class="btn waves-effect waves-light main-color" type="submit">Login</input>
+      <input id="login-button" class="btn waves-effect waves-light main-color" type="submit" value="Acessar"></input>
     </div>
   </form>
 </div>
