@@ -6,14 +6,13 @@
   <title>SADA</title>
   <link rel="shortcut icon" type="image/png" href="../inc/favicon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/materialize.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css">
 </head>
 
 <body>
-  <nav class="indigo darken-4" role="navigation">
+  <nav class="main-color" role="navigation">
     <div class="nav-wrapper container">
       <a href="../home.php" class="brand-logo yellow-text text-accent-1">SADA</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">

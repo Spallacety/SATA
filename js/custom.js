@@ -18,6 +18,6 @@ $(document).ready(function() {
   });
 });
 
-function abrirModalSair(){
-  $('#logout-modal').modal('open');
+function abrirModalSobre(){
+  $('#modal-sobre').modal('open');
 }
