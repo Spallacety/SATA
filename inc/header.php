@@ -48,17 +48,17 @@
               <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
             </ul>
           </li>
-          <li><a data-toggle="modal" data-target="#modalSobre">Sobre</a></li>
+          <li><a data-toggle="modal" data-target="#modalSobre" href="">Sobre</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<div class="modal fade" id="modalSobre">
+<div class="modal fade" id="modalSobre" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">SADA</h5>
+        <h5 class="modal-title" id="modalTitle">SADA</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
