@@ -13,10 +13,8 @@
 </head>
 
 <body>
-
   <nav class="blue" role="navigation">
-
-    <div class="nav-wrapper">
+    <div class="nav-wrapper container">
       <a href="../home.php" class="brand-logo">SADA</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button" href="#!" data-activates="dropdownCadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
