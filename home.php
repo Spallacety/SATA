@@ -126,11 +126,10 @@
 			echo "<div class='row center'><p class='center'>Você não tem permissão para visualizar esta página.</p></div>
 			<br/>
 			<br/>
-			<div class='row row-center'>
+			<div class='row center'>
 			    <a class='btn waves-effect waves-light main-color' href='index.php'>Fazer login</a>
       		</div>";
 			
-			echo  "<br/>";
 			echo  "<br/>";
 			echo  "<br/>";
 			

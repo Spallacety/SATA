@@ -14,12 +14,12 @@
       <div class="col s2 m3 l4"></div>
       <div class="col s8 m6 l4">
         <div class="input-field">
-          <input class="main-text-color main-input-color" id="usuario" type="text">
-          <label class="main-text-color" for="usuario">Usuário</label>
+          <input id="usuario" type="text">
+          <label for="usuario">Usuário</label>
         </div>
         <div class="input-field">
-          <input class="main-text-color main-input-color" id="senha" type="password">
-          <label class="main-text-color" for="senha">Matrícula</label>
+          <input id="senha" type="password">
+          <label for="senha">Senha</label>
         </div>
       </div>
       <div class="col s2 m3 l4"></div>
