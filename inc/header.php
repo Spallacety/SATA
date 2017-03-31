@@ -48,27 +48,27 @@
               <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
             </ul>
           </li>
-          <li><a data-toggle="modal" data-target="#modalSobre" href="">Sobre</a></li>
+          <li><a data-toggle="modal" data-target="#modalSobre" href="#!">Sobre</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-<div class="modal fade" id="modalSobre" aria-labelledby="modalTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">SADA</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>SADA é a sigla de Sistema de Apoio ao Diagnóstico de Autismo, desenvolvido no LIMS.</p>
-        <p>Desenvolvido por: Guilherme, Emanuel, Iara, Luana, Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
+  <div class="modal fade" id="modalSobre" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Sobre</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>SADA é a sigla de Sistema de Apoio ao Diagnóstico de Autismo, desenvolvido no LIMS.</p>
+          <p>Desenvolvido por: Guilherme, Emanuel, Iara, Luana, Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <main class="container">

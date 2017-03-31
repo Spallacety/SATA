@@ -15,7 +15,7 @@
       <label for = "usuario">Usuário:</label>
       <input class="form-control" type="text" name="usuario" required/>
       </div>
-      </br>
+      <br>
       <div class="col-md-4 col-center">
       <label for = "senha">Senha:</label>
       <input class="form-control" type="password" name="senha" required/>
