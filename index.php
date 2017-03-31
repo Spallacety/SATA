@@ -5,7 +5,7 @@
 <?php $db = open_database(); ?>
 
 <div class="row row-center">
-  <h4 class="main-text-color center">Sistema de Acompanhamento ao Diagnóstico de Autismo</h4>
+  <h4 class="main-text center">Sistema de Acompanhamento ao Diagnóstico de Autismo</h4>
   <hr>
 </div>
 <div id="form">
