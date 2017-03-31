@@ -8,64 +8,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="../inc/favicon.png">
   <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/materialize.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../home.php" class="navbar-brand">SADA</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">          
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-              <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-              <li><a href="../cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-              <li><a href="../cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
-            </ul>
-          </li>       
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Avaliações <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
-              <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resultados <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
-            </ul>
-          </li>
-          <li><a data-toggle="modal" data-target="#modalSobre" href="#!">Sobre</a></li>
-        </ul>
-      </div>
+
+  <nav class="blue" role="navigation">
+    <div class="nav-wrapper">
+      <a href="../home.php" class="brand-logo">SADA</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="dropdownCadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdownResultados">Resultados<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#!" onClick="abrirModalSobre();">Sobre</a></li>
+      </ul>
     </div>
   </nav>
+  
+  <ul id="dropdownCadastros" class="dropdown-content">
+    <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
+    <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
+    <li><a href="../cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
+    <li><a href="../cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
+  </ul>
 
-  <div class="modal fade" id="modalSobre" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header" id="modalTitle">
-          <h3 class="modal-title">Sobre SADA</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body">
-          <p class="row-center">SADA é a sigla de Sistema de Apoio ao Diagnóstico de Autismo, desenvolvido no LIMS.</p>
-          <p class="row-center">Desenvolvido por: Guilherme, Emanuel, Iara, Luana, Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
-        </div>
-      </div>
+  <ul id="dropdownAvaliacoes" class="dropdown-content">
+    <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
+    <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
+  </ul>
+
+  <ul id="dropdownResultados" class="dropdown-content">
+    <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
+  </ul>
+
+  <div id="modal-sobre" class="modal">
+    <div class="modal-content">
+      <h4 class="black-text center">Sobre SADA</h4>
+      <p class="black-text center">SADA é a sigla de Sistema de Apoio ao Diagnóstico de Autismo, desenvolvido no LIMS.</p>
+      <p class="black-text center">Desenvolvido por: Guilherme, Emanuel, Iara, Luana, Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat black-text">Voltar</a>
     </div>
   </div>
 
