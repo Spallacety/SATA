@@ -121,15 +121,14 @@
 			include(HEADER_TEMPLATE);
 			
 			echo  "<br/>";
-			echo  "<br/>";
-			echo  "<br/>";
+			echo  "<br/>"
 						
-			echo "<div class='row row-center'>Você não tem permissão para visualizar esta página.</div>
+			echo "<div class='row center'><p class='center'>Você não tem permissão para visualizar esta página.</p></div>
 			<br/>
 			<br/>
 			<div class='row row-center'>
-			    <a class='btn btn-primary' href = 'index.php'>Fazer login</a>
-      </div>";
+			    <a class='btn waves-effect waves-light main-color' href='index.php'>Fazer login</a>
+      		</div>";
 			
 			echo  "<br/>";
 			echo  "<br/>";

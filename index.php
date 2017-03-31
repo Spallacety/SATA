@@ -11,19 +11,18 @@
 <div id="form">
   <form action="home.php" method="post">
     <div class="row center">
-      <div class="col s2 m4"></div>
-      <div class="col s8 m4">
+      <div class="col s2 m3 l4"></div>
+      <div class="col s8 m6 l4">
         <div class="input-field">
-          <input id="usuario" type="text">
-          <label for="usuario">Usuário</label>
+          <input class="main-text-color main-input-color" id="usuario" type="text">
+          <label class="main-text-color" for="usuario">Usuário</label>
         </div>
-        <br>
         <div class="input-field">
-          <input id="senha" type="password">
-          <label for="senha">Matrícula</label>
+          <input class="main-text-color main-input-color" id="senha" type="password">
+          <label class="main-text-color" for="senha">Matrícula</label>
         </div>
       </div>
-      <div class="col s2 m4"></div>
+      <div class="col s2 m3 l4"></div>
     </div>
     </br>
     <div class="row center">
