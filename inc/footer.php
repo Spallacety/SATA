@@ -1,8 +1,8 @@
   </main>
 
   <hr>
-  <footer class="container row-center">
-    <p>&copy; LIMS - Laboratory of Innovation on Multimedia Systems</p>
+  <footer class="container row center">
+    <p class="center">&copy; LIMS - Laboratory of Innovation on Multimedia Systems</p>
   </footer>
 
     <script src="../js/jquery-2.1.1.min.js"></script>
