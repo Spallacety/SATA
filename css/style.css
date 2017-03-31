@@ -15,6 +15,10 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+ul{
+    margin-bottom: -1px;
+}
+
 .input-field input[type=text]:focus + label {
   color: #1a237e;
 }
