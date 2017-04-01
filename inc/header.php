@@ -6,10 +6,10 @@
   <title>SADA</title>
   <link rel="shortcut icon" type="image/png" href="../inc/favicon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../css/bootstrap.css">
-  <link rel="stylesheet" href="../css/materialize.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap.css">
+  <link rel="stylesheet" href="<?php echo BASEURL; ?>css/materialize.css">
+  <link rel="stylesheet" href="<?php echo BASEURL; ?>css/style.css">
+  <link rel="stylesheet" href="<?php echo BASEURL; ?>css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,19 +25,19 @@
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
-      <li><a href="../cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-      <li><a href="../cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-      <li><a href="../cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-      <li><a href="../cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
+      <li><a href="<?php echo BASEURL; ?>cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
+      <li><a href="<?php echo BASEURL; ?>cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
+      <li><a href="<?php echo BASEURL; ?>cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
+      <li><a href="<?php echo BASEURL; ?>cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
-      <li><a href="../avaliacao/avaliacao.php">CARS</a></li>
-      <li><a href="../avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
+      <li><a href="<?php echo BASEURL; ?>avaliacao/avaliacao.php">CARS</a></li>
+      <li><a href="<?php echo BASEURL; ?>avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
     </ul>
 
     <ul id="dropdownResultados" class="dropdown-content">
-      <li><a href="../cadastros/pacientes/index.php">Profissionais</a></li>
+      <li><a href="<?php echo BASEURL; ?>cadastros/pacientes/index.php">Profissionais</a></li>
     </ul>
 
     <div id="modal-sobre" class="modal">
