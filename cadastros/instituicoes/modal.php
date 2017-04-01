@@ -1,18 +1,10 @@
-<!-- Modal de Delete-->
-<div class="modal fade" id="delete-modal-instituicao" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
-      </div>
-      <div class="modal-body">
-        Deseja realmente excluir este item?
-      </div>
-      <div class="modal-footer">
-        <a id="confirm" class="btn btn-primary" href="#">Sim</a>
-        <a id="cancel" class="btn btn-default" data-dismiss="modal">N&atilde;o</a>
-      </div>
-    </div>
+<div id="modal-apagar-instituicao" class="modal">
+  <div class="modal-content">
+    <h4>Excluir</h4>
+    <p> Deseja mesmo apagar <?php echo $instituicao['descricao']; ?>?</p>
   </div>
-</div> <!-- /.modal -->
+  <div class="modal-footer">
+    <a id="confirm" href="#!" class="modal-action modal-close btn-flat">Sim</a>
+    <a id="cancel" href="#!" class="modal-action modal-close btn-flat">Não</a>
+  </div>
+</div>
