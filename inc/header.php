@@ -51,4 +51,4 @@
     </div>
   </nav>
 
-  <div class="container valign-wrapper">
+  <div class="container">
