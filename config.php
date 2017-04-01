@@ -1,8 +1,8 @@
 <?php
-define('DB_NAME', 'sadalimsdb');
-define('DB_USER', 'sadalims');
-define('DB_PASSWORD', '123456');
-define('DB_HOST', 'db4free.net:3306');
+define('DB_NAME', 'sql1066665');
+define('DB_USER', 'sql1066665');
+define('DB_PASSWORD', 'guBrvPYJ5Z');
+define('DB_HOST', 'sql10.freemysqlhosting.net:3306');
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
