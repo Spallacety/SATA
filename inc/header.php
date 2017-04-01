@@ -15,7 +15,7 @@
 <body>
   <nav class="main-color" role="navigation">
     <div class="nav-wrapper container">
-      <a href="../home.php" class="brand-logo secondary-text">SADA</a>
+      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/home.php" class="brand-logo secondary-text">SADA</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
