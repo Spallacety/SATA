@@ -8,17 +8,15 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<header>
 	<div class="row">
-		<div class="col-sm-6">
-			<h2>Instituições</h2>
+		<div class="col s12 l6">
+			<h4 class="main-text center">Instituições</h4>
 		</div>
-		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Nova Instituição</a>
-	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
-	    </div>
+		<div class="col s12 l6">
+			<a href="add.php" class="btn-flat blue-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
+			<a href="index.php" class="btn-flat blue-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
+	  </div>
 	</div>
-</header>
 
 <?php if (!empty($_SESSION['message'])) : ?>
 	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
@@ -33,9 +31,9 @@
 <table class="table table-hover">
 <thead>
 	<tr>
-		<th>Matrícula</th>
-		<th>Descrição</th>				
-		<th>Opções</th>
+		<th width="5%">Matrícula</th>
+		<th width="65%">Descrição</th>				
+		<th width="30%">Opções</th>
 	</tr>
 </thead>
 <tbody>
