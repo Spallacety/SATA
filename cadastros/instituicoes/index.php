@@ -8,36 +8,26 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-	<div class="container">
-		<div class="row">
-			<div class="col s12 m6">
-				<h4 class="main-text">Instituições</h4>
-			</div>
-			<div class="col s12 m6">
-		    <div class="row">    
-					<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
-					<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
-		  	</div>
-	  	</div>
+	<div class="row">
+		<div class="col s12 m6">
+			<h4 class="main-text">Instituições</h4>
 		</div>
+		<div class="col s12 m6">
+	    <div class="row">    
+				<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
+				<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
+	  	</div>
+  	</div>
 	</div>
-
-<?php if (!empty($_SESSION['message'])) : ?>
-	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<?php echo $_SESSION['message']; ?>
-	</div>
-	<?php clear_messages(); ?>
-<?php endif; ?>
 
 <hr>
 
 <table class="highlight">
 <thead>
 	<tr>
-		<th width="10%">Matrícula</th>
-		<th width="70%">Descrição</th>				
-		<th width="25%">Opções</th>
+		<th width="7%">Matrícula</th>
+		<th width="63%">Descrição</th>				
+		<th width="30%">Opções</th>
 	</tr>
 </thead>
 <tbody>
