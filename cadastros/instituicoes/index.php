@@ -9,7 +9,7 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 	<div class="row">
-		<div class="col s12 m6 left-align">
+		<div class="col s12 m6 vallign left-align">
 			<h4 class="main-text">Instituições</h4>
 		</div>
 		<div class="col s12 m6 vallign right-align">
@@ -27,8 +27,8 @@
 <thead>
 	<tr>
 		<th width="10%">Matrícula</th>
-		<th width="90%">Descrição</th>				
-		<th>Opções</th>
+		<th width="63%">Descrição</th>				
+		<th width="27%">Opções</th>
 	</tr>
 </thead>
 <tbody>
