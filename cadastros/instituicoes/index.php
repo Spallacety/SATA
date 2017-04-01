@@ -9,11 +9,12 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 	<div class="row">
-		<div class="col s12 m6">
+		<div class="col s12 m6 left-align">
 			<h4 class="main-text">Instituições</h4>
 		</div>
-		<div class="col s12 m6">
-	    <div class="row center">    
+		<div class="col s12 m6 right-align">
+	    <div class="row right">
+	    	<br>
 				<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
 				<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
 	  	</div>
@@ -25,9 +26,9 @@
 <table class="highlight">
 <thead>
 	<tr>
-		<th width="7%">Matrícula</th>
-		<th width="63%">Descrição</th>				
-		<th width="30%">Opções</th>
+		<th width="10%">Matrícula</th>
+		<th width="90%">Descrição</th>				
+		<th>Opções</th>
 	</tr>
 </thead>
 <tbody>
