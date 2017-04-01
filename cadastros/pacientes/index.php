@@ -3,10 +3,9 @@
     index();
 ?>
 
-<?php include('modal.php'); ?>
-
-
 <?php include(HEADER_TEMPLATE); ?>
+
+<?php include('modal.php'); ?>
 
 <header>
 	<div class="row">
