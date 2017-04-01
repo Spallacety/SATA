@@ -11,7 +11,8 @@ if ( !defined('BASEURL') )
 	define('BASEURL', '/sada/');
 /** caminho do arquivo de banco de dados **/
 if ( !defined('DBAPI') )
-	define('DBAPI', ABSPATH . 'inc/database.php');
-define('HEADER_TEMPLATE', ABSPATH . 'inc/header.php');
-define('FOOTER_TEMPLATE', ABSPATH . 'inc/footer.php');
+	define('DBAPI', ABSPATH . '/inc/database.php');
+
+define('HEADER_TEMPLATE', ABSPATH . '/inc/header.php');
+define('FOOTER_TEMPLATE', ABSPATH . '/inc/footer.php');
 /*$db = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);*/
