@@ -4,7 +4,7 @@
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
-<div class="row row-center">
+<div class="row center">
   <h4 class="main-text center">Sistema de Acompanhamento ao Diagnóstico de Autismo</h4>
   <hr>
 </div>
