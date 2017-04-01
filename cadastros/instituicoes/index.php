@@ -9,13 +9,15 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 	<div class="row">
-		<div class="col s12 l6">
-			<h4 class="main-text center">Instituições</h4>
+		<div class="col s12 m6">
+			<h4 class="main-text">Instituições</h4>
 		</div>
-		<div class="col s12 l6">
-			<a href="add.php" class="btn-flat blue-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
-			<a href="index.php" class="btn-flat blue-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
-	  </div>
+		<div class="col s12 m6">
+	    <div class="row">    
+				<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
+				<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
+	  	</div>
+  	</div>
 	</div>
 
 <?php if (!empty($_SESSION['message'])) : ?>
