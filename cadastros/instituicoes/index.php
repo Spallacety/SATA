@@ -45,8 +45,8 @@
 		<td><?php echo $instituicao['id']; ?></td>
 		<td><?php echo $instituicao['descricao']; ?></td>		
 		<td class="actions text-right">
-			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat green-text"><i class="material-icons right">visibility</i></a></li></a>
-			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat amber-text"><i class="material-icons right">mode_edit</i></i></a>
+			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat green-text"><i class="material-icons right">visibility</i></a>
+			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat amber-text"><i class="material-icons right">mode_edit</i></a>
 			<a href="#!" class="btn-flat red-text" data-toggle="modal" data-target="#delete-modal-instituicao" data-instituicao="<?php echo $instituicao['id']; ?>"><i class="material-icons right">delete</i></a>
 		</td>
 	</tr>
