@@ -25,8 +25,8 @@
 <thead>
 	<tr>
 		<th width="10%">Matrícula</th>
-		<th width="63%">Descrição</th>				
-		<th width="27%" class"vallign right-align">Opções</th>
+		<th width="63%">Descrição</th>
+		<th width="27%" class"right-align"></th>
 	</tr>
 </thead>
 <tbody>

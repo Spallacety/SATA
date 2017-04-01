@@ -4,7 +4,7 @@
     <p> Deseja mesmo apagar <?php echo $instituicao['descricao']; ?>?</p>
   </div>
   <div class="modal-footer">
-    <a id="confirm" href="#!" class="modal-action modal-close btn-flat">Sim</a>
     <a id="cancel" href="#!" class="modal-action modal-close btn-flat">Não</a>
+    <a id="confirm" href="#!" class="modal-action modal-close btn-flat">Sim</a>
   </div>
 </div>
