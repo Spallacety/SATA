@@ -5,10 +5,10 @@
       <p class="center">&copy; LIMS - Laboratory of Innovation on Multimedia Systems</p>
     </footer>
 
-    <script src="<?php echo BASEURL; ?>js/jquery-2.1.1.min.js"></script>
-    <script src="<?php echo BASEURL; ?>js/bootstrap.js"></script>
-    <script src="<?php echo BASEURL; ?>js/materialize.js"></script>
-    <script src="<?php echo BASEURL; ?>js/main.js"></script>
-    <script src="<?php echo BASEURL; ?>js/custom.js"></script>
+    <script src="<?php echo $_SERVER['SERVER_NAME']; ?>js/jquery-2.1.1.min.js"></script>
+    <script src="<?php echo $_SERVER['SERVER_NAME']; ?>js/bootstrap.js"></script>
+    <script src="<?php echo $_SERVER['SERVER_NAME']; ?>js/materialize.js"></script>
+    <script src="<?php echo $_SERVER['SERVER_NAME']; ?>js/main.js"></script>
+    <script src="<?php echo $_SERVER['SERVER_NAME']; ?>js/custom.js"></script>
   </body>
 </html>
