@@ -4,12 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>SADA</title>
-  <link rel="shortcut icon" type="image/png" href="../inc/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/inc/favicon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo ABSPATH; ?>/css/bootstrap.css">
-  <link rel="stylesheet" href="<?php echo ABSPATH; ?>/css/materialize.css">
-  <link rel="stylesheet" href="<?php echo ABSPATH; ?>/css/style.css">
-  <link rel="stylesheet" href="<?php echo ABSPATH; ?>/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/bootstrap.css">
+  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/materialize.css">
+  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/style.css">
+  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,19 +25,19 @@
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
-      <li><a href="<?php echo ABSPATH; ?>/cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-      <li><a href="<?php echo ABSPATH; ?>/cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-      <li><a href="<?php echo ABSPATH; ?>/cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-      <li><a href="<?php echo ABSPATH; ?>/cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
-      <li><a href="<?php echo ABSPATH; ?>/avaliacao/avaliacao.php">CARS</a></li>
-      <li><a href="<?php echo ABSPATH; ?>/avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/avaliacao/avaliacao.php">CARS</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/avaliacao/relatorios/index.php">Avaliação Descritiva</a></li>
     </ul>
 
     <ul id="dropdownResultados" class="dropdown-content">
-      <li><a href="<?php echo ABSPATH; ?>/cadastros/pacientes/index.php">Profissionais</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/pacientes/index.php">Profissionais</a></li>
     </ul>
 
     <div id="modal-sobre" class="modal">
