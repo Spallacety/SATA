@@ -38,7 +38,7 @@
 		<td class="row vallign right-align">
 			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons">visibility</i></a>
 			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons">mode_edit</i></a>
-			<a href="#!" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar" data-toggle="modal" data-target="#delete-modal-instituicao" data-instituicao="<?php echo $instituicao['id']; ?>"><i class="material-icons">delete</i></a>
+			<a href="#modal-apagar-instituicao" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar" data-instituicao="<?php echo $instituicao['id']; ?>"><i class="material-icons">delete</i></a>
 		</td>
 	</tr>
 <?php endforeach; ?>
