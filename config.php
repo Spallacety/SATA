@@ -2,7 +2,7 @@
 define('DB_NAME', 'epiz_19901727_sada');
 define('DB_USER', 'epiz_19901727');
 define('DB_PASSWORD', '3h0B4p5n');
-define('DB_HOST', '185.27.134.10:3306');
+define('DB_HOST', '185.27.134.10');
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
