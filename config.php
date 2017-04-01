@@ -1,8 +1,8 @@
 <?php
-define('DB_NAME', 'epiz_19901727_sada');
-define('DB_USER', 'epiz_19901727');
-define('DB_PASSWORD', '3h0B4p5n');
-define('DB_HOST', '192.168.0.6:51660');
+define('DB_NAME', 'sadalimsdb');
+define('DB_USER', 'sadalims');
+define('DB_PASSWORD', '123456');
+define('DB_HOST', 'db4free.net:3306');
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
