@@ -4,9 +4,9 @@
     <div class="modal-header">
       <h4>Excluir</h4>
     </div>
-    <p> Deseja mesmo apagar <?php echo $paciente['id']; ?>?</p>
+    <p> Deseja mesmo apagar <?php echo $paciente['nome']; ?>?</p>
     <div class="modal-footer">
-      <a id="cancel" class="btn-flat" href="#!">Não</a>
+      <a id="cancel" class="btn-flat modal-close" href="#!">Não</a>
       <a id="confirm" class="btn-flat" href="#!">Sim</a>
     </div>
   </div>
