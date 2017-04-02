@@ -44,9 +44,7 @@
 		<td class="actions text-right">
 			<a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
 			<a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal-paciente" data-paciente="<?php echo $paciente['id']; ?>">
-				<i class="fa fa-trash"></i> Excluir
-			</a>
+			<a href="#delete-modal-paciente" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar" data-instituicao="<?php echo $paciente['id']; ?>"><i class="material-icons">delete</i></a>
 		</td>
 	</tr>
 <?php endforeach; ?>
