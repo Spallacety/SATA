@@ -23,9 +23,11 @@ function abrirModalSobre(){
   $('#modal-sobre').modal('open');
 }
 
-function abrirModalApagarInstituicao(idInstituicao){
-  var idInstituicao = idInstituicao.getAttribute("data-instituicao");
-  global $instituicao;
-  $instituicao = find('instituicoes', idInstituicao);
+function abrirModalApagarInstituicao(instituicao){
+  var idInstituicao = instituicao.getAttribute("data-instituicao");
+  <?php 
+    global $instituicao;
+    $instituicao = find('instituicoes', idInstituicao);
+  ?>
   $('#modal-apagar-instituicao').modal('open');
 }
