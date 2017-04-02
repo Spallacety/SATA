@@ -1,4 +1,4 @@
-<div id="modal-apagar-instituicao" class="modal">
+<div id="delete-modal-instituicao" class="modal">
   <div class="modal-content">
     <h4>Excluir</h4>
     <p> Deseja mesmo apagar <?php echo $instituicao['descricao']; ?>?</p>
