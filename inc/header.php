@@ -6,6 +6,7 @@
   <title>SADA</title>
   <link rel="shortcut icon" type="image/png" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/inc/favicon.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/bootstrap.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/materialize.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/style.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/font-awesome.min.css">
