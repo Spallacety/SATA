@@ -5,11 +5,11 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-	<div class="row">
-		<div class="col s12 m6 vallign left-align">
+	<div class="row vallign">
+		<div class="col s12 m6 left-align">
 			<h4 class="main-text">Instituições</h4>
 		</div>
-		<div class="col s12 m6 vallign right-align">
+		<div class="col s12 m6 right-align">
 	    <div class="row right">
 				<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
 				<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
@@ -35,7 +35,7 @@
 		<td class="row vallign right-align">
 			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons">visibility</i></a>
 			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons">mode_edit</i></a>
-			<a href="#delete-modal-instituicao" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar" data-instituicao="<?php echo $instituicao['id']; ?>"><i class="material-icons">delete</i></a>
+			<a href="#!" onClick="abrirModalApagarInstituicao(this);" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar" data-instituicao="<?php echo $instituicao['id']; ?>"><i class="material-icons">delete</i></a>
 		</td>
 	</tr>
 <?php endforeach; ?>
