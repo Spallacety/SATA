@@ -5,8 +5,6 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<?php include('modal.php'); ?>
-
 <header>
 	<div class="row">
 		<div class="col-sm-6">
