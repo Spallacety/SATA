@@ -39,10 +39,3 @@ hr {
 .main-color {
   background-color: #1a237e !important;
 }
-
-.msg-modal{
-  max-width: 450px !important;
-  overflow: hidden;
-}
-
-#buttonsMessage { display: flex; justify-content: center; }
