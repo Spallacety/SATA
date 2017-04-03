@@ -23,9 +23,19 @@ function abrirModalSobre(){
   $('#modal-sobre').modal('open');
 }
 
-$(document).on("click", ".deleteButton", function () {
+function abrirModalApagarInstituicao(){
   var idItem = $(this).data('id');
-  $(".modal-content .p #itemApagar").val(idItem);
+  $("#itemApagar").value(idItem);
   $('#modal-apagar-instituicao').modal('open');
-});
+}
 
+function apagar(id){
+  <?php 
+    require_once('functions.php'); 
+    if (isset(id)){
+      delete(id);
+    } else {
+      die("ERRO: ID não definido.");
+    }
+  ?>
+}
