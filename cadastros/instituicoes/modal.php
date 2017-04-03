@@ -1,7 +1,7 @@
-<div id="modal-apagar-instituicao<?php echo $instituicao['id']; ?>" class="modal">
+<div id="modal-apagar-instituicao" class="modal">
   <div class="modal-content">
     <h4>Excluir</h4>
-    <p> Deseja mesmo apagar <?php echo $instituicao['descricao']; ?>?</p>
+    <p> Deseja mesmo apagar <a id="itemApagar" value=""></a>?</p>
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close btn-flat">Não</a>

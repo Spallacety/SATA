@@ -23,11 +23,9 @@ function abrirModalSobre(){
   $('#modal-sobre').modal('open');
 }
 
-function abrirModalApagarInstituicao(instituicao){
-  var idInstituicao = instituicao.getAttribute("data-instituicao");
-  <?php 
-    global $instituicao;
-    $instituicao = find('instituicoes', idInstituicao);
-  ?>
+$(document).on("click", ".deleteButton", function () {
+  var idItem = $(this).data('id');
+  $(".modal-content .p #itemApagar").val(idItem);
   $('#modal-apagar-instituicao').modal('open');
-}
+});
+
