@@ -114,7 +114,7 @@ $.fn.extend({
               }
             }
       
-            $('#modalMessage').openModal({
+            $('#modalMessage').modal({
               dismissible : settings.dismissible,
               complete : function(){$('#modalMessage').remove()}
             });
