@@ -23,8 +23,8 @@
 <thead>
 	<tr>
 		<th width="5%">Matrícula</th>
-		<th width="45%">Descrição</th>
-		<th width="50%" class"right-align"></th>
+		<th>Descrição</th>
+		<th width="30%" class"right-align"></th>
 	</tr>
 </thead>
 <tbody>
