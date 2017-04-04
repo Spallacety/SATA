@@ -43,3 +43,18 @@ hr {
 .main-color {
   background-color: #1a237e !important;
 }
+
+.my-btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
