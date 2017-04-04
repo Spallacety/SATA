@@ -44,7 +44,3 @@ hr {
   max-width: 450px !important;
   overflow: hidden;
 }
-
-#buttonsMessage {
-  display: flex; justify-content: center;
-}
