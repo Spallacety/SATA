@@ -52,3 +52,7 @@ hr {
 .img-btn:focus, .img-btn:hover {
   background-color: transparent;
 }
+
+.btn-group-h{
+  min-width: 30px;
+}

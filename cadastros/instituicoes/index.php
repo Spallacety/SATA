@@ -23,8 +23,8 @@
 <thead>
 	<tr>
 		<th width="5%">Matrícula</th>
-		<th>Descrição</th>
-		<th width="30%" class"right-align"></th>
+		<th width="80%">Descrição</th>
+		<th width="20%" class"right-align"></th>
 	</tr>
 </thead>
 <tbody>
@@ -34,9 +34,11 @@
 		<td><?php echo $instituicao['id']; ?></td>
 		<td><?php echo $instituicao['descricao']; ?></td>		
 		<td class="row vallign right-align">
-			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
-			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
-			<a href="#!" onClick="abrirModalApagarInstituicao(<?php echo $instituicao['id']; ?>, '<?php echo $instituicao['descricao']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
+			<div class="btn-group-h">
+				<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
+				<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
+				<a href="#!" onClick="abrirModalApagarInstituicao(<?php echo $instituicao['id']; ?>, '<?php echo $instituicao['descricao']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
+			</div>
 		</td>
 	</tr>
 <?php endforeach; ?>
