@@ -1,4 +1,4 @@
-<div id="modal-apagar-instituicao" class="modal msg-modal">
+<div id="modal-apagar-instituicao" class="modal">
   <div class="modal-content">
     <h4><i class="material-icons red-text">warning</i> Apagar</h4>
     <p class="black-text"> Deseja mesmo apagar <a id="itemApagar">*delete*</a>?</p>
