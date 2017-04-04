@@ -44,34 +44,8 @@ hr {
   background-color: #1a237e !important;
 }
 
-
-.btn-floating {
-  display: inline-block;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
+.img-btn {
   z-index: 1;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
-  border-radius: 50%;
-  transition: .3s;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-
-.my-btn {
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  z-index: 1;
-  height: 36px;
-  line-height: 36px;
-  padding: 0;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
 }
