@@ -14,9 +14,6 @@
 	    	<br>
 				<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
 				<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
-				<div class="col s12 center-align"><br><br>
-			    <a href="someFooPage.html" class="btn blue buttonDelete" id="" data-id="87" data-firstname="Elizabeth" data-lastname='Hudgen'>delete 87</a>
-			  </div>
 	  	</div>
   	</div>
 	</div>
@@ -39,17 +36,7 @@
 		<td class="row vallign right-align">
 			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons">visibility</i></a>
 			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons">mode_edit</i></a>
-			<a href="#modal-apagar-instituicao<?php echo $instituicao['id']; ?>" class="btn-flat red-text tooltipped deleteButton" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons">delete</i></a>
-			<div id="modal-apagar-instituicao<?php echo $instituicao['id']; ?>" class="modal">
-			  <div class="modal-content">
-			    <h4>Excluir</h4>
-			    <p> Deseja mesmo apagar <?php echo $instituicao['descricao']; ?>?</p>
-			  </div>
-			  <div class="modal-footer">
-			    <a href="#!" class="modal-action modal-close btn-flat">Não</a>
-			    <a href="delete.php?id=<?php echo $instituicao['id']; ?>" class="modal-action modal-close btn-flat">Sim</a>
-			  </div>
-			</div>
+			<a href="#!" onClick="abrirModalApagarInstituicao();" class="btn-flat red-text tooltipped deleteButton" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons">delete</i></a>
 		</td>
 	</tr>
 <?php endforeach; ?>

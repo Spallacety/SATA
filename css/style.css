@@ -45,4 +45,6 @@ hr {
   overflow: hidden;
 }
 
-#buttonsMessage { display: flex; justify-content: center; }
+#buttonsMessage {
+  display: flex; justify-content: center;
+}
