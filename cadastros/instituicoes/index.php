@@ -34,10 +34,9 @@
 		<td><?php echo $instituicao['id']; ?></td>
 		<td><?php echo $instituicao['descricao']; ?></td>		
 		<td class="row vallign right-align">
-			<div class="col s6"></div>
-			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="col s2 btn-flat green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons">visibility</i></a>
-			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="col s2 btn-flat amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons">mode_edit</i></a>
-			<a href="#!" onClick="abrirModalApagarInstituicao(<?php echo $instituicao['id']; ?>, '<?php echo $instituicao['descricao']; ?>');" class="col s2 btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons">delete</i></a>
+			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat green-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons">visibility</i></a>
+			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat amber-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons">mode_edit</i></a>
+			<a href="#!" onClick="abrirModalApagarInstituicao(<?php echo $instituicao['id']; ?>, '<?php echo $instituicao['descricao']; ?>');" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons">delete</i></a>
 		</td>
 	</tr>
 <?php endforeach; ?>
