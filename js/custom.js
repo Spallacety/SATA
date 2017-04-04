@@ -23,7 +23,7 @@ function abrirModalSobre(){
   $('#modal-sobre').modal('open');
 }
 
-function abrirModalApagarInstituicao(idItem){
+function abrirModalApagarInstituicao(){
   var idItem = $(this).attr('data-id');
   $("#itemApagar").val(idItem);
   $('#modal-apagar-instituicao').modal('open');
