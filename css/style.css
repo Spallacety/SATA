@@ -50,5 +50,5 @@ hr {
 }
 
 .img-btn:focus, .img-btn:hover {
-  background-color: 000;
+  background-color: transparent;
 }
