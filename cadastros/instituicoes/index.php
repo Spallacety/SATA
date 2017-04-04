@@ -14,6 +14,9 @@
 	    	<br>
 				<a href="add.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
 				<a href="index.php" class="btn white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
+				<div class="col s12 center-align"><br><br>
+			    <a href="someFooPage.html" class="btn blue buttonDelete" id="" data-id="87" data-firstname="Elizabeth" data-lastname='Hudgen'>delete 87</a>
+			  </div>
 	  	</div>
   	</div>
 	</div>
