@@ -25,5 +25,6 @@ function abrirModalSobre(){
 
 function abrirModalApagarInstituicao(idItem){
   document.getElementById("itemApagar").innerHTML = idItem;
+  document.getElementById("deleteBtn").href="edit.php?id="+idItem; 
   $('#modal-apagar-instituicao').modal('open');
 }
