@@ -22,9 +22,9 @@
 <table class="highlight">
 <thead>
 	<tr>
-		<th width="5%">Matrícula</th>
-		<th width="80%">Descrição</th>
-		<th width="20%" class"right-align"></th>
+		<th width="5%">ID</th>
+		<th width="60%">Descrição</th>
+		<th width="40%" class"right-align"></th>
 	</tr>
 </thead>
 <tbody>
