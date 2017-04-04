@@ -45,11 +45,10 @@ hr {
 }
 
 .img-btn {
-  z-index: 1;
-  padding: 0 1rem;
+  padding: 0 10px;
   background-color: transparent;
 }
 
 .img-btn:focus, .img-btn:hover {
-  background-color: transparent;
+  background-color: 000;
 }
