@@ -5,6 +5,6 @@
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-action modal-close btn-flat">Cancelar</a>
-    <a href="#!" id="deleteBtn" class="modal-action modal-close btn-flat">Apagar</a>
+    <a href="#!" id="deleteBtn" class="modal-action modal-close btn-flat red-text">Apagar</a>
   </div>
 </div>
