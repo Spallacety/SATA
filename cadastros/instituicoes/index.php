@@ -35,7 +35,7 @@
 		<td><?php echo $instituicao['descricao']; ?></td>		
 		<td class="row vallign right-align">
 			<a href="view.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
-			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons amber-text">mode_edit</i></a>
+			<a href="edit.php?id=<?php echo $instituicao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
 			<a href="#!" onClick="abrirModalApagarInstituicao(<?php echo $instituicao['id']; ?>, '<?php echo $instituicao['descricao']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
 		</td>
 	</tr>
