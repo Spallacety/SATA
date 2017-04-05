@@ -21,7 +21,7 @@ function add() {
     
     $today = 
       date_create('now', new DateTimeZone('America/Sao_Paulo'));
-    $profissao = $_POST['profissional'];
+    $profissao = $_POST['profissao'];
     $profissao['modificacao'] = $profissao['criacao'] = $today->format("Y-m-d H:i:s");
     
     save('profissoes', $profissao);
