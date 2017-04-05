@@ -47,7 +47,7 @@
 				<div class="btn-group-h">
 					<a href="view.php?id=<?php echo $profissao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
 					<a href="edit.php?id=<?php echo $profissao['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
-					<a href="#!" onClick="abrirModalApagarProfissao(<?php echo $profissao['id']; ?>, '<?php echo $profissao['nome']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
+					<a href="#!" onClick="abrirModalApagarProfissao(<?php echo $profissao['id']; ?>, '<?php echo $profissao['descricao']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
 				</div>
 			</td>
 		</tr>
