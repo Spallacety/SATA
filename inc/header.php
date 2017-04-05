@@ -25,21 +25,21 @@
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/pacientes/index.php" class="main-text">Gerenciar Pacientes</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/profissionais/index.php" class="main-text">Gerenciar Profissionais</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/profissoes/index.php" class="main-text">Gerenciar Profissões</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/instituicoes/index.php" class="main-text">Gerenciar Instituições</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/avaliacao/avaliacao.php">CARS</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/avaliacao/avaliacao.php" class="main-text">CARS</a></li>
     </ul>
 
     <ul id="dropdownTratamentos" class="dropdown-content">
     </ul>
 
     <ul id="dropdownResultados" class="dropdown-content">
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/pacientes/index.php">Profissionais</a></li>
+      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/cadastros/pacientes/index.php" class="main-text">Profissionais</a></li>
     </ul>
 
     <div id="modal-sobre" class="modal">
