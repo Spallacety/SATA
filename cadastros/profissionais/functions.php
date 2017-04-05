@@ -6,7 +6,7 @@ $profissional = null;
 $instituicoes = null;
 $profissoes = null;
 
-function initAttr() {
+function initAttr () {
   global $instituicoes;
   $instituicoes = find_all('instituicoes');
   global $profissoes;
