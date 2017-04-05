@@ -45,11 +45,11 @@ function abrirModalApagarPaciente(idItem, nomeItem){
 function abrirModalApagarProfissao(idItem, nomeItem){
   document.getElementById("itemApagar").innerHTML = nomeItem;
   document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
-  $('#modal-apagar-paciente').modal('open');
+  $('#modal-apagar-profissao').modal('open');
 }
 
 function abrirModalApagarProfissional(idItem, nomeItem){
   document.getElementById("itemApagar").innerHTML = nomeItem;
   document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
-  $('#modal-apagar-paciente').modal('open');
+  $('#modal-apagar-profissional').modal('open');
 }
