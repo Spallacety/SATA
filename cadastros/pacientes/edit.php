@@ -38,7 +38,7 @@
     <div class="col s12 m2 l2">
       <div class="input-field">
         <input type="text" class="data" maxlength="10" id="dtNasc" name="paciente['nascimento']" value="<?php echo $paciente['nascimento']; ?>" required>
-        <label for="dtNasc">Data de Nascimento</label>
+        <label for="dtNasc">Dt. Nascimento</label>
       </div>
     </div>
 

@@ -39,7 +39,7 @@
     <div class="col s12 m2 l2">
       <div class="input-field">
         <input disabled type="text" class="data black-text" maxlength="10" id="dtNasc" name="paciente['nascimento']" value="<?php echo $paciente['nascimento']; ?>" required>
-        <label for="dtNasc" class="main-text">Data de Nascimento</label>
+        <label for="dtNasc" class="main-text">Dt. Nascimento</label>
       </div>
     </div>
 
