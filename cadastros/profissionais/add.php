@@ -49,6 +49,7 @@
         <?php foreach ($instituicoes as $instituicao) : ?>
           <option value="<?php echo $instituicao['id']; ?>"><?php echo $instituicao['descricao']; ?></option>
         <?php endforeach; ?>
+        <?php endif; ?>
       </select>
       <label for="instituicao">Instituição</label>
     </div>
