@@ -15,8 +15,8 @@
 <div class="row">
   <div class="col s12">
     <div class="input-field">
-      <input type="text" id="descricao" name="profissao['descricao']" value="<?php echo $profissao['descricao']; ?>" required>
-      <label for="descricao">Profissão</label>
+      <input disabled type="text" class="black-text" id="descricao" name="profissao['descricao']" value="<?php echo $profissao['descricao']; ?>" required>
+      <label for="descricao" class="main-text">Profissão</label>
     </div>
   </div>
 </div>
