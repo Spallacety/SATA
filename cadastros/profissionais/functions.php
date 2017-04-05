@@ -4,15 +4,13 @@ require_once(DBAPI);
 $profissionais = null;
 $profissional = null;
 $instituicoes = null;
-
-function initInstituicoes() {
-  global $instituicoes;
-  $instituicoes = find_all('instituicoes');
-}
+$instituicao = null;
 
 function index() {
 	global $profissionais;
 	$profissionais = find_all('profissionais');
+  global $instituicoes;
+  $instituicoes = find_all('instituicoes');
 }
 
 /**
