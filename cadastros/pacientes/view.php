@@ -27,15 +27,12 @@
       </div>
     </div>
 
-    <div class="input-field col s12 m2 l2">
-      <select disabled id="sexo" class="black-text" name="paciente['sexo']">
-        <option disabled selected></option>
-        <option disabled <?php if ($paciente['sexo'] == 'M') echo ' selected '; ?> value="M">Masculino</option>
-        <option disabled <?php if ($paciente['sexo'] == 'F') echo ' selected '; ?> value="F">Feminino</option>
-      </select>
-      <label for="sexo" class="main-text">Sexo</label>
+    <div class="col s12 m2 l2">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" id="sexo" name="paciente['sexo']" <?php if ($paciente['sexo'] == 'M') echo ' value="Masculino" '; ?> <?php if ($paciente['sexo'] == 'F') echo ' value="Feminino" '; ?> required>
+        <label for="sexo" class="main-text">Sexo</label>
+      </div>
     </div>
-  </div>
 
   <div class="row">
     <div class="col s12 m2 l2">
