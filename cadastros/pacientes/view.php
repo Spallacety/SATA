@@ -33,6 +33,7 @@
         <label for="sexo" class="main-text">Sexo</label>
       </div>
     </div>
+  </div>
 
   <div class="row">
     <div class="col s12 m2 l2">
