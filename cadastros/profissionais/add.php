@@ -1,6 +1,5 @@
 <?php 
   require_once('functions.php');
-  $instituicoes = find_all('instituicoes');
   add();
 ?>
 

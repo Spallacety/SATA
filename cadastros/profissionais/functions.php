@@ -3,10 +3,13 @@ require_once('../../config.php');
 require_once(DBAPI);
 $profissionais = null;
 $profissional = null;
+$instituicoes = null;
 
-/**
- *  Listagem de profissionais
- */
+function initInstituicoes() {
+  global $instituicoes;
+  $instituicoes = find_all('instituicoes');
+}
+
 function index() {
 	global $profissionais;
 	$profissionais = find_all('profissionais');
