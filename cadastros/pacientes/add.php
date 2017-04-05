@@ -59,7 +59,7 @@
     <div class="col s12 m2 l2">
       <div class="input-field">
         <input type="text" class="cep" maxlength="9" id="cep" name="paciente['cep']" required>
-        <label for="cep">Endereço</label>
+        <label for="cep">CEP</label>
       </div>
     </div>
   </div>

@@ -62,7 +62,7 @@
     <div class="col s12 m2 l2">
       <div class="input-field">
         <input disabled type="text" class="black-text" class="cep" maxlength="9" id="cep" name="paciente['cep']" value="<?php echo $paciente['cep']; ?>" required>
-        <label for="cep" class="main-text">Endereço</label>
+        <label for="cep" class="main-text">CEP</label>
       </div>
     </div>
   </div>
