@@ -1,5 +1,6 @@
 <?php 
-  require_once('functions.php'); 
+  require_once('functions.php');
+  $instituicoes = find_all('instituicoes');
   add();
 ?>
 
@@ -27,20 +28,31 @@
     <div class="col s12 m2 l2">
       <div class="input-field">
         <input type="text" class="telefone" maxlength="14" id="telefone" name="profissional['telefone']" required>
-        <label for="telefone">Tel. Residencial</label>
+        <label for="telefone">Telefone</label>
       </div>
     </div>
 
     <div class="col s12 m2 l2">
       <div class="input-field">
         <input type="text" class="celular" maxlength="14" id="celular" name="profissional['celular']" required>
-        <label for="celular">Tel. Residencial</label>
+        <label for="celular">Celular</label>
       </div>
     </div>
   </div>
 
   <div class="row">	  
 	  
+    <div class="input-field col s12 m6 l6">
+      <select id="instituicao" name="profissional['instituicao']">
+        <option disabled selected></option>
+        <?php if ($instituicoes) : ?>
+        <?php foreach ($instituicoes as $instituicao) : ?>
+          <option value="<?php echo $instituicao['id']; ?>"><?php echo $instituicao['descricao']; ?></option>
+        <?php endforeach; ?>
+      </select>
+      <label for="instituicao">Instituição</label>
+    </div>
+
     <div class="form-group col-md-6">
       <label for="campo1">Profissão</label>
       <input type="text" placeholder="Profissão do Profissional" class="form-control" name="profissional['profissao']" required>
