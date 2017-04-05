@@ -25,12 +25,12 @@
     </div>
 
     <div class="input-field col s12 m2 l2">
-      <select name="paciente['sexo']">
+      <select id="sexo" name="paciente['sexo']">
         <option disabled selected></option>
-        <option class="black-text" value="Masculino">Masculino</option>
-        <option class="black-text" value="Feminino">Feminino</option>
+        <option class="black-text" value="M">Masculino</option>
+        <option class="black-text" value="F">Feminino</option>
       </select>
-      <label>Sexo</label>
+      <label for="sexo">Sexo</label>
     </div>
   </div>
 

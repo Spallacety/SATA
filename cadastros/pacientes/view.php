@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Paciente: <?php echo $paciente['nome']; ?></h2>
+<h4 class="main-text center">Visualizar Informações</h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
@@ -28,12 +28,12 @@
     </div>
 
     <div class="input-field col s12 m2 l2">
-      <select disabled name="paciente['sexo']" value="<?php echo $paciente['sexo']; ?>">
+      <select disabled id="sexo" name="paciente['sexo']">
         <option disabled selected></option>
-        <option class="black-text" value="Masculino">Masculino</option>
-        <option class="black-text" value="Feminino">Feminino</option>
+        <option class="black-text" <?php if ($paciente['sexo'] == 'M') echo ' selected '; ?> value="M">Masculino</option>
+        <option class="black-text" <?php if ($paciente['sexo'] == 'F') echo ' selected '; ?> value="F">Feminino</option>
       </select>
-      <label class="main-text">Sexo</label>
+      <label for="sexo" class="main-text">Sexo</label>
     </div>
   </div>
 
