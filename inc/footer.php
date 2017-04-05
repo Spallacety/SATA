@@ -1,7 +1,7 @@
     </div>
 
     <hr/>
-    <footer class="container grey lighten-4">
+    <footer class="page-footer grey lighten-4">
       <p class="center">&copy; LIMS - Laboratory of Innovation on Multimedia Systems</p>
     </footer>
 
