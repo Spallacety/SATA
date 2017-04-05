@@ -60,3 +60,7 @@ hr {
 ul.dropdown-content.select-dropdown li span {
     color: #000;
 }
+
+ul.dropdown-content.select-dropdown li.disabled span {
+    color: #000;
+}
