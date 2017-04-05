@@ -34,14 +34,13 @@
 
     <div class="col s12 m2 l2">
       <div class="input-field">
-        <input type="text" class="celular" maxlength="14" id="celular" name="profissional['celular']" required>
+        <input type="text" class="celular" maxlength="15" id="celular" name="profissional['celular']" required>
         <label for="celular">Celular</label>
       </div>
     </div>
   </div>
 
   <div class="row">	  
-	  
     <div class="input-field col s12 m6 l6">
       <select id="instituicao" name="profissional['instituicao']">
         <option disabled selected></option>
@@ -54,20 +53,21 @@
       <label for="instituicao">Instituição</label>
     </div>
 
-    <div class="form-group col-md-6">
-      <label for="campo1">Profissão</label>
-      <input type="text" placeholder="Profissão do Profissional" class="form-control" name="profissional['profissao']" required>
-    </div>
-
-    <div class="form-group col-md-6">
-      <label for="campo2">Instituição</label>
-      <input type="text" placeholder="Instituição do Profissional" class="form-control" name="profissional['instituicao']" required>
-    </div>       
-
+    <div class="input-field col s12 m6 l6">
+      <select id="profissao" name="profissional['profissao']">
+        <option disabled selected></option>
+        <?php if ($profissoes) : ?>
+        <?php foreach ($profissoes as $profissao) : ?>
+          <option value="<?php echo $profissao['id']; ?>"><?php echo $profissao['descricao']; ?></option>
+        <?php endforeach; ?>
+        <?php endif; ?>
+      </select>
+      <label for="profissao">Profissão</label>
+    </div>    
   </div>
   
   <fieldset>
-    <legend> Para uso no sistema </legend>
+    <legend class="grey"> Para uso no sistema </legend>
     <div class="row">
       <div class="col s12 m6 l6">
         <div class="input-field">
