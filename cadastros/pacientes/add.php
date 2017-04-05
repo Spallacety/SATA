@@ -25,7 +25,7 @@
     </div>
 
     <div class="input-field col s12 m2 l2">
-      <select name="paciente['sexo']">
+      <select class="black-text" name="paciente['sexo']">
         <option disabled selected></option>
         <option value="M">Masculino</option>
         <option value="F">Feminino</option>
