@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h4 class="main-text center">Editar Profissao</h2>
+<h4 class="main-text center">Editar Profissão</h2>
 <hr>
 
 <form action="edit.php?id=<?php echo $profissao['id']; ?>" method="post">
