@@ -33,7 +33,8 @@
 	<thead>
 		<tr>
 			<th width="5%">ID</th>
-			<th width="60%">Profissão</th>
+			<th width="45%">Nome</th>
+			<th width="15%">Profissão</th>
 			<th width="40%" class"right-align"></th>
 		</tr>
 	</thead>
