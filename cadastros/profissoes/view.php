@@ -24,7 +24,7 @@
 <div class="container">
   <div class="row center">
     <br>
-      <a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn blue white-text btn-primary">Editar</a>
+      <a href="edit.php?id=<?php echo $profissao['id']; ?>" class="btn blue white-text btn-primary">Editar</a>
       <a href="index.php" class="btn blue white-text btn-default">Voltar</a>
   </div>
 </div>
