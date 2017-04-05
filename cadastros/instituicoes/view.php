@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Instituição: <?php echo $instituicao['descricao']; ?></h2>
+<h4 class="main-text center">Visualizar informações</h2>
 <hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
