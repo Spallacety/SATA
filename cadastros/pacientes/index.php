@@ -5,17 +5,19 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<header>
-	<div class="row">
-		<div class="col-sm-6">
-			<h2>Pacientes</h2>
-		</div>
-		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Novo Paciente</a>
-	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
-	    </div>
+<div class="row valign-wrapper">
+	<div class="col s12 m6 valign left-align">
+		<h4 class="main-text">Pacientes</h4>
 	</div>
-</header>
+	<div class="col s12 m6 valign right-align">
+    <div class="row right">
+    	<br>
+		<a href="add.php" class="btn-floating white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
+		<a href="index.php" class="btn-floating white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Atualizar"><i class="material-icons">refresh</i></a>
+  	</div>
+	</div>
+</div>
+<hr>
 
 <?php if (!empty($_SESSION['message'])) : ?>
 	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
@@ -25,35 +27,35 @@
 	<?php clear_messages(); ?>
 <?php endif; ?>
 
-<hr>
-
-<table class="table table-hover">
-<thead>
-	<tr>
-		<th>Matrícula</th>
-		<th width="70%">Nome</th>		
-		<th width="22,5%">Opções</th>
-	</tr>
-</thead>
-<tbody>
-<?php if ($pacientes) : ?>
-<?php foreach ($pacientes as $paciente) : ?>
-	<tr>
-		<td><?php echo $paciente['id']; ?></td>
-		<td><?php echo $paciente['nome']; ?></td>   		
-		<td class="actions text-right">
-			<a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#delete-modal-paciente" class="btn-flat red-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar" data-instituicao="<?php echo $paciente['id']; ?>"><i class="material-icons">delete</i></a>
-		</td>
-	</tr>
-<?php endforeach; ?>
-<?php else : ?>
-	<tr>
-		<td colspan="6">Nenhum registro encontrado.</td>
-	</tr>
-<?php endif; ?>
-</tbody>
+<table class="highlight">
+	<thead>
+		<tr>
+			<th width="5%">ID</th>
+			<th width="60%">Nome</th>
+			<th width="40%" class"right-align"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php if ($pacientes) : ?>
+		<?php foreach ($pacientes as $paciente) : ?>
+		<tr>
+			<td><?php echo $paciente['id']; ?></td>
+			<td><?php echo $paciente['nome']; ?></td>		
+			<td class="row vallign right-align">
+				<div class="btn-group-h">
+					<a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
+					<a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
+					<a href="#!" onClick="abrirModalApagarPaciente(<?php echo $paciente['id']; ?>, '<?php echo $paciente['nome']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
+				</div>
+			</td>
+		</tr>
+		<?php endforeach; ?>
+		<?php else : ?>
+		<tr>
+			<td colspan="6">Nenhum registro encontrado.</td>
+		</tr>
+		<?php endif; ?>
+	</tbody>
 </table>
 
 <?php include('modal.php'); ?>

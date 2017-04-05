@@ -34,3 +34,9 @@ function abrirModalApagarInstituicao(idItem, descricaoItem){
   document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
   $('#modal-apagar-instituicao').modal('open');
 }
+
+function abrirModalApagarPaciente(idItem, nomeItem){
+  document.getElementById("itemApagar").innerHTML = nomeItem;
+  document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
+  $('#modal-apagar-paciente').modal('open');
+}
