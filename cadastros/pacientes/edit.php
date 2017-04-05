@@ -3,165 +3,118 @@
   edit();
 ?>
 
-<script>
-
-function mascara(o,f){
-    v_obj=o
-    v_fun=f
-    setTimeout("execmascara()",1)
-}
-
-function execmascara(){
-    v_obj.value=v_fun(v_obj.value)
-}
-
-function leech(v){
-    v=v.replace(/o/gi,"0")
-    v=v.replace(/i/gi,"1")
-    v=v.replace(/z/gi,"2")
-    v=v.replace(/e/gi,"3")
-    v=v.replace(/a/gi,"4")
-    v=v.replace(/s/gi,"5")
-    v=v.replace(/t/gi,"7")
-    return v
-}
-
-function soNumeros(v){
-    return v.replace(/\D/g,"")
-}
-
-function telefone(v){
-    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
-    v=v.replace(/^(\d\d)(\d)/g,"($1) $2") //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d{4})(\d)/,"$1-$2")    //Coloca hífen entre o quarto e o quinto dígitos
-    return v
-}
-
-function celular(v){
-    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
-    v=v.replace(/^(\d\d)(\d)/g,"($1) $2") //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d{5})(\d)/,"$1-$2")    //Coloca hífen entre o quarto e o quinto dígitos
-    return v
-}
-
-function nascimento(v){
-    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
-    v=v.replace(/(\d{2})(\d)/,"$1-$2")    //Coloca um hífen depois do bloco de quatro dígitos
-    v=v.replace(/(\d{2})(\d)/,"$1-$2")    //Coloca um hífen depois do bloco de quatro dígitos
-    return v
-}
-
-function cpf(v){
-    v=v.replace(/\D/g,"")                    //Remove tudo o que não é dígito
-    v=v.replace(/(\d{3})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
-    v=v.replace(/(\d{3})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
-                                             //de novo (para o segundo bloco de números)
-    v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2") //Coloca um hífen entre o terceiro e o quarto dígitos
-    return v
-}
-
-function cep(v){
-    v=v.replace(/D/g,"")                //Remove tudo o que não é dígito
-    v=v.replace(/^(\d{5})(\d)/,"$1-$2") //Esse é tão fácil que não merece explicações
-    return v
-}
-
-</script>
-
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Atualizar Paciente</h2>
+<h4 class="main-text center">Editar Paciente</h2>
+<hr>
 
 <form action="edit.php?id=<?php echo $paciente['id']; ?>" method="post">
-  <hr />
   <div class="row">
-    <div class="form-group col-md-7">
-      <label for="name">Nome</label>
-      <input type="text" class="form-control" name="paciente['nome']" value="<?php echo $paciente['nome']; ?>">
+    <div class="col s12 m7 l7">
+      <div class="input-field">
+        <input type="text" id="nome" name="paciente['nome']" value="<?php echo $paciente['nome']; ?>" required>
+        <label for="nome">Nome</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-3">
-      <label for="campo2">CPF</label>
-      <input type="text" onkeypress="mascara(this,cpf)" maxlength="14" class="form-control" name="paciente['cpf']" value="<?php echo $paciente['cpf']; ?>">
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input type="text" class="cpf" maxlength="14" id="cpf" name="paciente['cpf']" value="<?php echo $paciente['cpf']; ?>" required>
+        <label for="cpf">CPF</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-2">
-      <label for="campo3">Sexo</label>
-      
-      <select class="form-control" name="paciente['sexo']" value="<?php echo $paciente['sexo']; ?>">
-				<option value="M">Masculino</option>
-				<option value="F">Feminino</option>
-			</select>     
-      
+    <div class="input-field col s12 m2 l2">
+      <select name="paciente['sexo']" value="<?php echo $paciente['sexo']; ?>">
+        <option disabled selected></option>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+      </select>
+      <label>Sexo</label>
     </div>
   </div>
+
   <div class="row">
-	  
-	 <div class="form-group col-md-2">
-      <label for="campo3">Data de Nascimento</label>
-      <input type="text" onkeypress="mascara(this,nascimento)" maxlength="10" class="form-control" name="paciente['nascimento']" value="<?php echo $paciente['nascimento']; ?>">
-    </div>
-	  
-    <div class="form-group col-md-5">
-      <label for="campo1">Endereço</label>
-      <input type="text" class="form-control" name="paciente['endereco']" value="<?php echo $paciente['endereco']; ?>">
+    <div class="col s12 m2 l2">
+      <div class="input-field">
+        <input type="text" class="data" maxlength="10" id="dtNasc" name="paciente['nascimento']" value="<?php echo $paciente['nascimento']; ?>" required>
+        <label for="dtNasc">Data de Nascimento</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-3">
-      <label for="campo2">Bairro</label>
-      <input type="text" class="form-control" name="paciente['bairro']" value="<?php echo $paciente['bairro']; ?>">
+    <div class="col s12 m5 l5">
+      <div class="input-field">
+        <input type="text" id="endereco" name="paciente['endereco']" value="<?php echo $paciente['endereco']; ?>" required>
+        <label for="endereco">Endereço</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-2">
-      <label for="campo3">CEP</label>
-      <input type="text" onkeypress="mascara(this,cep)" maxlength="9" class="form-control" name="paciente['cep']" value="<?php echo $paciente['cep']; ?>">
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input type="text" id="bairro" name="paciente['bairro']" value="<?php echo $paciente['bairro']; ?>" required>
+        <label for="bairro">Bairro</label>
+      </div>
     </div>
 
-   
+    <div class="col s12 m2 l2">
+      <div class="input-field">
+        <input type="text" class="cep" maxlength="9" id="cep" name="paciente['cep']" value="<?php echo $paciente['cep']; ?>" required>
+        <label for="cep">Endereço</label>
+      </div>
+    </div>
   </div>
+  
   <div class="row">
-    <div class="form-group col-md-5">
-      <label for="campo1">Município</label>
-      <input type="text" class="form-control" name="paciente['cidade']" value="<?php echo $paciente['cidade']; ?>">
+    <div class="col s12 m5 l5">
+      <div class="input-field">
+        <input type="text" id="cidade" name="paciente['cidade']" value="<?php echo $paciente['cidade']; ?>" required>
+        <label for="cidade">Cidade</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-1">
-      <label for="campo3">UF</label>
-      <input type="text" class="form-control" name="paciente['estado']" value="<?php echo $paciente['estado']; ?>">
+    <div class="col s12 m1 l1">
+      <div class="input-field">
+        <input type="text" maxlength="2" id="estado" name="paciente['estado']" value="<?php echo $paciente['estado']; ?>" required>
+        <label for="estado">UF</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-3">
-      <label for="campo2">Tel. Residencial</label>
-      <input type="text" onkeypress="mascara(this,telefone)" maxlength="14" class="form-control" name="paciente['telefone']" value="<?php echo $paciente['telefone']; ?>">
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input type="text" class="telefone" maxlength="14" id="telefone" name="paciente['telefone']" value="<?php echo $paciente['telefone']; ?>" required>
+        <label for="telefone">Tel. Residencial</label>
+      </div>
     </div>
 
-    <div class="form-group col-md-3">
-      <label for="campo3">Tel. Celular</label>
-      <input type="text" onkeypress="mascara(this,celular)" maxlength="15" class="form-control" name="paciente['celular']" value="<?php echo $paciente['celular']; ?>">
-    </div>    
- </div>
- 
- <div class="row">
-    <div class="form-group col-md-7">
-      <label for="campo3">Responsável</label>
-      <input type="text" class="form-control" name="paciente['responsavel']" value="<?php echo $paciente['responsavel']; ?>">
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input type="text" class="celular" maxlength="15" id="celular" name="paciente['celular']" value="<?php echo $paciente['celular']; ?>" required>
+        <label for="celular">Tel. Celular</label>
+      </div>
     </div>
-
-    <div class="form-group col-md-3">
-      <label for="campo3">Tel. Cel. Resp.</label>
-      <input type="text" onkeypress="mascara(this,celular)" maxlength="15" class="form-control" name="paciente['celresp']" value="<?php echo $paciente['celresp']; ?>">
-    </div>
-    
-     <div class="form-group col-md-2">
-      <label for="campo3">Data de Cadastro</label>
-      <input type="text" class="form-control" name="paciente['criacao']" disabled value="<?php echo $paciente['criacao']; ?>">
-    </div>
-
   </div>
-  <div id="actions" class="row">
-    <div class="col-md-12">
-      <button type="submit" class="btn btn-primary">Salvar</button>
-      <a href="index.php" class="btn btn-default">Cancelar</a>
+
+  <div class="row">
+    <div class="col s12 m8 l8">
+      <div class="input-field">
+        <input type="text" id="responsavel" name="paciente['responsavel']" value="<?php echo $paciente['responsavel']; ?>" required>
+        <label for="responsavel">Responsável</label>
+      </div>
+    </div>
+
+    <div class="col s12 m4 l4">
+      <div class="input-field">
+        <input type="text" class="celular" maxlength="2" id="celresp" name="paciente['celresp']" value="<?php echo $paciente['celresp']; ?>" required>
+        <label for="celresp">Cel. Responsável</label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row center">
+      <br>
+      <button type="submit" class="btn green white-text btn-primary">Salvar</button>
+      <a href="index.php" class="btn red white-text btn-default">Cancelar</a>
     </div>
   </div>
 </form>

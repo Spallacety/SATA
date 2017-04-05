@@ -16,6 +16,7 @@ $(document).ready(function() {
   $('.modal').modal({
     dismissible: false
   });
+  $('select').material_select();
   $(".button-collapse").sideNav();
   $('.data').mask('00/00/0000');
   $('.cep').mask('00000-000');

@@ -12,80 +12,113 @@
 	<div class="alert alert-<?php echo $_SESSION['type']; ?>"><?php echo $_SESSION['message']; ?></div>
 <?php endif; ?>
 
-<dl class="dl-horizontal">
-	<dt>Matrícula:</dt>
-	<dd><?php echo $paciente['id']; ?></dd>
+  <div class="row">
+    <div class="col s12 m7 l7">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" id="nome" name="paciente['nome']" value="<?php echo $paciente['nome']; ?>" required>
+        <label for="nome" class="main-text">Nome</label>
+      </div>
+    </div>
 
-	<dt>CPF:</dt>
-	<dd><?php echo $paciente['cpf']; ?></dd>
-	
-	<dt>Sexo:</dt>
-	<dd>
-		<?php
-			switch ($paciente['sexo'])
-		{
-			case "M";
-			echo "Masculino";
-			break;			
-			case "F";
-			echo "Feminino";			
-			break;			
-		}	
-	 ?></dd>
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input disabled type="text" class="cpf black-text" maxlength="14" id="cpf" name="paciente['cpf']" value="<?php echo $paciente['cpf']; ?>" required>
+        <label for="cpf" class="main-text">CPF</label>
+      </div>
+    </div>
 
-	<dt>Data de Nascimento:</dt>
-	<dd><?php echo $paciente['nascimento']; ?></dd>
-</dl>
+    <div class="input-field col s12 m2 l2">
+      <select disabled class="black-text" name="paciente['sexo']" value="<?php echo $paciente['sexo']; ?>">
+        <option disabled selected></option>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+      </select>
+      <label class="main-text">Sexo</label>
+    </div>
+  </div>
 
-<dl class="dl-horizontal">
-	<dt>Endereço:</dt>
-	<dd><?php echo $paciente['endereco']; ?></dd>
+  <div class="row">
+    <div class="col s12 m2 l2">
+      <div class="input-field">
+        <input disabled type="text" class="data black-text" maxlength="10" id="dtNasc" name="paciente['nascimento']" value="<?php echo $paciente['nascimento']; ?>" required>
+        <label for="dtNasc" class="main-text">Data de Nascimento</label>
+      </div>
+    </div>
 
-	<dt>Bairro:</dt>
-	<dd><?php echo $paciente['bairro']; ?></dd>
+    <div class="col s12 m5 l5">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" id="endereco" name="paciente['endereco']" value="<?php echo $paciente['endereco']; ?>" required>
+        <label for="endereco" class="main-text">Endereço</label>
+      </div>
+    </div>
 
-	<dt>CEP:</dt>
-	<dd><?php echo $paciente['cep']; ?></dd>
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" id="bairro" name="paciente['bairro']" value="<?php echo $paciente['bairro']; ?>" required>
+        <label for="bairro" class="main-text">Bairro</label>
+      </div>
+    </div>
 
-	<dt>Cidade:</dt>
-	<dd><?php echo $paciente['cidade']; ?></dd>
+    <div class="col s12 m2 l2">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" class="cep" maxlength="9" id="cep" name="paciente['cep']" value="<?php echo $paciente['cep']; ?>" required>
+        <label for="cep" class="main-text">Endereço</label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col s12 m5 l5">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" id="cidade" name="paciente['cidade']" value="<?php echo $paciente['cidade']; ?>" required>
+        <label for="cidade" class="main-text">Cidade</label>
+      </div>
+    </div>
 
-        <dt>UF:</dt>
-	<dd><?php echo $paciente['estado']; ?></dd>
+    <div class="col s12 m1 l1">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" maxlength="2" id="estado" name="paciente['estado']" value="<?php echo $paciente['estado']; ?>" required>
+        <label for="estado" class="main-text">UF</label>
+      </div>
+    </div>
 
-	
-</dl>
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input disabled type="text" class="telefone black-text" maxlength="14" id="telefone" name="paciente['telefone']" value="<?php echo $paciente['telefone']; ?>" required>
+        <label for="telefone" class="main-text">Tel. Residencial</label>
+      </div>
+    </div>
 
-<dl class="dl-horizontal">
-	
-	<dt>Telefone Residencial:</dt>
-	<dd><?php echo $paciente['telefone']; ?></dd>
+    <div class="col s12 m3 l3">
+      <div class="input-field">
+        <input disabled type="text" class="celular black-text" maxlength="15" id="celular" name="paciente['celular']" value="<?php echo $paciente['celular']; ?>" required>
+        <label for="celular" class="main-text">Tel. Celular</label>
+      </div>
+    </div>
+  </div>
 
-	<dt>Telefone Celular:</dt>
-	<dd><?php echo $paciente['celular']; ?></dd>	
-</dl>
+	<div class="row">
+    <div class="col s12 m8 l8">
+      <div class="input-field">
+        <input disabled type="text" class="black-text" id="responsavel" name="paciente['responsavel']" value="<?php echo $paciente['responsavel']; ?>" required>
+        <label for="responsavel" class="main-text">Responsável</label>
+      </div>
+    </div>
 
-<dl class="dl-horizontal">
-	
-	<dt>Responsável:</dt>
-	<dd><?php echo $paciente['responsavel']; ?></dd>
+    <div class="col s12 m4 l4">
+      <div class="input-field">
+        <input disabled type="text" class="celular black-text" maxlength="2" id="celresp" name="paciente['celresp']" value="<?php echo $paciente['celresp']; ?>" required>
+        <label for="celresp" class="main-text">Cel. Responsável</label>
+      </div>
+    </div>
+  </div>
 
-	<dt>Tel. Celular Resp.:</dt>
-	<dd><?php echo $paciente['celresp']; ?></dd>
-
-</dl>
-
-<dl class="dl-horizontal">
-	
-	<dt>Data de Cadastro:</dt>
-	<dd><?php echo $paciente['criacao']; ?></dd>
-</dl>
-
-<div id="actions" class="row">
-	<div class="col-md-12">
-	  <a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn btn-primary">Editar</a>
-	  <a href="index.php" class="btn btn-default">Voltar</a>
-	</div>
-</div>
+  <div class="container">
+    <div class="row center">
+      <br>
+        <a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn blue white-text btn-primary">Editar</a>
+        <a href="index.php" class="btn blue white-text btn-default">Voltar</a>
+    </div>
+  </div>
 
 <?php include(FOOTER_TEMPLATE); ?>
