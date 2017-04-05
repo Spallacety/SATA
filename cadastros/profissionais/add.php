@@ -1,6 +1,6 @@
 <?php 
   require_once('functions.php');
-  initInstituicoes();
+  initAttr();
   add();
 ?>
 
@@ -67,7 +67,7 @@
   </div>
   
   <fieldset>
-    <legend class="grey"> Para uso no sistema </legend>
+    <legend class="grey-text"> Para uso no sistema </legend>
     <div class="row">
       <div class="col s12 m6 l6">
         <div class="input-field">
