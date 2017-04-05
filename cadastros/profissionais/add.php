@@ -3,65 +3,12 @@
   add();
 ?>
 
-<script>
-
-function mascara(o,f){
-    v_obj=o
-    v_fun=f
-    setTimeout("execmascara()",1)
-}
-
-function execmascara(){
-    v_obj.value=v_fun(v_obj.value)
-}
-
-function leech(v){
-    v=v.replace(/o/gi,"0")
-    v=v.replace(/i/gi,"1")
-    v=v.replace(/z/gi,"2")
-    v=v.replace(/e/gi,"3")
-    v=v.replace(/a/gi,"4")
-    v=v.replace(/s/gi,"5")
-    v=v.replace(/t/gi,"7")
-    return v
-}
-
-function soNumeros(v){
-    return v.replace(/\D/g,"")
-}
-
-function telefone(v){
-    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
-    v=v.replace(/^(\d\d)(\d)/g,"($1) $2") //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d{4})(\d)/,"$1-$2")    //Coloca hífen entre o quarto e o quinto dígitos
-    return v
-}
-
-function celular(v){
-    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
-    v=v.replace(/^(\d\d)(\d)/g,"($1) $2") //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d{5})(\d)/,"$1-$2")    //Coloca hífen entre o quarto e o quinto dígitos
-    return v
-}
-
-function cpf(v){
-    v=v.replace(/\D/g,"")                    //Remove tudo o que não é dígito
-    v=v.replace(/(\d{3})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
-    v=v.replace(/(\d{3})(\d)/,"$1.$2")       //Coloca um ponto entre o terceiro e o quarto dígitos
-                                             //de novo (para o segundo bloco de números)
-    v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2") //Coloca um hífen entre o terceiro e o quarto dígitos
-    return v
-}
-
-</script>
-
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Novo Profissional</h2>
+<h4 class="main-text center">Novo Profissional</h2>
+<hr>
 
 <form action="add.php" method="post">
-  <!-- area de campos do form -->
-  <hr />
   <div class="row">
     <div class="form-group col-md-6">
       <label for="name">Nome</label>
@@ -97,18 +44,24 @@ function cpf(v){
 
   </div>
   
+  <fieldset>
+    <legend>Para uso no sistema</legend>
     <div class="row">
-    <div class="form-group col-md-4">
-      <label for="campo1">Usuário no SADA</label>
-      <input type="text" placeholder="Usuário do Profissional no SADA" class="form-control" name="profissional['usuario']" required>
+      <div class="col s12 m6 l6">
+        <div class="input-field">
+          <input type="text" id="usuario" name="profissional['usuario']" required>
+          <label for="usuario">Usuário</label>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l6">
+        <div class="input-field">
+          <input type="password" id="senha" name="profissional['senha']" required>
+          <label for="senha">Senha</label>
+        </div>
+      </div>
     </div>
-
-    <div class="form-group col-md-4">
-      <label for="campo2">Senha</label>
-      <input type="password" placeholder="Senha do Profissional no SADA" class="form-control" name="profissional['senha']" required>
-    </div>       
-
-  </div>
+  </fieldset>    
 
   <div id="actions" class="row">
     <div class="col-md-12">
