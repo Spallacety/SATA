@@ -56,3 +56,7 @@ hr {
 .btn-group-h{
   min-width: 40%;
 }
+
+ul.dropdown-content.select-dropdown li span {
+    color: #000;
+}

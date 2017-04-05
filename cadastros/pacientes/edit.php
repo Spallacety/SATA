@@ -25,10 +25,10 @@
     </div>
 
     <div class="input-field col s12 m2 l2">
-      <select id="sexo" name="paciente['sexo']">
+      <select id="sexo" class="black-text" name="paciente['sexo']">
         <option disabled selected></option>
-        <option class="black-text" <?php if ($paciente['sexo'] == 'M') echo ' selected '; ?> value="M">Masculino</option>
-        <option class="black-text" <?php if ($paciente['sexo'] == 'F') echo ' selected '; ?> value="F">Feminino</option>
+        <option <?php if ($paciente['sexo'] == 'M') echo ' selected '; ?> value="M">Masculino</option>
+        <option <?php if ($paciente['sexo'] == 'F') echo ' selected '; ?> value="F">Feminino</option>
       </select>
       <label for="sexo">Sexo</label>
     </div>
