@@ -28,10 +28,10 @@
     </div>
 
     <div class="input-field col s12 m2 l2">
-      <select disabled class="black-text" name="paciente['sexo']" value="<?php echo $paciente['sexo']; ?>">
+      <select disabled name="paciente['sexo']" value="<?php echo $paciente['sexo']; ?>">
         <option disabled selected></option>
-        <option value="M">Masculino</option>
-        <option value="F">Feminino</option>
+        <option class="black-text" value="Masculino">Masculino</option>
+        <option class="black-text" value="Feminino">Feminino</option>
       </select>
       <label class="main-text">Sexo</label>
     </div>
