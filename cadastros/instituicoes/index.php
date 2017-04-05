@@ -12,7 +12,7 @@
 		<div class="col s12 m6 valign right-align">
 	    <div class="row right">
 	    	<br>
-				<a href="index.php" class="btn white-text blue waves-effect waves-light">Atualizar</a>
+			<a href="add.php" class="btn-floating white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
 	  	</div>
   	</div>
 	</div>
@@ -23,8 +23,7 @@
 	<tr>
 		<th width="5%">ID</th>
 		<th width="60%">Descrição</th>
-		<th width="40%" class"row right-align"><a href="add.php" class="btn-floating white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a></th>
-</th>
+		<th width="40%" class"right-align"></th>
 	</tr>
 </thead>
 <tbody>
