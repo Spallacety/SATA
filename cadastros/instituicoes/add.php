@@ -60,70 +60,64 @@ function cnpj(v){
 
 <form action="add.php" method="post">
   <!-- area de campos do form -->
-  <hr />
-  <div class="row">
-    <div class="form-group col-md-8">
-      <label for="name">Descrição</label>
-      <input type="text" placeholder="Descrição da Instituição" class="form-control" name="instituicao['descricao']" required>
-    </div>
+  <hr/>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 l8">
+        <input type="text" id="descricao" name="instituicao['descricao']" required>
+        <label for="descricao">Descrição</label>
+      </div>
 
-    <div class="form-group col-md-4">
-      <label for="campo2">CNPJ</label>
-      <input type="text" onkeypress="mascara(this,cnpj)" maxlength="18" placeholder="00.000.000/0000-00" class="form-control" name="instituicao['cnpj']" required>
-    </div>    
-  </div>
-  
-  <div class="row">
-    <div class="form-group col-md-6">
-      <label for="campo1">Endereço</label>
-      <input type="text" placeholder="Endereço da Instituição" class="form-control" name="instituicao['endereco']" required>
+      <div class="col s12 m4 l4">
+        <input type="text" onkeypress="mascara(this,cnpj)" maxlength="18" id="cnpj" name="instituicao['cnpj']" required>
+        <label for="cnpj">CNPJ</label>
+      </div>    
     </div>
+    
+    <div class="row">
+      <div class="col s12 m6 l6">
+        <input type="text" id="endereco" name="instituicao['endereco']" required>
+        <label for="endereco">Endereço</label>
+      </div>
 
-    <div class="form-group col-md-4">
-      <label for="campo2">Bairro</label>
-      <input type="text" placeholder="Nome da Instituição" class="form-control" name="instituicao['bairro']" required>
+      <div class="col s12 m4 l4">
+        <input type="text" id="bairro" name="instituicao['bairro']" required>
+        <label for="bairro">Bairro</label>
+      </div>
+      
+      <div class="col s12 m2 l2">
+        <input type="text" onkeypress="mascara(this,cep)" maxlength="9" id="cep" name="instituicao['cep']" required>
+        <label for="cep">CEP</label>
+      </div>
     </div>
     
-    <div class="form-group col-md-2">
-      <label for="campo3">CEP</label>
-      <input type="text" onkeypress="mascara(this,cep)" maxlength="9" placeholder="00000-000" class="form-control" name="instituicao['cep']" required>
-    </div>
-       
-  </div>
-  
-  <div class="row">
-    <div class="form-group col-md-4">
-      <label for="campo1">Município</label>
-      <input type="text" placeholder="Município da Instituição" class="form-control" name="instituicao['cidade']" required>
-    </div>
-    
-    <div class="form-group col-md-1">
-      <label for="campo3">UF</label>
-      <input type="text" placeholder="UF" class="form-control" name="instituicao['estado']" required>
-    </div>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <input type="text" id="cidade" name="instituicao['cidade']" required>
+        <label for="cidade">Cidade</label>
+      </div>
+      
+      <div class="col s3 m1 l1">
+        <input type="text" id="uf" name="instituicao['estado']" required>
+        <label for="uf">UF</label>
+      </div>
 
-    <div class="form-group col-md-3">
-      <label for="campo2">Telefone</label>
-      <input type="text" onkeypress="mascara(this,telefone)" maxlength="14" placeholder="(00)0000-0000" class="form-control" name="instituicao['telefone']" required>
+      <div class="col s9 m3 l3">
+        <input type="text" onkeypress="mascara(this,telefone)" maxlength="14" id="telefone" name="instituicao['telefone']" required>
+        <label for="telefone">Telefone</label>
+      </div>
+      
+       <div class="col s12 m4 l4">
+        <input type="text" id="responsavel" name="instituicao['responsavel']" required>
+        <label for="responsavel">Responsável</label>
+      </div>        
     </div>
-    
-     <div class="form-group col-md-4">
-      <label for="campo3">Responsável</label>
-      <input type="text" placeholder="Responsável pela Instituição" class="form-control" name="instituicao['responsavel']" required>
-    </div>        
   </div>
     
-<div class="row">
-
-   
-</div>
-    
-  </div>
-  
-  <div id="actions" class="row">
-    <div class="col-md-12">
-      <button type="submit" class="btn btn-primary">Salvar</button>
-      <a href="index.php" class="btn btn-default">Cancelar</a>
+  <div class="container">
+    <div class="row center">
+      <button type="submit" class="btn green white-text btn-primary">Salvar</button>
+      <a href="index.php" class="btn red white-text btn-default">Cancelar</a>
     </div>
   </div>
 </form>
