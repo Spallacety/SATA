@@ -23,7 +23,7 @@
 	<tr>
 		<th width="5%">ID</th>
 		<th width="60%">Descrição</th>
-		<th width="40%" class"row right-align"><a href="add.php" class="btn-floating white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a>
+		<th width="40%" class"row right-align"><a href="add.php" class="btn-floating white-text blue waves-effect waves-light tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova instituição"><i class="material-icons">add</i></a></th>
 </th>
 	</tr>
 </thead>
