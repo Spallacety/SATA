@@ -6,7 +6,8 @@
 	if(isset($_POST["login-button"]))
 	{
 		$usuario = $_POST["usuario"];
-		$senha = sha1($_POST["senha"]);
+		$senha = md5($_POST["senha"]);
+		alert($senha);
 		
 		if($db):
 		

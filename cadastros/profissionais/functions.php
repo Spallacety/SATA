@@ -28,7 +28,7 @@ function add() {
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $profissional = $_POST['profissional'];
     $profissional['modificacao'] = $profissional['criacao'] = $today->format("Y-m-d H:i:s");
-    $profissional['senha'] = sha1($profissional['senha']);
+    $profissional['senha'] = md5($profissional['senha']);
     
     save('profissionais', $profissional);
     header('location: index.php');
@@ -45,7 +45,8 @@ function edit() {
     if (isset($_POST['profissional'])) {
       $profissional = $_POST['profissional'];
       $profissional['modificacao'] = $now->format("Y-m-d H:i:s");
-      $profissional['senha'] = sha1($profissional['senha']);
+      $profissional['senha'] = md5($profissional['senha']);
+
       update('profissionais', $id, $profissional);
       header('location: index.php');
     } else {
