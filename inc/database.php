@@ -144,3 +144,13 @@ function remove( $table = null, $id = null ) {
   close_database($database);
 }
 
+function md5Hash($id = 0, $pass = null) {
+  $database = open_database();
+  $newpass = md5($pass);
+  $sql  = "UPDATE profissionais SET senha=`" . $newpass . "` WHERE id=" . $id . "";
+  try {
+    $database->query($sql);
+  }
+  catch (Exception $e) {} 
+  close_database($database);
+}
