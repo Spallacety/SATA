@@ -11,14 +11,14 @@
 		
 		if($db):
 		
-			$query = "SELECT * FROM profissionais WHERE usuario=`$usuario` AND senha=`$senha`";
+			$query = "SELECT * FROM profissionais WHERE usuario='$usuario' AND senha='$senha'";
 			$run_query = mysqli_query($db, $query);
 			$rows = mysqli_num_rows($run_query);
 
 			if($rows > 0)
 			{
         setcookie('usuario', $_POST['usuario'], false, '/', 'sada-lims.herokuapp.com');
-        setcookie('senha', md5($_POST['senha']), false, '/', 'sada-lims.herokuapp.com');
+        setcookie('senha', $_POST['senha'], false, '/', 'sada-lims.herokuapp.com');
 
 				include(HEADER_TEMPLATE);
 				echo
