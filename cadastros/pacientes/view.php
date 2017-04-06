@@ -1,5 +1,6 @@
 <?php 
 	require_once('functions.php'); 
+  initAttr();
 	view($_GET['id']);
 ?>
 
