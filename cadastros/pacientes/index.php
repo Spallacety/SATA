@@ -30,7 +30,6 @@
 <table class="highlight">
 	<thead>
 		<tr>
-			<th width="5%">ID</th>
 			<th width="60%">Nome</th>
 			<th width="40%" class"right-align"></th>
 		</tr>
@@ -39,7 +38,6 @@
 		<?php if ($pacientes) : ?>
 		<?php foreach ($pacientes as $paciente) : ?>
 		<tr>
-			<td><?php echo $paciente['id']; ?></td>
 			<td><?php echo $paciente['nome']; ?></td>		
 			<td class="row vallign right-align">
 				<div class="btn-group-h">

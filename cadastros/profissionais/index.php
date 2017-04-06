@@ -33,7 +33,6 @@
 <table class="highlight">
 	<thead>
 		<tr>
-			<th width="5%">ID</th>
 			<th width="45%">Nome</th>
 			<th width="15%">Profissão</th>
 			<th width="40%" class"right-align"></th>
@@ -43,7 +42,6 @@
 		<?php if ($profissionais) : ?>
 		<?php foreach ($profissionais as $profissional) : ?>
 		<tr>
-			<td><?php echo $profissional['id']; ?></td>
 			<td><?php echo $profissional['nome']; ?></td>		
    		<td>
    			<?php $profissao = find('profissoes', $profissional['id_profissao']);?>

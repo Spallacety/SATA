@@ -22,7 +22,6 @@
 <table class="highlight">
 	<thead>
 		<tr>
-			<th width="5%">ID</th>
 			<th width="60%">Descrição</th>
 			<th width="40%" class"right-align"></th>
 		</tr>
@@ -31,7 +30,6 @@
 		<?php if ($instituicoes) : ?>
 		<?php foreach ($instituicoes as $instituicao) : ?>
 		<tr>
-			<td><?php echo $instituicao['id']; ?></td>
 			<td><?php echo $instituicao['descricao']; ?></td>		
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
