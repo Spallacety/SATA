@@ -12,11 +12,12 @@
 		
 			$query = "SELECT * FROM profissionais WHERE usuario='$usuario' AND senha='$senha'";
 			$run_query = mysqli_query($db, $query);
+			$user = mysqli_fetch_array($run_query);
 			$rows = mysqli_num_rows($run_query);
 
 			if($rows > 0)
 			{
-				setcookie("usuario",$usuario);
+				setcookie("nome",$user['nome']);
 				header('location: home.php');
 			}
 			

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/material-icons.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/materialize.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/style.css">
-  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/font-awesome.min.css">
 </head>
 
 <body>
