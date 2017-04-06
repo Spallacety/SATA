@@ -78,7 +78,7 @@
 
       <div class="col s12 m6 l6">
         <div class="input-field">
-          <input type="password" id="senha" name="profissional['senha']" required>
+          <input type="password" id="senha" name="senhaSemHash" required>
           <label for="senha">Senha</label>
         </div>
       </div>

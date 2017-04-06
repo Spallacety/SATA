@@ -1,59 +1,68 @@
 <?php require_once "functions.php"; ?>
 <?php $db = open_db(); ?>
 
-<html>
-	<head>
-		<title>Login result</title>
-	</head>
-	<body>
-		<?php
+<?php 
+
+	if(isset($_POST["login-button"]))
+	{
+		$usuario = $_POST["usuario"];
+		$senha = md5($_POST["senha"]);
 		
-			//naosei' OR '2=2';#
+		if($db):
 		
-			if(isset($_POST["submit_button"]))
+			$query = "SELECT * FROM profissionais WHERE usuario='$usuario' AND senha='$senha'";
+			$run_query = mysqli_query($db, $query);
+			$rows = mysqli_num_rows($run_query);
+
+			if($rows > 0)
 			{
-				
-				$table = "profissionais";
-				$username = $_POST["usuario"];
-				$password = $_POST["senha"];
-				
-				if($db):
-				
-					//query($db, $table, $username, $password);
-					
-					$query = "SELECT * FROM $table WHERE usuario='$username' AND senha='$password'";
-					$run_query = mysqli_query($db, $query);
-					$rows = mysqli_num_rows($run_query);
-					
-					if($rows > 0)
-					{
-						
-						echo "<b>Login success ! </b>";
-						
-					}
-					
-					else
-					{
-						
-						echo "<b>Login failure :/ </b><br /><br /><a href = 'login_form.html'>Try again</a>"; 
-						
-					}
-					
-				else:
-				
-					echo "<b>ERROR</b>: MySQL couldn't establish a connection";
-					
-				endif;
-				
+				setcookie("usuario",$usuario);
+				header('location: home.php');
 			}
 			
 			else
 			{
 				
-				echo "Please, <a href = 'login_form.html'>login</a>.";
+				include(HEADER_TEMPLATE);
 				
+				echo
+				"
+				<h1>Sistema de Apoio ao Diagnóstico de Autismo</h1>
+				<hr />
+				<b>Erro: usuário e/ou senha incorretos. <a href = 'index.php'>Tente novamente</a></b>
+				<br />
+				";
+				
+				include(FOOTER_TEMPLATE);
 			}
+			
+			else:
+			
+				echo 
+				"
+					<div class='alert alert-danger' role='alert'>
+						<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
+					</div>
+					
+				";
+				
+			endif;
 		
-		?>
-	</body>
-</html>
+		}
+	
+		else
+		{
+			include(HEADER_TEMPLATE);
+			
+			echo  "<br/>";
+			echo "<div class='row center'><p class='center'>Você não tem permissão para visualizar esta página.</p></div>
+			<div class='row center'>
+			    <a class='btn waves-effect waves-light main-color' href='index.php'>Fazer login</a>
+      		</div>";
+      echo  "<br>";
+			
+			include(FOOTER_TEMPLATE);
+			
+		}
+		
+?>

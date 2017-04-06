@@ -9,7 +9,7 @@
   <hr>
 </div>
 <div id="form">
-  <form action="home.php" method="post">
+  <form action="login.php" method="post">
     <div class="row center">
       <div class="col s2 m3 l4"></div>
       <div class="col s8 m6 l4">

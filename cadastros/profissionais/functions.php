@@ -28,6 +28,8 @@ function add() {
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $profissional = $_POST['profissional'];
     $profissional['modificacao'] = $profissional['criacao'] = $today->format("Y-m-d H:i:s");
+    $pass = md5($_POST['senhaSemHash']);
+    $profissional['senha'] = $pass;
     
     save('profissionais', $profissional);
     header('location: index.php');
