@@ -17,8 +17,6 @@
 
 			if($rows > 0)
 			{
-        setcookie('usuario', $_POST['usuario'], false, '/', 'sada-lims.herokuapp.com');
-        setcookie('senha', $_POST['senha'], false, '/', 'sada-lims.herokuapp.com');
 
 				include(HEADER_TEMPLATE);
 				echo
