@@ -7,6 +7,7 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 <h4 class="main-text center">Editar Profissional</h2>
+<h2>olá, <?php echo $login_cookie = $_COOKIE['usuario']?>!</h2>
 <hr>
 
 <form action="edit.php?id=<?php echo $profissional['id']; ?>" method="post">
