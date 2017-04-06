@@ -42,7 +42,7 @@
 
   <div class="row">	  
     <div class="input-field col s12 m6 l6">
-      <select id="instituicao" name="profissional['instituicao']">
+      <select id="instituicao" name="profissional['id_instituicao']">
         <option disabled selected></option>
         <?php if ($instituicoes) : ?>
         <?php foreach ($instituicoes as $instituicao) : ?>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="input-field col s12 m6 l6">
-      <select id="profissao" name="profissional['profissao']">
+      <select id="profissao" name="profissional['id_profissao']">
         <option disabled selected></option>
         <?php if ($profissoes) : ?>
         <?php foreach ($profissoes as $profissao) : ?>

@@ -28,10 +28,10 @@
 
 <dl class="dl-horizontal">
 	<dt>Profissão:</dt>
-	<dd><?php echo $profissional['profissao']; ?></dd>
+	<dd><?php echo $profissional['id_profissao']; ?></dd>
 
 	<dt>Instituição:</dt>
-	<dd><?php echo $profissional['instituicao']; ?></dd>
+	<dd><?php echo $profissional['id_instituicao']; ?></dd>
 </dl>
 
 <dl class="dl-horizontal">
