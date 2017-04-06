@@ -49,7 +49,7 @@
     	<?php if ($profissoes) : ?>
       <?php foreach ($profissoes as $profissao) : ?>
       <?php if ($profissional['id_profissao'] == $profissao['id']) : ?>
-	      <input disabled type="text" class="black-text" id="profissao" name="profissional['profissao']" value=<?php echo $profissao['descricao']; ?> required>
+	      <input disabled type="text" class="black-text" id="profissao" name="profissional['profissao']" <?php echo "value='".$profissao['descricao']."'"; ?> required>
 	      <label for="profissao" class="main-text">Profissão</label>
       <?php endif; ?>
       <?php endforeach; ?>
