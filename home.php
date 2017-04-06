@@ -4,7 +4,7 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 <h1>Sistema de Apoio ao Diagnóstico de Autismo</h1>
-<h2>olá, <?php echo $login_cookie = $_COOKIE['login']?>!</h2>
+<h2>olá, <?php echo $login_cookie = $_COOKIE['usuario']?>!</h2>
 <hr />
 <div class='row'>
 	<div class='col-xs-6 col-sm-3 col-md-2'>
