@@ -6,7 +6,7 @@
 	if(isset($_POST["login-button"]))
 	{
 		$usuario = $_POST["usuario"];
-		$senha = $_POST["senha"];
+		$senha = md5($_POST["senha"]);
 		
 		if($db):
 		
@@ -94,7 +94,7 @@
 				"
 				<h1>Sistema de Apoio ao Diagnóstico de Autismo</h1>
 				<hr />
-				<b>Erro: usuário e/ou senha incorretos. <a href = 'index.php'>Tente novamente</a></b>
+				<b>Erro: usuário e/ou senha incorretos. <a href = 'index.php'>Tente novamente</a> $senha</b>
 				<br />
 				";
 				
