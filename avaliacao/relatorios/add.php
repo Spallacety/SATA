@@ -25,17 +25,17 @@
   <div class="row">
     <div class="form-group col-md-12">
       <label for="name">Relatos do Responsável</label>
-      <textarea name="message" rows="6" class="form-control" name="relatorio['relatados']" >Digite aqui os relatos feitos pelo responsável. </textarea>
+      <textarea name="message" placeholder="Digite aqui os relatos do responsável durante a consulta" rows="6" class="form-control" name="relatorio['relatados']"></textarea>
     </div>
     
     <div class="form-group col-md-12">
       <label for="name">Observações do Profissional</label>
-      <textarea name="message" rows="6" class="form-control" name="relatorio['observados']" >Digite aqui as observações feitas pelo profissional. </textarea>
+      <textarea name="message" placeholder="Digite aqui o que foi observado sobre o paciente em consultório" rows="6" class="form-control" name="relatorio['observados']"></textarea>
     </div>
     
     <div class="form-group col-md-12">
       <label for="name">Conclusões do Profissional</label>
-      <textarea name="message" rows="6" class="form-control" name="relatorio['observacoes']" >Digite aqui as conclusões do profissional. </textarea>
+      <textarea name="message" placeholder="Digite aqui as conclusões sobre a avaliação" rows="6" class="form-control" name="relatorio['observacoes']"></textarea>
     </div>
     
     <div class="form-group col-md-3">
