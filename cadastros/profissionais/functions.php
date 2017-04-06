@@ -44,9 +44,10 @@ function edit() {
     if (isset($_POST['profissional'])) {
       $profissional = $_POST['profissional'];
       $profissional['modificacao'] = $now->format("Y-m-d H:i:s");
+      $pass = md5($_POST['senhaSemHash']);
+      $profissional['senha'] = $pass;
 
       update('profissionais', $id, $profissional);
-      md5Hash($id, $profissional['senha']);
       header('location: index.php');
     } else {
       global $profissional;
