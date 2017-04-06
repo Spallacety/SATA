@@ -10,7 +10,7 @@
 		
 		if($db):
 		
-			$query = "SELECT * FROM profissionais WHERE usuario=`$usuario` AND senha=`$senha`";
+			$query = "SELECT * FROM profissionais WHERE usuario=`$usuario` AND senha=`".sha1($senha)."`";
 			$run_query = mysqli_query($db, $query);
 			$rows = mysqli_num_rows($run_query);
 
