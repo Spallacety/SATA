@@ -25,8 +25,7 @@ function index() {
 function add() {
   if (!empty($_POST['profissional'])) {
     
-    $today = 
-      date_create('now', new DateTimeZone('America/Sao_Paulo'));
+    $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $profissional = $_POST['profissional'];
     $profissional['modificacao'] = $profissional['criacao'] = $today->format("Y-m-d H:i:s");
     $profissional['senha'] = sha1($profissional['senha']);
