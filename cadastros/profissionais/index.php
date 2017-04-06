@@ -45,14 +45,7 @@
 		<tr>
 			<td><?php echo $profissional['id']; ?></td>
 			<td><?php echo $profissional['nome']; ?></td>		
-   		<td>
-        <?php if ($profissoes) : ?>
-        <?php foreach ($profissoes as $profissao) : ?>
-        	<?php if ($profissao['id'] == $profissional['id_profissao']) echo $profissao['descricao']; ?>
-        	<?php endif; ?>
-        <?php endforeach; ?>
-        <?php endif; ?>
-   		</td>
+   		<td><?php echo $profissional['id_profissao']; ?></td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
 					<a href="view.php?id=<?php echo $profissional['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
