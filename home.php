@@ -127,7 +127,7 @@
 			<div class='row center'>
 			    <a class='btn waves-effect waves-light main-color' href='index.php'>Fazer login</a>
       		</div>";
-      echo  "<br/>";
+      echo  "<br>";
 			
 			include(FOOTER_TEMPLATE);
 			
