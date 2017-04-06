@@ -69,6 +69,13 @@
       <?php endif; ?>
     </div>
   </div>
+
+  <div class="col s12 m2 l2">
+    <div class="input-field">
+      <input disabled type="text" class="black-text" id="usuario" name="profissional['usuario']" value="<?php echo $profissional['usuario']; ?>" required>
+      <label for="usuario" class="main-text">Usuário</label>
+    </div>
+  </div>
 </div>
 
 <div class="container">
