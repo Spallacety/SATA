@@ -52,8 +52,6 @@
         	<?php endif; ?>
         <?php endforeach; ?>
         <?php endif; ?>
-      </select>
-
    		</td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
