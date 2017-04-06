@@ -49,7 +49,7 @@
     	<?php if ($profissoes) : ?>
       <?php foreach ($profissoes as $profissao) : ?>
       <?php if ($profissional['id_profissao'] == $profissao['id']) : ?>
-	      <input disabled type="text" class="black-text" id="profissao" name="profissional['profissao']" value=<?php echo "<pre>".$profissao['descricao']."<pre>"; ?> required>
+	      <input disabled type="text" class="black-text" id="profissao" name="profissional['profissao']" value="<?php echo $profissao['descricao']; ?>" required>
 	      <label for="profissao" class="main-text">Profissão</label>
       <?php endif; ?>
       <?php endforeach; ?>
@@ -62,7 +62,7 @@
       <?php if ($instituicoes) : ?>
       <?php foreach ($instituicoes as $instituicao) : ?>
       <?php if ($profissional['id_instituicao'] == $instituicao['id']) : ?>
-	      <input disabled type="text" class="black-text" id="profissao" name="profissional['profissao']" value=<?php echo $instituicao['descricao']; ?> required>
+	      <input disabled type="text" class="black-text" id="profissao" name="profissional['profissao']" value="<?php echo $instituicao['descricao']; ?>" required>
 	      <label for="profissao" class="main-text">Instituição</label>
       <?php endif; ?>
       <?php endforeach; ?>
