@@ -6,7 +6,8 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Atualizar Profissional</h2>
+<h4 class="main-text center">Editar Profissional</h2>
+<hr>
 
 <form action="edit.php?id=<?php echo $profissional['id']; ?>" method="post">
   <div class="row">
@@ -39,7 +40,19 @@
     </div>
   </div>
 
-  <div class="row">   
+  <div class="row">
+    <div class="input-field col s12 m6 l6">
+      <select id="profissao" name="profissional['id_profissao']" required>
+        <option></option>
+        <?php if ($profissoes) : ?>
+        <?php foreach ($profissoes as $profissao) : ?>
+          <option <?php if ($profissional['id_profissao'] == $profissao['id']) echo ' selected '; ?> value="<?php echo $profissao['id']; ?>"><?php echo $profissao['descricao']; ?></option>
+        <?php endforeach; ?>
+        <?php endif; ?>
+      </select>
+      <label for="profissao">Profissão</label>
+    </div>
+
     <div class="input-field col s12 m6 l6">
       <select id="instituicao" name="profissional['id_instituicao']" required>
         <option></option>
@@ -52,17 +65,6 @@
       <label for="instituicao">Instituição</label>
     </div>
 
-    <div class="input-field col s12 m6 l6">
-      <select id="profissao" name="profissional['id_profissao']" required>
-        <option></option>
-        <?php if ($profissoes) : ?>
-        <?php foreach ($profissoes as $profissao) : ?>
-          <option <?php if ($profissional['id_profissao'] == $profissao['id']) echo ' selected '; ?> value="<?php echo $profissao['id']; ?>"><?php echo $profissao['descricao']; ?></option>
-        <?php endforeach; ?>
-        <?php endif; ?>
-      </select>
-      <label for="profissao">Profissão</label>
-    </div>    
   </div>
   
   <fieldset>
