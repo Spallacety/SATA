@@ -94,7 +94,7 @@
 				"
 				<h1>Sistema de Apoio ao Diagnóstico de Autismo</h1>
 				<hr />
-				<b>Erro: usuário e/ou senha incorretos. <a href = 'index.php'>Tente novamente</a> $senha</b>
+				<b>Erro: usuário e/ou senha incorretos. <a href = 'index.php'>Tente novamente</a></b>
 				<br />
 				";
 				
