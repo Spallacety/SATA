@@ -17,6 +17,7 @@
 
 			if($rows > 0)
 			{
+				setcookie("id_profissional",$user['id']);
 				setcookie("nome",$user['nome']);
 				header('location: home.php');
 			}

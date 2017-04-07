@@ -1,1 +1,9 @@
- $login_cookie = $_COOKIE['login']
+<?php 
+
+if (!$_COOKIE){
+  session_destroy();
+  header("Location: index.php");
+  exit;
+}
+
+?>
