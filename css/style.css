@@ -32,6 +32,10 @@ hr {
   box-shadow: 0 1px 0 0 #1a237e;
 }
 
+type="radio".with-gap:checked+label:after {
+background-color: #1a237e !important;
+}
+
 .main-text{
   color: #1a237e !important;
 }
