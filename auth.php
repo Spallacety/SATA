@@ -2,7 +2,7 @@
 
 if (!$_COOKIE){
   session_destroy();
-  header("Location: index.php");
+  header("Location: https://" . echo $_SERVER['SERVER_NAME'] . "");
   exit;
 }
 
