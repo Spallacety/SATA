@@ -32,6 +32,18 @@ if(isset($_POST["login-button"])){
 			
 			include(FOOTER_TEMPLATE);
 		}
+
+		else:
+		
+			echo 
+			"
+				<div class='alert alert-danger' role='alert'>
+					<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
+				</div>
+				
+			";
+			
+		endif;
 	}
 
 else{
