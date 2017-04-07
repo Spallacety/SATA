@@ -1,7 +1,6 @@
 <?php
 
-session_start();
-session_destroy();
-header("location: index.php"); 
+$_COOKIE=NULL;
+header("Location: https://sada-lims.herokuapp.com/index.php");
 
 ?>
