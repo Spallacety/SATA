@@ -1,6 +1,13 @@
 <?php require_once 'config.php'; ?>
 <?php require_once DBAPI; ?>
 
+<?php
+if ($_COOKIE){
+  header("Location: https://sada-lims.herokuapp.com/home.php");
+  exit;
+}
+?>
+
 <?php include(HEADER_TEMPLATE); ?>
 <?php $db = open_database(); ?>
 
