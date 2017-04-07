@@ -23,7 +23,7 @@ if(isset($_POST["login-button"])){
 		else{
 			include(HEADER_TEMPLATE);
 			
-			echo  "<br/>";
+			echo  "<br>";
 			echo "<div class='row center'><p class='center'>Usuário e/ou senha inválidos.</p></div>
 			<div class='row center'>
 			    <a class='btn waves-effect waves-light main-color' href='index.php'>Voltar</a>
@@ -34,22 +34,22 @@ if(isset($_POST["login-button"])){
 		}
 
 		else:
-		
-			echo 
-			"
-				<div class='alert alert-danger' role='alert'>
-					<p><strong>ERRO:</strong> Não foi possível Conectar ao Banco de Dados!</p>
-				</div>
-				
-			";
+
+			include(HEADER_TEMPLATE);
 			
+			echo  "<br>";
+			echo "<div class='row center'><h5 class='center red-text'><b>ERRO:</b> Não foi possível conectar ao Banco de Dados!</h5></div>";
+      echo  "<br>";
+			
+			include(FOOTER_TEMPLATE);
+
 		endif;
 	}
 
 else{
 	include(HEADER_TEMPLATE);
 	
-	echo  "<br/>";
+	echo  "<br>";
 	echo "<div class='row center'><p class='center'>Você não tem permissão para visualizar esta página.</p></div>
 	<div class='row center'>
 	    <a class='btn waves-effect waves-light main-color' href='index.php'>Fazer login</a>

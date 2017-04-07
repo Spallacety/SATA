@@ -5,7 +5,7 @@ function open_database() {
 		$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 		return $conn;
 	} catch (Exception $e) {
-		echo $e->getMessage();
+//		echo $e->getMessage();
 		return null;
 	}
 }
