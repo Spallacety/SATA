@@ -36,6 +36,7 @@ hr {
   background-color: #1a237e !important;
 }
 
+[type="radio"].with-gap:checked + label:before,
 [type="radio"].with-gap:checked + label:after {
   border: 2px solid #1a237e !important;
 }
