@@ -5,9 +5,9 @@
 <?php $db = open_database(); ?>
 
 <h4 class="main-text center">CARS -  Escala de Classificação de Autismo na Infância</p></h4>
-<h6> Paciente: ______</h6>
-<h6> Profissional Responsável: <?php echo $_COOKIE['nome']?></h6>	
-<h6> Data da Avaliação:  <?php $today = date_create('now', new DateTimeZone('America/Sao_Paulo')); echo $today->format("d/m/Y") ?>;</h6>	
+<h6> <b>Paciente:</b> <u>______</u></h6>
+<h6> <b>Profissional Responsável:</b> <u><?php echo $_COOKIE['nome']?></u></h6>	
+<h6> <b>Data da Avaliação:</b> <u><?php $today = date_create('now', new DateTimeZone('America/Sao_Paulo')); echo $today->format("d/m/Y"); ?></u></h6>	
 
 <form action = "cars.php" method = "post">
 	<div class="row">
