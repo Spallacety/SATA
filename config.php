@@ -1,8 +1,8 @@
 <?php
-define('DB_NAME', 'sql10166665');
-define('DB_USER', 'sql10166665');
-define('DB_PASSWORD', 'guBrvPYJ5Z');
-define('DB_HOST', 'sql10.freemysqlhosting.net:3306');
+define('DB_NAME', 'epiz_19901727_sadalims');
+define('DB_USER', 'epiz_19901727');
+define('DB_PASSWORD', '3h0B4p5n');
+define('DB_HOST', 'sql312.epizy.com:3306');
 /** caminho absoluto para a pasta do sistema **/
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
