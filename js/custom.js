@@ -97,3 +97,18 @@ $('#delete-modal-profissao').on('show.bs.modal', function (event) {
   modal.find('#confirm').attr('href', 'delete.php?id=' + id);
 })
  */
+
+function cars1to2(){
+  if ($('input[name=q1]:checked').length > 0){
+    document.getElementById('q2div').style.display = 'block';
+    document.getElementById('q1div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars2to1(){
+  document.getElementById('q1div').style.display = 'block';
+  document.getElementById('q2div').style.display = 'none';
+}
