@@ -108,6 +108,16 @@ function cars1to2(){
   }
 }
 
+function cars2to3(){
+  if ($('input[name=q2]:checked').length > 0){
+    document.getElementById('q3div').style.display = 'block';
+    document.getElementById('q2div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
 function cars2to1(){
   document.getElementById('q1div').style.display = 'block';
   document.getElementById('q2div').style.display = 'none';
