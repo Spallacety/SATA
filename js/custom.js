@@ -24,6 +24,7 @@ $(document).ready(function() {
   $('.celular').mask('(00) 00000-0000');
   $('.cpf').mask('000.000.000-00', {reverse: true});
   $('.cnpj').mask('00.000.000/0000-00');
+  $('.select2').select2();
 });
 
 function abrirModalSobre(){
@@ -110,8 +111,128 @@ function cars1to2(){
 
 function cars2to3(){
   if ($('input[name=q2]:checked').length > 0){
-//    document.getElementById('q3div').style.display = 'block';
+    document.getElementById('q3div').style.display = 'block';
     document.getElementById('q2div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars3to4(){
+  if ($('input[name=q3]:checked').length > 0){
+    document.getElementById('q4div').style.display = 'block';
+    document.getElementById('q3div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars4to5(){
+  if ($('input[name=q4]:checked').length > 0){
+    document.getElementById('q5div').style.display = 'block';
+    document.getElementById('q4div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars5to6(){
+  if ($('input[name=q5]:checked').length > 0){
+    document.getElementById('q6div').style.display = 'block';
+    document.getElementById('q5div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars6to7(){
+  if ($('input[name=q6]:checked').length > 0){
+    document.getElementById('q7div').style.display = 'block';
+    document.getElementById('q6div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars7to8(){
+  if ($('input[name=q7]:checked').length > 0){
+    document.getElementById('q8div').style.display = 'block';
+    document.getElementById('q7div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars8to9(){
+  if ($('input[name=q8]:checked').length > 0){
+    document.getElementById('q9div').style.display = 'block';
+    document.getElementById('q8div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars9to10(){
+  if ($('input[name=q9]:checked').length > 0){
+    document.getElementById('q10div').style.display = 'block';
+    document.getElementById('q9div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars10to11(){
+  if ($('input[name=q10]:checked').length > 0){
+    document.getElementById('q11div').style.display = 'block';
+    document.getElementById('q10div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars11to12(){
+  if ($('input[name=q11]:checked').length > 0){
+    document.getElementById('q12div').style.display = 'block';
+    document.getElementById('q11div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars12to13(){
+  if ($('input[name=q12]:checked').length > 0){
+    document.getElementById('q13div').style.display = 'block';
+    document.getElementById('q12div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars13to14(){
+  if ($('input[name=q13]:checked').length > 0){
+    document.getElementById('q14div').style.display = 'block';
+    document.getElementById('q13div').style.display = 'none';
+  }
+  else{
+    $('#modal-cars').modal('open');
+  }
+}
+
+function cars14to15(){
+  if ($('input[name=q14]:checked').length > 0){
+    document.getElementById('q15div').style.display = 'block';
+    document.getElementById('q14div').style.display = 'none';
   }
   else{
     $('#modal-cars').modal('open');
@@ -121,4 +242,69 @@ function cars2to3(){
 function cars2to1(){
   document.getElementById('q1div').style.display = 'block';
   document.getElementById('q2div').style.display = 'none';
+}
+
+function cars3to2(){
+  document.getElementById('q2div').style.display = 'block';
+  document.getElementById('q3div').style.display = 'none';
+}
+
+function cars4to3(){
+  document.getElementById('q3div').style.display = 'block';
+  document.getElementById('q4div').style.display = 'none';
+}
+
+function cars5to4(){
+  document.getElementById('q4div').style.display = 'block';
+  document.getElementById('q5div').style.display = 'none';
+}
+
+function cars6to5(){
+  document.getElementById('q5div').style.display = 'block';
+  document.getElementById('q6div').style.display = 'none';
+}
+
+function cars7to6(){
+  document.getElementById('q6div').style.display = 'block';
+  document.getElementById('q7div').style.display = 'none';
+}
+
+function cars8to7(){
+  document.getElementById('q7div').style.display = 'block';
+  document.getElementById('q8div').style.display = 'none';
+}
+
+function cars9to8(){
+  document.getElementById('q8div').style.display = 'block';
+  document.getElementById('q9div').style.display = 'none';
+}
+
+function cars10to9(){
+  document.getElementById('q9div').style.display = 'block';
+  document.getElementById('q10div').style.display = 'none';
+}
+
+function cars11to10(){
+  document.getElementById('q10div').style.display = 'block';
+  document.getElementById('q11div').style.display = 'none';
+}
+
+function cars12to11(){
+  document.getElementById('q11div').style.display = 'block';
+  document.getElementById('q12div').style.display = 'none';
+}
+
+function cars13to12(){
+  document.getElementById('q12div').style.display = 'block';
+  document.getElementById('q13div').style.display = 'none';
+}
+
+function cars14to13(){
+  document.getElementById('q13div').style.display = 'block';
+  document.getElementById('q14div').style.display = 'none';
+}
+
+function cars15to14(){
+  document.getElementById('q14div').style.display = 'block';
+  document.getElementById('q15div').style.display = 'none';
 }

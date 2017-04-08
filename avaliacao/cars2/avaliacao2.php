@@ -9,7 +9,7 @@
 <h6> <b>Profissional Responsável:</b> <?php echo $_COOKIE['nome']?></h6>	
 <h6> <b>Data da Avaliação:</b> <?php $today = date_create('now', new DateTimeZone('America/Sao_Paulo')); echo $today->format("d/m/Y"); ?></h6>	
 
-<form action = "cars.php" method = "post">
+<form action = "add.php" method = "post">
 	<div id="q1div" class="row">
 		<h5 class="main-text center">Relacionamento interpessoal (Questão 1/15)</h5> 
 		<br>
