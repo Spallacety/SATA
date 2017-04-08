@@ -41,7 +41,7 @@
 	<tbody>
 		<?php if ($profissionais) : ?>
 		<?php foreach ($profissionais as $profissional) : ?>
-    <?php if ($profissional['id'] != 1) ?>
+    <?php if ($profissional['id'] != '1') ?>
 		<tr>
 			<td><?php echo $profissional['nome']; ?></td>		
    		<td>
