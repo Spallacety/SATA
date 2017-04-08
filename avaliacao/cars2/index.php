@@ -40,7 +40,7 @@
    			<?php $profissional = find('profissionais', $resultado['id_profissonal']);?>
    			<?php echo $profissional['nome']; ?>
    		</td>
-      <td><?php echo $resultado['data']; ?></td>
+      <td><?php echo $resultado['criacao']; ?></td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
 					<a href="view.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
