@@ -1,58 +1,48 @@
 <?php 
-	require_once('functions.php'); 
+	require_once('functions.php');
 	view($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h2>Paciente: <?php echo $car['paciente']; ?></h2>
+<h4 class="main-text center">Resultados da Avaliação</h2>
 <hr>
 
-<?php if (!empty($_SESSION['message'])) : ?>
-	<div class="alert alert-<?php echo $_SESSION['type']; ?>"><?php echo $_SESSION['message']; ?></div>
-<?php endif; ?>
+<div class="row">
+  <div class="col s12 m4 l4">
+    <div class="input-field">
+      <input disabled type="text" class="black-text" id="nome" value="<?php $paciente = find('pacientes', $resultado['id_paciente']); echo $paciente['nome']; ?>" required>
+      <label for="nome" class="main-text">Paciente</label>
+    </div>
+  </div>
 
-<dl class="dl-horizontal">
-	<dt>Número do Relatório:</dt>
-	<dd><?php echo $car['id']; ?></dd>
-</dl>
-<dl class="dl-horizontal">
-	<dt>Profissional:</dt>
-	<dd><?php echo $car['profissional']; ?></dd>
-</dl>
-<dl class="dl-horizontal">
-	<dt>Resultado do CARS:</dt>
-	<dd><?php echo $car['resultado']; ?></dd>
-</dl>	
+  <div class="col s12 m4 l4">
+    <div class="input-field">
+      <input disabled type="text" class="black-text" id="nome" value="<?php $profissional = find('profissionais', $resultado['id_profissional']); echo $profissional['nome']; ?>" required>
+      <label for="nome" class="main-text">Profissional</label>
+    </div>
+  </div>
 
-<dl class="dl-horizontal">
-	<dt>Tipo de Autismo:</dt>
-	<dd><?php
-if ($car['resultado'] >= 15 and $car['resultado'] <= 29.5) {
-    echo "Sem Autismo";
-} elseif ($car['resultado'] >= 30 and $car['resultado'] <= 36.5) {
-    echo "Autismo Leve";
-} else {
-    echo "Autismo Moderado/Severo";
-}
-?></dd>
-</dl>
+  <div class="col s12 m4 l4">
+    <div class="input-field">
+      <input disabled type="text" class="black-text" id="nome" value="<?php echo $resultado['criacao']; ?>" required>
+      <label for="nome" class="main-text">Data</label>
+    </div>
+  </div>
 
-
-<div id="actions" class="row">
-	<div class="col-md-12">
-		<dt>Ver Todas as Respostas:</dt>
-	    <a href="view2.php?id=<?php echo $car['id']; ?>" class="btn btn-sm btn-success">Resultados</a>
-	  
-	</div>
+  <div class="col s12">
+    <div class="input-field">
+      <input disabled type="text" class="black-text" id="nome" value="<?php echo $resultado['resultado']; ?>" required>
+      <label for="nome" class="main-text">Resultado</label>
+    </div>
+  </div>
 </div>
-</br>
 
-<div id="actions" class="row">
-	<div class="col-md-12">		
-	  <a href="edit.php?id=<?php echo $car['id']; ?>" class="btn btn-primary">Editar</a>
-	  <a href="index.php" class="btn btn-default">Voltar</a>
-	</div>
+<div class="container">
+  <div class="row center">
+    <br>
+    <a href="index.php" class="btn blue white-text btn-default">Voltar</a>
+  </div>
 </div>
 
 <?php include(FOOTER_TEMPLATE); ?>

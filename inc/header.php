@@ -42,7 +42,6 @@
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
       <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/avaliacao/cars/index.php" class="main-text">CARS</a></li>
-      <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/avaliacao/cars2/index.php" class="main-text">CARS2</a></li>
     </ul>
 
     <ul id="dropdownTratamentos" class="dropdown-content">

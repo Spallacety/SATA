@@ -1,18 +1,11 @@
-<!-- Modal de Delete-->
-<div class="modal fade" id="delete-modal-profissao" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
-      </div>
-      <div class="modal-body">
-        Deseja realmente excluir este item?
-      </div>
-      <div class="modal-footer">
-        <a id="confirm" class="btn btn-primary" href="#">Sim</a>
-        <a id="cancel" class="btn btn-default" data-dismiss="modal">N&atilde;o</a>
-      </div>
+<div id="modal-cars" class="modal">
+  <div class="modal-content">
+    <h4 class="center"><i class="material-icons orange-text">warning</i> Atenção</h4>
+    <p class="center">Marque uma opção para continuar!</p>
+  </div>
+  <div class="modal-footer">
+    <div class="center-align">
+      <a href="#!" class="modal-action modal-close btn-flat">Ok</a>
     </div>
   </div>
-</div> <!-- /.modal -->
+</div>
