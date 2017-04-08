@@ -37,7 +37,7 @@
         <?php echo $paciente['nome']; ?>
       </td>
    		<td>
-   			<?php $profissional = find('profissionais', $resultado['id_profissonal']);?>
+   			<?php $profissional = find('profissionais', $resultado['id_profissional']);?>
    			<?php echo $profissional['nome']; ?>
    		</td>
       <td><?php echo $resultado['criacao']; ?></td>
