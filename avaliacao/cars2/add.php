@@ -590,7 +590,7 @@
     <div class="row center">
       <br>
       <a href="#!" onClick="cars15to14();" class="btn orange white-text btn-primary">Voltar</a>
-      <a type="submit" class="btn blue white-text btn-primary">Salvar</a>
+      <button type="submit" class="btn blue white-text btn-primary">Salvar</button>
     </div>
   </div>
 </form>
