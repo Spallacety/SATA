@@ -100,7 +100,7 @@ $('#delete-modal-profissao').on('show.bs.modal', function (event) {
  */
 
 function cars1to2(){
-  if ($("input[name='cars['q1']']:checked").length > 0){
+  if ($("input[name=q1]:checked").length > 0){
     document.getElementById('q2div').style.display = 'block';
     document.getElementById('q1div').style.display = 'none';
   }
