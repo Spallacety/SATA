@@ -18,14 +18,14 @@
 
   <div class="col s12 m4 l4">
     <div class="input-field">
-      <input disabled type="text" class="black-text" id="nome" value="<?php $profissional = find('profissionais', $resultado['id_profissonal']); echo $profissional['nome']; ?>" required>
+      <input disabled type="text" class="black-text" id="nome" value="<?php $profissional = find('profissionais', $resultado['id_profissional']); echo $profissional['nome']; ?>" required>
       <label for="nome" class="main-text">Profissional</label>
     </div>
   </div>
 
   <div class="col s12 m4 l4">
     <div class="input-field">
-      <input disabled type="text" class="black-text" id="nome" value="<?php echo $resultado['data']; ?>" required>
+      <input disabled type="text" class="black-text" id="nome" value="<?php echo $resultado['criacao']; ?>" required>
       <label for="nome" class="main-text">Data</label>
     </div>
   </div>
