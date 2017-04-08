@@ -9,7 +9,6 @@
     <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/js/jquery-2.1.1.min.js"></script>
     <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/js/materialize.min.js"></script>
     <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/js/jquery-mask.min.js"></script>
-    <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/js/select2.min.js"></script>
     <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/js/custom.js"></script>
   </body>
 </html>

@@ -7,7 +7,6 @@
   <link rel="shortcut icon" type="image/png" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/inc/favicon.png">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/material-icons.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/materialize.min.css">
-  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/select2.min.css">
   <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/style.css">
 </head>
 
