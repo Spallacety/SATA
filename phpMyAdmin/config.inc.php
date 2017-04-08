@@ -33,6 +33,7 @@ $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['user'] = 'b91015b1bbae14';
 $cfg['Servers'][$i]['password'] = 'a8840fc6';
+$cfg['DefaultLang'] = 'pt_BR';
 
 /**
  * phpMyAdmin configuration storage settings.
