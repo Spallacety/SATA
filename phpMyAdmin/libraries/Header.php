@@ -114,7 +114,7 @@ class Header
         $this->_isEnabled = true;
         $this->_isAjax = false;
         $this->_bodyId = '';
-        $this->_title  = '';
+        $this->_title  = 'phpMyAdmin';
         $this->_console = new Console();
         $db = ! empty($GLOBALS['db']) ? $GLOBALS['db'] : '';
         $table = ! empty($GLOBALS['table']) ? $GLOBALS['table'] : '';

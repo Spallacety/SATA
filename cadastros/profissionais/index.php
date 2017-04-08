@@ -41,8 +41,6 @@
 	<tbody>
 		<?php if ($profissionais) : ?>
 		<?php foreach ($profissionais as $profissional) : ?>
-    <?php if ($profissional['id'] == '1') ?>
-    <?php else : ?>
 		<tr>
 			<td><?php echo $profissional['nome']; ?></td>		
    		<td>
@@ -57,7 +55,6 @@
 				</div>
 			</td>
 		</tr>
-    <?php endif; ?>
 		<?php endforeach; ?>
 		<?php else : ?>
 		<tr>
