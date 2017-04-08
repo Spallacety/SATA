@@ -1,5 +1,12 @@
 <?php
 
+/*
+user: b91015b1bbae14
+pass: a8840fc6
+host: us-cdbr-iron-east-03.cleardb.net
+db: heroku_9e3d73128281d5a
+*/
+
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 $host = $url["host"];
