@@ -100,7 +100,7 @@ $('#delete-modal-profissao').on('show.bs.modal', function (event) {
  */
 
 function cars1to2(){
-  if ($('input[name=cars[''q1'']:checked').length > 0){
+  if ($('input[name=cars[\'q1\']:checked').length > 0){
     document.getElementById('q2div').style.display = 'block';
     document.getElementById('q1div').style.display = 'none';
   }
@@ -110,7 +110,7 @@ function cars1to2(){
 }
 
 function cars2to3(){
-  if ($('input[name=cars[''q2'']:checked').length > 0){
+  if ($('input[name=cars[\'q2\']:checked').length > 0){
     document.getElementById('q3div').style.display = 'block';
     document.getElementById('q2div').style.display = 'none';
   }
@@ -120,7 +120,7 @@ function cars2to3(){
 }
 
 function cars3to4(){
-  if ($('input[name=cars[''q3'']:checked').length > 0){
+  if ($('input[name=cars[\'q3\']:checked').length > 0){
     document.getElementById('q4div').style.display = 'block';
     document.getElementById('q3div').style.display = 'none';
   }
@@ -130,7 +130,7 @@ function cars3to4(){
 }
 
 function cars4to5(){
-  if ($('input[name=cars[''q4'']:checked').length > 0){
+  if ($('input[name=cars[\'q4\']:checked').length > 0){
     document.getElementById('q5div').style.display = 'block';
     document.getElementById('q4div').style.display = 'none';
   }
@@ -140,7 +140,7 @@ function cars4to5(){
 }
 
 function cars5to6(){
-  if ($('input[name=cars[''q5'']:checked').length > 0){
+  if ($('input[name=cars[\'q5\']:checked').length > 0){
     document.getElementById('q6div').style.display = 'block';
     document.getElementById('q5div').style.display = 'none';
   }
@@ -150,7 +150,7 @@ function cars5to6(){
 }
 
 function cars6to7(){
-  if ($('input[name=cars[''q6'']:checked').length > 0){
+  if ($('input[name=cars[\'q6\']:checked').length > 0){
     document.getElementById('q7div').style.display = 'block';
     document.getElementById('q6div').style.display = 'none';
   }
@@ -160,7 +160,7 @@ function cars6to7(){
 }
 
 function cars7to8(){
-  if ($('input[name=cars[''q7'']:checked').length > 0){
+  if ($('input[name=cars[\'q7\']:checked').length > 0){
     document.getElementById('q8div').style.display = 'block';
     document.getElementById('q7div').style.display = 'none';
   }
@@ -170,7 +170,7 @@ function cars7to8(){
 }
 
 function cars8to9(){
-  if ($('input[name=cars[''q8'']:checked').length > 0){
+  if ($('input[name=cars[\'q8\']:checked').length > 0){
     document.getElementById('q9div').style.display = 'block';
     document.getElementById('q8div').style.display = 'none';
   }
@@ -180,7 +180,7 @@ function cars8to9(){
 }
 
 function cars9to10(){
-  if ($('input[name=cars[''q9'']:checked').length > 0){
+  if ($('input[name=cars[\'q9\']:checked').length > 0){
     document.getElementById('q10div').style.display = 'block';
     document.getElementById('q9div').style.display = 'none';
   }
@@ -190,7 +190,7 @@ function cars9to10(){
 }
 
 function cars10to11(){
-  if ($('input[name=cars[''q10'']:checked').length > 0){
+  if ($('input[name=cars[\'q10\']:checked').length > 0){
     document.getElementById('q11div').style.display = 'block';
     document.getElementById('q10div').style.display = 'none';
   }
@@ -200,7 +200,7 @@ function cars10to11(){
 }
 
 function cars11to12(){
-  if ($('input[name=cars[''q11'']:checked').length > 0){
+  if ($('input[name=cars[\'q11\']:checked').length > 0){
     document.getElementById('q12div').style.display = 'block';
     document.getElementById('q11div').style.display = 'none';
   }
@@ -210,7 +210,7 @@ function cars11to12(){
 }
 
 function cars12to13(){
-  if ($('input[name=cars[''q12'']:checked').length > 0){
+  if ($('input[name=cars[\'q12\']:checked').length > 0){
     document.getElementById('q13div').style.display = 'block';
     document.getElementById('q12div').style.display = 'none';
   }
@@ -220,7 +220,7 @@ function cars12to13(){
 }
 
 function cars13to14(){
-  if ($('input[name=cars[''q13'']:checked').length > 0){
+  if ($('input[name=cars[\'q13\']:checked').length > 0){
     document.getElementById('q14div').style.display = 'block';
     document.getElementById('q13div').style.display = 'none';
   }
@@ -230,7 +230,7 @@ function cars13to14(){
 }
 
 function cars14to15(){
-  if ($('input[name=cars[''q14'']:checked').length > 0){
+  if ($('input[name=cars[\'q14\']:checked').length > 0){
     document.getElementById('q15div').style.display = 'block';
     document.getElementById('q14div').style.display = 'none';
   }
