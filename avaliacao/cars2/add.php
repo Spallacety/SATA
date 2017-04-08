@@ -19,7 +19,7 @@
     </p>
     <p>
       <input class="with-gap" name="cars['q1']" type="radio" id="q1-i1" value="1.5" />
-      <label for="q1-i1" class="black-text">Intermediário</label>
+      <label for="q1-i1" class="black-text">Intermediário.</label>
     </p>
     <p>
       <input class="with-gap" name="cars['q1']" type="radio" id="q1-2" value="2" />
@@ -27,7 +27,7 @@
     </p>
     <p>
       <input class="with-gap" name="cars['q1']" type="radio" id="q1-i2" value="2.5" />
-      <label for="q1-i2" class="black-text">Intermediário</label>
+      <label for="q1-i2" class="black-text">Intermediário.</label>
     </p>
     <p>
       <input class="with-gap" name="cars['q1']" type="radio" id="q1-3" value="3" />
@@ -35,7 +35,7 @@
     </p>
     <p>
       <input class="with-gap" name="cars['q1']" type="radio" id="q1-i3" value="3.5" />
-      <label for="q1-i3" class="black-text">Intermediário</label>
+      <label for="q1-i3" class="black-text">Intermediário.</label>
     </p>
     <p>
       <input class="with-gap" name="cars['q1']" type="radio" id="q1-4" value="4" />
