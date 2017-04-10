@@ -25,7 +25,7 @@
 		<tr>
 			<th width="45%">Nome</th>
 			<th width="15%">Profissão</th>
-			<th width="40%" class"right-align"></th>
+			<th width="40%" class="right-align"></th>
 		</tr>
 	</thead>
 	<tbody>

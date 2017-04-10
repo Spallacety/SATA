@@ -23,7 +23,7 @@
 	<thead>
 		<tr>
 			<th width="60%">Descrição</th>
-			<th width="40%" class"right-align"></th>
+			<th width="40%" class="right-align"></th>
 		</tr>
 	</thead>
 	<tbody>
