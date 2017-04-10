@@ -29,6 +29,7 @@
 	<tbody>
 		<?php if ($instituicoes) : ?>
 		<?php foreach ($instituicoes as $instituicao) : ?>
+		<?php if ($instituicao['id'] > 1) : ?>
 		<tr>
 			<td><?php echo $instituicao['descricao']; ?></td>		
 			<td class="row vallign right-align">
@@ -39,6 +40,7 @@
 				</div>
 			</td>
 		</tr>
+		<?php endif; ?>
 		<?php endforeach; ?>
 		<?php else : ?>
 		<tr>
@@ -49,4 +51,5 @@
 </table>
 
 <?php include('modal.php'); ?>
+
 <?php include(FOOTER_TEMPLATE); ?>

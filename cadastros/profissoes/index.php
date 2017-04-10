@@ -3,8 +3,6 @@
     index();
 ?>
 
-<?php include('modal.php'); ?>
-
 <?php include(HEADER_TEMPLATE); ?>
 
 <div class="row valign-wrapper">
@@ -21,14 +19,6 @@
 </div>
 <hr>
 
-<?php if (!empty($_SESSION['message'])) : ?>
-	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<?php echo $_SESSION['message']; ?>
-	</div>
-	<?php clear_messages(); ?>
-<?php endif; ?>
-
 <table class="highlight">
 	<thead>
 		<tr>
@@ -39,6 +29,7 @@
 	<tbody>
 		<?php if ($profissoes) : ?>
 		<?php foreach ($profissoes as $profissao) : ?>
+		<?php if ($profissao['id'] > 1) : ?>
 		<tr>
 			<td><?php echo $profissao['descricao']; ?></td>
 			<td class="row vallign right-align">
@@ -49,6 +40,7 @@
 				</div>
 			</td>
 		</tr>
+		<?php endif; ?>
 		<?php endforeach; ?>
 		<?php else : ?>
 		<tr>
@@ -59,4 +51,5 @@
 </table>
 
 <?php include('modal.php'); ?>
+
 <?php include(FOOTER_TEMPLATE); ?>
