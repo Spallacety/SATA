@@ -11,16 +11,14 @@
 <form action = "add.php" method = "post">
   <div id="nomePaciente" class="row">
     <div class="row">
-      <div class="input-field col s5">
-        <select searchable="Procurar" id="select-paciente">
-          <option value="" disabled selected></option>
-          <?php if ($pacientes) : ?>
-          <?php foreach ($pacientes as $paciente) : ?>
-            <option value="<?php echo $paciente['id']; ?>"><?php echo $paciente['nome']; ?></option>
-          <?php endforeach; ?>
-          <?php endif; ?>
-        </select>
-        <label>Materialize Select</label>
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Autocomplete</label>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col s2 m3 l3"></div>

@@ -10,6 +10,20 @@ $( window ).on( "load", function() {
     alignment: 'left',
     stopPropagation: false
   });
+
+  const data2 = {
+    "Apple": { id: 1 },
+    "Microsoft": { id: 2 },
+    "Google": { id: 3 }
+  };
+  
+  $('input.autocomplete').autocomplete({
+    data: data2,
+    select: function (input, selection) {
+      var model = data[selection];
+      $(input).data('id', model.id)
+    }
+  });
 });
 
 $(document).ready(function() {
@@ -307,20 +321,4 @@ function cars14to13(){
 function cars15to14(){
   document.getElementById('q14div').style.display = 'block';
   document.getElementById('q15div').style.display = 'none';
-}
-
-function searchSelect() {
-  var input = document.getElementById('search-input').value.toLowerCase();
-
-  len = input.length;
-  output = document.getElementById('select-paciente').options;
-  
-  for(var i=0; i<output.length; i++)
-    if (output[i].text.toLowerCase().indexOf(input) != -1 ){
-      output[i].selected = true;
-      break;
-    }
-
-  if (input == '')
-    output[0].selected = true;
 }
