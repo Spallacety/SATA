@@ -1,6 +1,7 @@
 <?php 
   require_once('functions.php');
   add();
+  initAttr();
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
