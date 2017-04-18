@@ -3592,21 +3592,20 @@ if (jQuery) {
         }
       });
 
-		  //Changed to search to treat search
-      $newSelect.on('blur', function() {
-		
-        if (!multiple && !searchable) {
-          $(this).trigger('close');
-        }
-        options.find('li.selected').removeClass('selected');
-      });
-		  
-		  //Added to search
-		  if (!multiple && searchable) {
-			  options.find('li').on('click', function() {
-				  $newSelect.trigger('close');
-			  });
-		  }
+			$newSelect.on('blur', function () {
+
+			    if (!multiple && !searchable) {
+			        $(this).trigger('close');
+			    }
+			    options.find('li.selected').removeClass('selected');
+			});
+
+			//Added to search
+			if (!multiple && searchable) {
+			    options.find('li').on('click', function () {
+			        $newSelect.trigger('close');
+			    });
+			}
 
       options.hover(function() {
         optionsHover = true;
