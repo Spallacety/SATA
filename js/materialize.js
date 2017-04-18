@@ -3592,13 +3592,21 @@ if (jQuery) {
         }
       });
 
-			$newSelect.on('blur', function () {
-
-			    if (!multiple && !searchable) {
-			        $(this).trigger('close');
-			    }
-			    options.find('li.selected').removeClass('selected');
-			});
+		  //Changed to search to treat search
+      $newSelect.on('blur', function() {
+		
+        if (!multiple && !searchable) {
+          $(this).trigger('close');
+        }
+        options.find('li.selected').removeClass('selected');
+      });
+		  
+		  //Added to search
+		  if (!multiple && searchable) {
+			  options.find('li').on('click', function() {
+				  $newSelect.trigger('close');
+			  });
+		  }
 
       options.hover(function() {
         optionsHover = true;
@@ -3606,11 +3614,12 @@ if (jQuery) {
         optionsHover = false;
       });
 
-      $(window).on({
-        'click': function () {
-          multiple && (optionsHover || $newSelect.trigger('close'));
-        }
-      });
+			//Changed to search to treat search
+			$(window).on({
+			    'click': function () {
+			        (multiple || searchable) && (optionsHover || $newSelect.trigger('close'));
+			    }
+			});
 
       // Add initial multiple selections.
       if (multiple) {
