@@ -309,7 +309,7 @@ function cars15to14(){
   document.getElementById('q15div').style.display = 'none';
 }
 
-$('input.autocomplete').autocomplete({
+$('#autocomplete-paciente').autocomplete({
   data: {
     "Apple": null,
     "Microsoft": null,
