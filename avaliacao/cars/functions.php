@@ -4,17 +4,23 @@ require_once('../../auth.php');
 require_once(DBAPI);
 $resultados = null;
 $resultado = null;
+$pacientes = null;
 
 function index() {
-	global $resultados;
-	$resultados = find_all('cars');
+  global $resultados;
+  $resultados = find_all('cars');
+}
+
+function initAttr(){
+  global $pacientes;
+  $pacientes = find_all('pacientes');
 }
 
 function add() {
   if (!empty($_POST['q15'])) {
     
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
-    $resultado['id_paciente'] = '2';
+    $resultado['id_paciente'] = $_POST['paciente'];
     $resultado['id_profissional'] = $_COOKIE['id_profissional'];
     $resultado['q1'] = $_POST['q1'];
     $resultado['q2'] = $_POST['q2'];

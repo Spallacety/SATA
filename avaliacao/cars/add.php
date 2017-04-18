@@ -6,11 +6,21 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 <h4 class="main-text center">CARS -  Escala de Classificação de Autismo na Infância</p></h4>
-<h6><b>Paciente:</b> 1</h6>
-<h6><b>Profissional Responsável:</b> <?php echo $_COOKIE['nome']?></h6>
 
 <form action = "add.php" method = "post">
   <div id="q1div" class="row">
+    <div class="input-field">
+      <input id="paciente" name="paciente" type="text" list="pacientes">
+      <label for="paciente">Usuário</label>
+      <datalist id="pacientes">
+        <?php if ($pacientes) : ?>
+        <?php foreach ($pacientes as $paciente) : ?>
+          <option value="<?php echo $paciente['id']; ?>"><?php echo $paciente['nome']; ?></option>
+        <?php endforeach; ?>
+        <?php endif; ?>
+      </datalist>
+    </div>
+    <br>
     <h5 class="main-text center">Relacionamento interpessoal (Questão 1/15)</h5> 
     <br>
     <p>
