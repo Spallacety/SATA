@@ -12,7 +12,7 @@
   <div id="nomePaciente" class="row">
     <div class="row">
       <div class="input-field col s5">
-        <select searchable="Procurar">
+        <select searchable="Procurar" id="select-paciente">
           <option value="" disabled selected></option>
           <?php if ($pacientes) : ?>
           <?php foreach ($pacientes as $paciente) : ?>
