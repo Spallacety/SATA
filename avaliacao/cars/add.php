@@ -11,13 +11,16 @@
 <form action = "add.php" method = "post">
   <div id="nomePaciente" class="row">
     <div class="row">
-      <div class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <input type="text" id="autocomplete-paciente" class="autocomplete">
-            <label for="autocomplete-paciente">Autocomplete</label>
-          </div>
-        </div>
+      <div class="input-field col s5">
+        <select searchable="Procurar">
+          <option value="" disabled selected></option>
+          <?php if ($pacientes) : ?>
+          <?php foreach ($pacientes as $paciente) : ?>
+            <option value="<?php echo $paciente['id']; ?>"><?php echo $paciente['nome']; ?></option>
+          <?php endforeach; ?>
+          <?php endif; ?>
+        </select>
+        <label>Materialize Select</label>
       </div>
     </div>
     <div class="col s2 m3 l3"></div>

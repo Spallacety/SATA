@@ -3429,6 +3429,45 @@ if (jQuery) {
 
       var label = $select.find('option:selected').html() || $select.find('option:first').html() || "";
 
+			//Added to search
+			var applySeachInList = function () {
+
+			    var ul = $(this).closest('ul');
+			    var searchValue = $(this).val();
+			    var options = ul.find('li')
+			      .find('span.filtrable');
+
+			    options.each(function () {
+			        if (typeof (this.text()) == 'string') {
+			            var liValue = this.text().toLowerCase();
+
+			            if (liValue.indexOf(searchValue.toLowerCase()) === -1) {
+			                $(this).hide();
+			                $(this).parent().hide();
+			            } else {
+			                $(this).show();
+			                $(this).parent().show();
+			            }
+			        }
+			    });
+			}
+
+			//Added to search
+			var setSearchableOption = function () {
+			    var placeholder = $select.attr('searchable');
+			    var element = $('<span><input type="text" class="search" style="margin: 5px 0px 16px 15px; width: 96%;" placeholder="' + placeholder + '"></span>');
+			    options.append(element);
+			    element.find('.search').keyup(applySeachInList);
+			}
+
+			//Added to search
+			var searchable = $select.attr('searchable') ? true : false;
+
+			//Added to search	  
+			if (searchable) {
+			    setSearchableOption();
+			}
+
       // Function that renders and appends the option taking into
       // account type and possible image icon.
       var appendOptionWithIcon = function(select, option, type) {
@@ -3553,12 +3592,13 @@ if (jQuery) {
         }
       });
 
-      $newSelect.on('blur', function() {
-        if (!multiple) {
-          $(this).trigger('close');
-        }
-        options.find('li.selected').removeClass('selected');
-      });
+			$newSelect.on('blur', function () {
+
+			    if (!multiple && !searchable) {
+			        $(this).trigger('close');
+			    }
+			    options.find('li.selected').removeClass('selected');
+			});
 
       options.hover(function() {
         optionsHover = true;
