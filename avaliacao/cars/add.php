@@ -10,22 +10,12 @@
 
 <form action = "add.php" method = "post">
   <div id="nomePaciente" class="row">
-    <div class="row">
-      <div class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <input type="text" id="autocomplete-input" class="autocomplete">
-            <label for="autocomplete-input">Autocomplete</label>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="col s2 m3 l3"></div>
     <div class="col s8 m6 l6">
       <div class="input-field">
         <input id="paciente" name="paciente" type="text" list="pacientes">
         <label for="paciente">Paciente</label>
-        <datalist id="pacientes">
+        <datalist id="pacientes" class="datalist">
           <?php if ($pacientes) : ?>
           <?php foreach ($pacientes as $paciente) : ?>
             <option value="<?php echo $paciente['nome']; ?>"></option>
@@ -37,7 +27,6 @@
     <div class="col s2 m3 l3"></div>
   </div>
   <div id="q1div" class="row">
-    <br>
     <h5 class="main-text center">Relacionamento interpessoal (Questão 1/15)</h5> 
     <br>
     <p>

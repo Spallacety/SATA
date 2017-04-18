@@ -10,22 +10,6 @@ $( window ).on( "load", function() {
     alignment: 'left',
     stopPropagation: false
   });
-
-  const data2 = {
-    <?php if ($pacientes) : ?>
-    <?php foreach ($pacientes as $paciente) : ?>
-      "<?php echo $paciente['nome']; ?>": { id: <?php echo $paciente['id']; ?> }
-    <?php endforeach; ?>
-    <?php endif; ?>
-  };
-
-  $('input.autocomplete').autocomplete({
-    data: data2,
-    select: function (input, selection) {
-      var model = data[selection];
-      $(input).data('id', model.id)
-    }
-  });
 });
 
 $(document).ready(function() {
