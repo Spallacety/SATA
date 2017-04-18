@@ -12,11 +12,13 @@ $( window ).on( "load", function() {
   });
 
   const data2 = {
-    "Apple": { id: 1 },
-    "Microsoft": { id: 2 },
-    "Google": { id: 3 }
+    <?php if ($pacientes) : ?>
+    <?php foreach ($pacientes as $paciente) : ?>
+      "<?php echo $paciente['nome']; ?>": { id: <?php echo $paciente['id']; ?> }
+    <?php endforeach; ?>
+    <?php endif; ?>
   };
-  
+
   $('input.autocomplete').autocomplete({
     data: data2,
     select: function (input, selection) {
