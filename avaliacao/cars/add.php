@@ -10,17 +10,21 @@
 
 <form action = "add.php" method = "post">
   <div id="q1div" class="row">
-    <div class="input-field">
-      <input id="paciente" name="paciente" type="text" list="pacientes">
-      <label for="paciente">Usuário</label>
-      <datalist id="pacientes">
-        <?php if ($pacientes) : ?>
-        <?php foreach ($pacientes as $paciente) : ?>
-          <option value="<?php echo $paciente['id']; ?>"><?php echo $paciente['nome']; ?></option>
-        <?php endforeach; ?>
-        <?php endif; ?>
-      </datalist>
+    <div class="col s2 m3 l3"></div>
+    <div class="col s8 m6 l6">
+      <div class="input-field">
+        <input id="paciente" name="paciente" type="text" list="pacientes">
+        <label for="paciente">Paciente</label>
+        <datalist id="pacientes" class='dropdown-content'>
+          <?php if ($pacientes) : ?>
+          <?php foreach ($pacientes as $paciente) : ?>
+            <option value="<?php echo $paciente['nome']; ?>"></option>
+          <?php endforeach; ?>
+          <?php endif; ?>
+        </datalist>
+      </div>
     </div>
+    <div class="col s2 m3 l3"></div>
     <br>
     <h5 class="main-text center">Relacionamento interpessoal (Questão 1/15)</h5> 
     <br>
