@@ -3455,7 +3455,7 @@ if (jQuery) {
 			//Added to search
 			var setSearchableOption = function () {
 			    var placeholder = $select.attr('searchable');
-			    var element = $('<span><input type="text" class="search" style="margin: 5px 0px 16px 15px; width: 96%;" placeholder="' + placeholder + '"></span>');
+			    var element = $('<span><input type="search" style="margin: 5px 0px 16px 15px; width: 96%;" placeholder="' + placeholder + '"></span>');
 			    options.append(element);
 			    element.find('.search').keyup(applySeachInList);
 			}

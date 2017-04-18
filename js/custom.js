@@ -308,15 +308,3 @@ function cars15to14(){
   document.getElementById('q14div').style.display = 'block';
   document.getElementById('q15div').style.display = 'none';
 }
-
-$('#autocomplete-paciente').autocomplete({
-  data: {
-    "Apple": null,
-    "Microsoft": null,
-  },
-  limit: 20,
-  onAutocomplete: function(val) {
-    document.getElementById('autocomplete-paciente').disabled = 'disabled';
-  },
-  minLength: 1,
-});
