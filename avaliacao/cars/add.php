@@ -1,7 +1,7 @@
 <?php 
   require_once('functions.php');
   add();
-  initAttr();
+  initAttr($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
@@ -13,8 +13,8 @@
     <div class="col s2 m3 l3"></div>
     <div class="col s8 m6 l6">
       <div class="input-field">
-        <input id="paciente" disabled name="id_paciente" type="text" value="<?php echo $_GET['id']; ?>">
-        <label for="paciente">Paciente</label>
+        <input id="paciente" class="black-text" disabled name="paciente" type="text" value="<?php echo $paciente['nome']; ?>">
+        <label for="paciente" class="main-text">Paciente</label>
       </div>
     </div>
     <div class="col s2 m3 l3"></div>
