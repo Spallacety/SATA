@@ -3,7 +3,7 @@
 
 <?php
 if ($_COOKIE){
-  header("Location: https://sata-lims.herokuapp.com/home.php");
+  header("Location: /home.php");
   exit;
 }
 ?>
