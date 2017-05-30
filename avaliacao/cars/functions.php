@@ -42,7 +42,7 @@ function add() {
     $resultado['modificacao'] = $today->format("Y-m-d");
 
     save('avaliacoes', $resultado);
-    header('location: /home.php');
+    header('location: index.php');
   }
 }
 
