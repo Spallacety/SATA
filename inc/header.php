@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>SADA</title>
   <link rel="shortcut icon" type="image/png" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/inc/favicon.png">
-  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/material-icons.css">
-  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/materialize.min.css">
-  <link rel="stylesheet" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/css/style.css">
+  <link rel="stylesheet" href="sada/css/material-icons.css">
+  <link rel="stylesheet" href="sada/css/materialize.min.css">
+  <link rel="stylesheet" href="sada/css/style.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
       <div class="modal-content">
         <h4 class="black-text center">Sobre SADA</h4>
         <p class="black-text center">SADA é a sigla de Sistema de Apoio ao Diagnóstico de Autismo, desenvolvido no LIMS.</p>
-        <p class="black-text center">Desenvolvido por: Guilherme, Emanuel, Iara, Luana, Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
+        <p class="black-text center">Desenvolvido por: Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat black-text">Voltar</a>
