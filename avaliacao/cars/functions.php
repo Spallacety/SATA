@@ -16,11 +16,11 @@ function initAttr($id = null){
   $paciente = find('pacientes', $id);
 }
 
-function add() {
+function add($id = null) {
   if (!empty($_POST['q15'])) {
     
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
-    $resultado['id_paciente'] = $paciente['id'];
+    $resultado['id_paciente'] = $id;
     $resultado['id_profissional'] = $_COOKIE['id_profissional'];
     $resultado['q1'] = $_POST['q1'];
     $resultado['q2'] = $_POST['q2'];
