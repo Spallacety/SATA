@@ -4,16 +4,16 @@ require_once('../../auth.php');
 require_once(DBAPI);
 $resultados = null;
 $resultado = null;
-$pacientes = null;
+$paciente = null;
 
 function index() {
   global $resultados;
   $resultados = find_all('cars');
 }
 
-function initAttr(){
-  global $pacientes;
-  $pacientes = find_all('pacientes');
+function initAttr($id = null){
+  global $paciente;
+  $paciente = find('pacientes', $id);
 }
 
 function add() {
