@@ -19,7 +19,7 @@ function initAttr($id = null){
 function add() {
   if (!empty($_POST['q15'])) {
     
-    $today = date_create('now', new DateTimeZone('America/Fortaleza'));
+    $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $resultado['id_paciente'] = $_POST['id_paciente'];
     $resultado['id_profissional'] = $_COOKIE['id_profissional'];
     $resultado['q1'] = $_POST['q1'];
@@ -39,6 +39,7 @@ function add() {
     $resultado['q15'] = $_POST['q15'];
     $resultado['resultado'] = $_POST['q1'] + $_POST['q2'] + $_POST['q3'] + $_POST['q4'] + $_POST['q5'] + $_POST['q6'] + $_POST['q7'] + $_POST['q8'] + $_POST['q9'] + $_POST['q10'] + $_POST['q11'] + $_POST['q12'] + $_POST['q13'] + $_POST['q14'] + $_POST['q15'];
     $resultado['criacao'] = $today->format("Y-m-d");
+    $resultado['modificacao'] = $today->format("Y-m-d");
 
     save('cars', $resultado);
     header('location: index.php');
