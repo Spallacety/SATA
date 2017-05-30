@@ -8,7 +8,7 @@ $paciente = null;
 
 function index() {
   global $resultados;
-  $resultados = find_all('cars');
+  $resultados = find_all('avaliacoes');
 }
 
 function initAttr($id = null){
@@ -20,7 +20,7 @@ function add() {
   if (!empty($_POST['q15'])) {
     
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
-    $resultado['id_paciente'] = $_POST['id_paciente'];
+    $resultado['id_paciente'] = $paciente['id'];
     $resultado['id_profissional'] = $_COOKIE['id_profissional'];
     $resultado['q1'] = $_POST['q1'];
     $resultado['q2'] = $_POST['q2'];
@@ -41,12 +41,12 @@ function add() {
     $resultado['criacao'] = $today->format("Y-m-d");
     $resultado['modificacao'] = $today->format("Y-m-d");
 
-    save('cars', $resultado);
-    header('location: index.php');
+    save('avaliacoes', $resultado);
+    header('location: /home.php');
   }
 }
 
 function view($id = null) {
   global $resultado;
-  $resultado = find('cars', $id);
+  $resultado = find('avaliacoes', $id);
 }
