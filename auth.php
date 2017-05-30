@@ -1,7 +1,7 @@
 <?php 
 
 if (!$_COOKIE){
-  header("Location: https://sada-lims.herokuapp.com/login.php");
+  header("Location: https://sata-lims.herokuapp.com/login.php");
   exit;
 }
 

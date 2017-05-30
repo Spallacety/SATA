@@ -18,8 +18,6 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownTratamentos">Tratamentos<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownResultados">Resultados<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="secondary-text" href="#!" onClick="abrirModalSobre();">Sobre</a></li>
       </ul>
       <ul class="side-nav" id="mobile-menu">
@@ -28,8 +26,6 @@
         <li><a href="/cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
         <li><a href="/cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
         <li><a href="/avaliacao/cars/index.php">CARS</a></li>
-        <li><a href="/avaliacao/cars2/index.php">CARS2</a></li>
-        <li><a href="/avaliacao/relatorios/index.php">Profissionais</a></li>
       </ul>
     </div>
 
@@ -42,13 +38,6 @@
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
       <li><a href="/avaliacao/cars/index.php" class="main-text">CARS</a></li>
-    </ul>
-
-    <ul id="dropdownTratamentos" class="dropdown-content">
-    </ul>
-
-    <ul id="dropdownResultados" class="dropdown-content">
-      <li><a href="/avaliacao/relatorios/index.php" class="main-text">Profissionais</a></li>
     </ul>
 
     <div id="modal-sobre" class="modal">
