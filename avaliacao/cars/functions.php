@@ -20,7 +20,7 @@ function add() {
   if (!empty($_POST['q15'])) {
     
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
-    $resultado['id_paciente'] =  $_POST['id_paciente'];
+    $resultado['id_paciente'] =  7;
     $resultado['id_profissional'] = $_COOKIE['id_profissional'];
     $resultado['q1'] = $_POST['q1'];
     $resultado['q2'] = $_POST['q2'];
