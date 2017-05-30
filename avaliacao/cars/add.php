@@ -15,8 +15,9 @@
       <div class="input-field">
         <input id="paciente" class="black-text" disabled name="paciente" type="text" value="<?php echo $paciente['nome']; ?>">
         <label for="paciente" class="main-text">Paciente</label>
+        <input id="id_paciente" name="id_paciente" type="text" value="<?php echo $paciente['id']; ?>">
         <div style="display:none">
-          <input disabled name="id_paciente" type="text" value="<?php echo $paciente['id']; ?>">
+
         </div>
       </div>
     </div>
