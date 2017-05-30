@@ -16,7 +16,7 @@
       <a href="/home.php" class="brand-logo secondary-text">SADA</a>
       <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Cadastros<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="secondary-text" href="#!" onClick="abrirModalSobre();">Sobre</a></li>
       </ul>
@@ -25,15 +25,15 @@
         <li><a href="/cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
         <li><a href="/cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
         <li><a href="/cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
-        <li><a href="/avaliacao/cars/index.php">CARS</a></li>
+        <li><a href="/avaliacao/cars/index.php">Avaliações CARS</a></li>
       </ul>
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
-      <li><a href="/cadastros/pacientes/index.php" class="main-text">Gerenciar Pacientes</a></li>
-      <li><a href="/cadastros/profissionais/index.php" class="main-text">Gerenciar Profissionais</a></li>
-      <li><a href="/cadastros/profissoes/index.php" class="main-text">Gerenciar Profissões</a></li>
-      <li><a href="/cadastros/instituicoes/index.php" class="main-text">Gerenciar Instituições</a></li>
+      <li><a href="/cadastros/pacientes/index.php" class="main-text">Pacientes</a></li>
+      <li><a href="/cadastros/profissionais/index.php" class="main-text">Profissionais</a></li>
+      <li><a href="/cadastros/profissoes/index.php" class="main-text">Profissões</a></li>
+      <li><a href="/cadastros/instituicoes/index.php" class="main-text">Instituições</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">

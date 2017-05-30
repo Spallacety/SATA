@@ -41,6 +41,7 @@
 			<td><?php echo $paciente['nome']; ?></td>		
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
+					<a href="/avaliacoes/cars/add.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova Avaliação"><i class="material-icons blue-text">add</i></a>
 					<a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
 					<a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
 					<a href="#!" onClick="abrirModalApagarPaciente(<?php echo $paciente['id']; ?>, '<?php echo $paciente['nome']; ?>');" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
