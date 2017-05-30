@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>SADA</title>
   <link rel="shortcut icon" type="image/png" href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/inc/favicon.png">
-  <link rel="stylesheet" href="/sada/css/material-icons.css">
-  <link rel="stylesheet" href="/sada/css/materialize.min.css">
-  <link rel="stylesheet" href="/sada/css/style.css">
+  <link rel="stylesheet" href="/css/material-icons.css">
+  <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
