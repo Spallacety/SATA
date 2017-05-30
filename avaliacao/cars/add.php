@@ -13,7 +13,7 @@
     <div class="col s2 m3 l3"></div>
     <div class="col s8 m6 l6">
       <div class="input-field">
-        <input id="paciente" disabled name="paciente" type="text" value="<?php echo $_GET['id']; ?>">
+        <input id="paciente" disabled name="id_paciente" type="text" value="<?php echo $_GET['id']; ?>">
         <label for="paciente">Paciente</label>
       </div>
     </div>
