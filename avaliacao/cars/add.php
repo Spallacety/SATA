@@ -1,6 +1,6 @@
 <?php 
   require_once('functions.php');
-  add($_GET['id']);
+  add();
   initAttr($_GET['id']);
 ?>
 
@@ -15,6 +15,9 @@
       <div class="input-field">
         <input id="paciente" class="black-text" disabled name="paciente" type="text" value="<?php echo $paciente['nome']; ?>">
         <label for="paciente" class="main-text">Paciente</label>
+        <div style="display:none">
+          <input disabled name="id_paciente" type="text" value="<?php echo $paciente['id']; ?>">
+        </div>
       </div>
     </div>
     <div class="col s2 m3 l3"></div>

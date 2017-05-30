@@ -16,7 +16,7 @@ function initAttr($id = null){
   $paciente = find('pacientes', $id);
 }
 
-function add($id = null) {
+function add() {
   if (!empty($_POST['q15'])) {
     
     $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
