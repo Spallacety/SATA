@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>SADA</title>
+  <title>SATA</title>
   <link rel="shortcut icon" type="image/png" href="/inc/favicon.png">
   <link rel="stylesheet" href="/css/material-icons.css">
   <link rel="stylesheet" href="/css/materialize.min.css">
@@ -13,7 +13,7 @@
 <body>
   <nav class="main-color" role="navigation">
     <div class="nav-wrapper container">
-      <a href="/home.php" class="brand-logo secondary-text">SADA</a>
+      <a href="/home.php" class="brand-logo secondary-text">SATA</a>
       <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -42,8 +42,8 @@
 
     <div id="modal-sobre" class="modal">
       <div class="modal-content">
-        <h4 class="black-text center">Sobre SADA</h4>
-        <p class="black-text center">SADA é a sigla de Sistema de Apoio ao Diagnóstico de Autismo, desenvolvido no LIMS.</p>
+        <h4 class="black-text center">Sobre SATA</h4>
+        <p class="black-text center">SATA é a sigla de Sistema de Apoio ao Tratamento de Autismo, desenvolvido no LIMS.</p>
         <p class="black-text center">Desenvolvido por: Lucas Rodrigues e Fernando Santana (Professor Responsável)</p>
       </div>
       <div class="modal-footer">
