@@ -8,7 +8,7 @@
 
 <h4 class="main-text center">CARS -  Escala de Classificação de Autismo na Infância</p></h4>
 
-<form action = "add.php?id=<?php echo $paciente['id']; ?>" method = "post">
+<form action = "add.php?id=<?php echo $_GET['id']; ?>" method = "post">
   <div id="nomePaciente" class="row">
     <div class="col s2 m3 l3"></div>
     <div class="col s8 m6 l6">
