@@ -21,23 +21,23 @@
         <li><a class="secondary-text" href="#!" onClick="abrirModalSobre();">Sobre</a></li>
       </ul>
       <ul class="side-nav" id="mobile-menu">
-        <li><a href="/cadastros/pacientes/index.php">Gerenciar Pacientes</a></li>
-        <li><a href="/cadastros/profissionais/index.php">Gerenciar Profissionais</a></li>
-        <li><a href="/cadastros/profissoes/index.php">Gerenciar Profissões</a></li>
-        <li><a href="/cadastros/instituicoes/index.php">Gerenciar Instituições</a></li>
-        <li><a href="/avaliacao/cars/index.php">Avaliações CARS</a></li>
+        <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
+        <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
+        <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
+        <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
+        <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
       </ul>
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
-      <li><a href="/cadastros/pacientes/index.php" class="main-text">Pacientes</a></li>
-      <li><a href="/cadastros/profissionais/index.php" class="main-text">Profissionais</a></li>
-      <li><a href="/cadastros/profissoes/index.php" class="main-text">Profissões</a></li>
-      <li><a href="/cadastros/instituicoes/index.php" class="main-text">Instituições</a></li>
+      <li><a href="/cadastros/pacientes/" class="main-text">Pacientes</a></li>
+      <li><a href="/cadastros/profissionais/" class="main-text">Profissionais</a></li>
+      <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
+      <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
-      <li><a href="/avaliacao/cars/index.php" class="main-text">CARS</a></li>
+      <li><a href="/avaliacao/cars/" class="main-text">CARS</a></li>
     </ul>
 
     <div id="modal-sobre" class="modal">
