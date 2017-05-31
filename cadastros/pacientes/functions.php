@@ -26,7 +26,7 @@ function add() {
     $paciente['modificacao'] = $paciente['criacao'] = $today->format("Y-m-d H:i:s");
     
     save('pacientes', $paciente);
-    header('location: index.php');
+    header('location: /');
   }
 }
 
@@ -41,13 +41,13 @@ function edit() {
       $paciente = $_POST['paciente'];
       $paciente['modificacao'] = $now->format("Y-m-d H:i:s");
       update('pacientes', $id, $paciente);
-      header('location: index.php');
+      header('location: /');
     } else {
       global $paciente;
       $paciente = find('pacientes', $id);
     } 
   } else {
-    header('location: index.php');
+    header('location: /');
   }
 }
 
@@ -67,5 +67,5 @@ function view($id = null) {
 function delete($id = null) {
   global $paciente;
   $paciente = remove('pacientes', $id);
-  header('location: index.php');
+  header('location: /');
 }

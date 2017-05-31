@@ -39,16 +39,16 @@
    			<?php $profissional = find('profissionais', $resultado['id_profissional']);?>
    			<?php echo $profissional['nome']; ?>
    		</td>
-      <td><?php echo $resultado['criacao']; ?></td>
+      <td><?php echo $resultado['modificacao']; ?></td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
+          <a href="view.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
           <?php $today = date_create('now', new DateTimeZone('America/Sao_Paulo')); ?>
-          <?php if ($resultado['criacao'] == $today->format("Y-m-d")) : ?>
-            <a href="view.php?id=<?php echo $resultado["id"]; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons amber-text">visibility</i></a>
-            <a href="view.php?id=<?php echo $resultado["id"]; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons red-text">visibility</i></a>
-          <?php endif; ?>          
-					<a href="view.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
-				</div>
+          <?php if ($resultado['modificacao'] == $today->format("Y-m-d")) : ?>
+            <a href="edit.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
+            <a href="#!" onClick="abrirModalApagarCARS(<?php echo $resultado['id']; ?>);" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
+          <?php endif; ?>
+					</div>
 			</td>
 		</tr>
 		<?php endforeach; ?>
