@@ -3,67 +3,30 @@
     index();
 ?>
 
-<?php include('modal.php'); ?>
-
-
 <?php include(HEADER_TEMPLATE); ?>
 
-<header>
-	<div class="row">
-		<div class="col-sm-6">
-			<h2>Avaliações Descritivas</h2>
-		</div>
-		<div class="col-sm-6 text-right h2">
-	    	<a class="btn btn-primary" href="add.php"><i class="fa fa-plus"></i> Nova Avaliação</a>
-	    	<a class="btn btn-default" href="index.php"><i class="fa fa-refresh"></i> Atualizar</a>
-	    </div>
-	</div>
-</header>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-<?php if (!empty($_SESSION['message'])) : ?>
-	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<?php echo $_SESSION['message']; ?>
-	</div>
-	<?php clear_messages(); ?>
-<?php endif; ?>
+    function drawChart() {
+      // Define the chart to be drawn.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Element');
+      data.addColumn('number', 'Percentage');
+      data.addRows([
+        ['Nitrogen', 0.78],
+        ['Oxygen', 0.21],
+        ['Other', 0.01]
+      ]);
 
-<hr>
+      // Instantiate and draw the chart.
+      var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+      chart.draw(data, null);
+    }
+  </script>
 
-<table class="table table-hover">
-<thead>
-	<tr>
-		<th>Número</th>
-		<th width="30%">Paciente</th>		
-		<th width="25%">Profissional</th>
-		<th width="15%">Data da Avaliação</th>
-		<th width="22,5%">Opções</th>
-	</tr>
-</thead>
-<tbody>
-<?php if ($relatorios) : ?>
-<?php foreach ($relatorios as $relatorio) : ?>
-	<tr>
-		<td><?php echo $relatorio['id']; ?></td>
-		<td><?php echo $relatorio['paciente']; ?></td>
-		<td><?php echo $relatorio['profissional']; ?></td>
-		<td><?php echo $relatorio['criacao']; ?></td>		
-		<td class="actions text-right">
-			<a href="view.php?id=<?php echo $relatorio['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
-			<a href="edit.php?id=<?php echo $relatorio['id']; ?>" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editar</a>
-			<a href="#" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-modal-profissao" data-profissao="<?php echo $relatorio['id']; ?>">
-				<i class="fa fa-trash"></i> Excluir
-			</a>
-		</td>
-	</tr>
-<?php endforeach; ?>
-<?php else : ?>
-	<tr>
-		<td colspan="6">Nenhum registro encontrado.</td>
-	</tr>
-<?php endif; ?>
-</tbody>
-</table>
+  <div id="myPieChart"/>
 
-<?php include('modal.php'); ?>
 <?php include(FOOTER_TEMPLATE); ?>
