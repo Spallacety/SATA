@@ -25,7 +25,7 @@
 
   <div class="col s12 m4 l4">
     <div class="input-field">
-      <input disabled type="text" class="black-text" id="nome" value="<?php echo $resultado['criacao']; ?>" required>
+      <input disabled type="text" class="black-text" id="nome" value="<?php echo $resultado['modificacao']; ?>" required>
       <label for="nome" class="main-text">Data</label>
     </div>
   </div>

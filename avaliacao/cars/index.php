@@ -44,7 +44,7 @@
 				<div class="btn-group-h">
           <a href="view.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
           <?php $today = date_create('now', new DateTimeZone('America/Sao_Paulo')); ?>
-          <?php if ($resultado['modificacao'] == $today->format("Y-m-d")) : ?>
+          <?php if ($resultado['modificacao'] == $today->format("Y-m-d") and $resultado['id_profissional'] == $_COOKIE['id_profissional']) : ?>
             <a href="edit.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar"><i class="material-icons orange-text">mode_edit</i></a>
             <a href="#!" onClick="abrirModalApagarCARS(<?php echo $resultado['id']; ?>);" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Apagar"><i class="material-icons red-text">delete</i></a>
           <?php endif; ?>
