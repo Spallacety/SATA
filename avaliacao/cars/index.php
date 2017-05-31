@@ -42,7 +42,7 @@
       <td><?php echo $resultado['criacao']; ?></td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
-          <?php if ($resultado['criacao'] == date_create('now', new DateTimeZone('America/Sao_Paulo'))->format("Y-m-d")) ?>
+          <?php $today = date_create('now', new DateTimeZone('America/Sao_Paulo')); if ($resultado['criacao'] == $today->format("Y-m-d")) ?>
             <a href="view.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
           
 					<a href="view.php?id=<?php echo $resultado['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualizar"><i class="material-icons green-text">visibility</i></a>
