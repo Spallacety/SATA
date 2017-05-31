@@ -55,7 +55,7 @@ function abrirModalApagarProfissional(idItem, nomeItem){
   $('#modal-apagar-profissional').modal('open');
 }
 
-function abrirModalApagarProfissionalCARS(idItem){
+function abrirModalApagarCARS(idItem){
   document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
   $('#modal-apagar-cars').modal('open');
 }
