@@ -27,7 +27,7 @@
       <label for="q1-1" class="black-text">O comportamento da criança é apropriado para a idade. Alguma timidez, inquietação ou prejuízo pode ser observado, mas não a um nível diferente (atípico) quando comparado com outra de mesma idade.</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-i1" value="1.5" <?php echo ($resultado['q1'] == '1.5')?'checked':'' ?>  />
+      <input class="with-gap" name="q1" type="radio" id="q1-i1" value="1.5" <?php echo ($resultado['q1'] == '1.5')?'checked':'' ?> />
       <label for="q1-i1" class="black-text">Intermediário.</label>
     </p>
     <p>
@@ -61,31 +61,31 @@
     <h5 class="main-text center">Imitação (Questão 2/15)</h5> 
     <br>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-1" value="1" required/>
+      <input class="with-gap" name="q2" type="radio" id="q2-1" value="1" <?php echo ($resultado['q2'] == '1')?'checked':'' ?> required/>
       <label for="q2-1" class="black-text">A criança imita sons, palavras e movimentos que são apropriados para seu nível de desenvolvimento.</label>
     </p>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-i1" value="1.5" />
+      <input class="with-gap" name="q2" type="radio" id="q2-i1" value="1.5" <?php echo ($resultado['q2'] == '1.5')?'checked':'' ?> />
       <label for="q2-i1" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-2" value="2" />
+      <input class="with-gap" name="q2" type="radio" id="q2-2" value="2" <?php echo ($resultado['q2'] == '2')?'checked':'' ?> />
       <label for="q2-2" class="black-text">A criança imita comportamentos simples como bater palmas ou palavras isoladas na maior parte do tempo. As vezes reproduz uma imitação atrasada (após tempo de latência).</label>
     </p>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-i2" value="2.5" />
+      <input class="with-gap" name="q2" type="radio" id="q2-i2" value="2.5" <?php echo ($resultado['q2'] == '2.5')?'checked':'' ?> />
       <label for="q2-i2" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-3" value="3" />
+      <input class="with-gap" name="q2" type="radio" id="q2-3" value="3" <?php echo ($resultado['q2'] == '3')?'checked':'' ?>/>
       <label for="q2-3" class="black-text">A criança só imita as vezes e mesmo assim precisa de considerável persistência e auxílio do adulto. Frequentemente reproduz uma imitação atrasada.</label>
     </p>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-i3" value="3.5" />
+      <input class="with-gap" name="q2" type="radio" id="q2-i3" value="3.5" <?php echo ($resultado['q2'] == '3.5')?'checked':'' ?> />
       <label for="q2-i3" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q2" type="radio" id="q2-4" value="4" />
+      <input class="with-gap" name="q2" type="radio" id="q2-4" value="4" <?php echo ($resultado['q2'] == '4')?'checked':'' ?> />
       <label for="q2-4" class="black-text">A criança raramente ou mesmo nunca imita sons, palavras, ou movimentos mesmo com auxílio de adultos ou após período de latência.</label>
     </p>
 
@@ -100,31 +100,31 @@
     <h5 class="main-text center">Resposta emocional (Questão 3/15)</h5> 
     <br>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-1" value="1" required/>
+      <input class="with-gap" name="q3" type="radio" id="q3-1" value="1" <?php echo ($resultado['q3'] == '1')?'checked':'' ?> required/>
       <label for="q3-1" class="black-text">A resposta emocional (forma e quantidade) demonstra sintonia com a expressão facial, postura corporal e modos.</label>
     </p>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-i1" value="1.5" />
+      <input class="with-gap" name="q3" type="radio" id="q3-i1" value="1.5" <?php echo ($resultado['q3'] == '1.5')?'checked':'' ?> />
       <label for="q3-i1" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-2" value="2" />
+      <input class="with-gap" name="q3" type="radio" id="q3-2" value="2" <?php echo ($resultado['q3'] == '2')?'checked':'' ?> />
       <label for="q3-2" class="black-text">A criança ocasionalmente demonstra alguma inadequação na forma e quantidade das reações emocionais.  Às vezes as reações são não relacionadas a objetos ou acontecimentos do “entorno”.</label>
     </p>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-i2" value="2.5" />
+      <input class="with-gap" name="q3" type="radio" id="q3-i2" value="2.5" <?php echo ($resultado['q3'] == '2.5')?'checked':'' ?> />
       <label for="q3-i2" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-3" value="3" />
+      <input class="with-gap" name="q3" type="radio" id="q3-3" value="3" <?php echo ($resultado['q3'] == '3')?'checked':'' ?> />
       <label for="q3-3" class="black-text">Há presença definitiva de sinais inapropriados na forma e quantidade das respostas emocionais. As reações podem ser inibidas ou exageradas, mas também podem não estar relacionadas com a situação. A criança pode fazer caretas, rir ou ficar estática apesar de não estarem presentes fatos que possam estar causando tais reações.</label>
     </p>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-i3" value="3.5" />
+      <input class="with-gap" name="q3" type="radio" id="q3-i3" value="3.5" <?php echo ($resultado['q3'] == '3.5')?'checked':'' ?> />
       <label for="q3-i3" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q3" type="radio" id="q3-4" value="4" />
+      <input class="with-gap" name="q3" type="radio" id="q3-4" value="4" <?php echo ($resultado['q3'] == '4')?'checked':'' ?> />
       <label for="q3-4" class="black-text">As respostas são raramente apropriadas as situações: quando há determinado tipo de humor é muito difícil modificá-lo mesmo que se mude a atividade. O contrário também é verdadeiro podendo haver enorme variedade de diferentes reações emocionais durante um curto espaço de tempo mesmo que não tenha sido acompanhado por nenhuma mudança no meio ambiente.</label>
     </p>
 
