@@ -18,7 +18,7 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-menu">
         <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
