@@ -70,13 +70,13 @@ function edit() {
       $resultado['resultado'] = $_POST['q1'] + $_POST['q2'] + $_POST['q3'] + $_POST['q4'] + $_POST['q5'] + $_POST['q6'] + $_POST['q7'] + $_POST['q8'] + $_POST['q9'] + $_POST['q10'] + $_POST['q11'] + $_POST['q12'] + $_POST['q13'] + $_POST['q14'] + $_POST['q15'];
       $resultado['modificacao'] = $today->format("Y-m-d");
       update('avaliacoes', $id, $resultado);
-      header('location: /avaliacoes/cars/');
+      header('location: /avaliacao/cars/');
     } else {
       global $resultado;
       $resultado = find('avaliacoes', $id);
     } 
   } else {
-    header('location: /avaliacoes/cars/');
+    header('location: /avaliacao/cars/');
   }
 }
 
@@ -88,5 +88,5 @@ function view($id = null) {
 function delete($id = null) {
   global $resultado;
   $resultado = remove('avaliacoes', $id);
-  header('location: /avaliacoes/cars/');
+  header('location: /avaliacao/cars/');
 }
