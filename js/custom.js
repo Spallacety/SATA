@@ -55,6 +55,11 @@ function abrirModalApagarProfissional(idItem, nomeItem){
   $('#modal-apagar-profissional').modal('open');
 }
 
+function abrirModalApagarProfissionalCARS(idItem){
+  document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
+  $('#modal-apagar-cars').modal('open');
+}
+
 /* Antigo meio de passar dados para o modal do bootstrap
 
 $('#delete-modal-paciente').on('show.bs.modal', function (event) {

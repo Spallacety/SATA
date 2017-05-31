@@ -60,4 +60,6 @@
 	</tbody>
 </table>
 
+<?php include('modal.php'); ?>
+
 <?php include(FOOTER_TEMPLATE); ?>

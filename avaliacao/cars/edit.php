@@ -12,7 +12,7 @@
     <div class="col s2 m3 l3"></div>
     <div class="col s8 m6 l6">
       <div class="input-field">
-        <input id="paciente" class="black-text" disabled name="paciente" type="text" value="<?php echo $resultado['id_resultado']; ?>">
+        <input id="paciente" class="black-text" disabled name="paciente" type="text" value="<?php $paciente = find('pacientes', $resultado['id_paciente']); echo $paciente['nome']; ?>">
         <label for="paciente" class="main-text">Paciente</label>
         <input id="id_paciente" name="id_paciente" type="text" value="<?php echo $resultado['id_paciente']; ?>" style="display:none">
       </div>
@@ -23,31 +23,31 @@
     <h5 class="main-text center">Relacionamento interpessoal (Questão 1/15)</h5> 
     <br>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-1" value="1" required/>
+      <input class="with-gap" name="q1" type="radio" id="q1-1" value="1" <?php echo ($resultado['q1'] == '1')?'checked':'' ?>/> required/>
       <label for="q1-1" class="black-text">O comportamento da criança é apropriado para a idade. Alguma timidez, inquietação ou prejuízo pode ser observado, mas não a um nível diferente (atípico) quando comparado com outra de mesma idade.</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-i1" value="1.5"/>
+      <input class="with-gap" name="q1" type="radio" id="q1-i1" value="1.5" <?php echo ($resultado['q1'] == '1.5')?'checked':'' ?>/>
       <label for="q1-i1" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-2" value="2"/>
+      <input class="with-gap" name="q1" type="radio" id="q1-2" value="2" <?php echo ($resultado['q1'] == '2')?'checked':'' ?>/>/>
       <label for="q1-2" class="black-text">A criança evita olhar o adulto nos olhos; evita o adulto; demonstra dificuldade quando é forçada a tal; é extremamente tímida; não é tão sociável com um adulto quanto uma criança normal de mesma idade; fica agarrada aos familiares de forma mais intensa que outras de mesma idade.</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-i2" value="2.5"/>
+      <input class="with-gap" name="q1" type="radio" id="q1-i2" value="2.5" <?php echo ($resultado['q1'] == '2.5')?'checked':'' ?>/>/>
       <label for="q1-i2" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-3" value="3"/>
+      <input class="with-gap" name="q1" type="radio" id="q1-3" value="3" <?php echo ($resultado['q1'] == '3')?'checked':'' ?>/>/>
       <label for="q1-3" class="black-text">A criança às vezes demonstra isolamento. Há necessidade de esforço persistente para obter sua atenção. Há um contato mínimo por iniciativa da criança (o contato pode ser impessoal).</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-i3" value="3.5"/>
+      <input class="with-gap" name="q1" type="radio" id="q1-i3" value="3.5" <?php echo ($resultado['q1'] == '3.5')?'checked':'' ?>/>/>
       <label for="q1-i3" class="black-text">Intermediário.</label>
     </p>
     <p>
-      <input class="with-gap" name="q1" type="radio" id="q1-4" value="4" />
+      <input class="with-gap" name="q1" type="radio" id="q1-4" value="4" <?php echo ($resultado['q1'] == '4')?'checked':'' ?>/>/>
       <label for="q1-4" class="black-text">A criança é isolada realmente, não se dando conta do que o adulto está fazendo; nunca responde as iniciativas do adulto ou inicia contato. Somente as tentativas muito intensas para obter sua atenção tem algum efeito positivo.</label>
     </p>
 
