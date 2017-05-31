@@ -41,8 +41,8 @@
     </ul>
 
     <ul id="dropdownGeral" class="dropdown-content">
-      <li><a href="#!" onClick="abrirModalSobre();">Sobre</a></li>
-      <li><a href="#!" class="red-text"><i class="material-icons">view_module</i>Sair</a></li>
+      <li><a href="#!" class="main-text" onClick="abrirModalSobre();">Sobre</a></li>
+      <li><a href="#!" class="red-text"><i class="material-icons">clear</i>Sair</a></li>
     </ul>
 
     <div id="modal-sobre" class="modal">
