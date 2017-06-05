@@ -79,6 +79,10 @@ function findLast($id = null){
     if ($id) {
       $sql = "SELECT * FROM avaliacoes WHERE id = " . $id . "ORDER BY DESC LIMIT 10";
       $result = $database->query($sql);
+      
+      if ($result->num_rows > 0) {
+        $found = $result->fetch_assoc();
+      }
     }
 
   } catch (Exception $e) {

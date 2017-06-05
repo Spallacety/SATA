@@ -21,7 +21,7 @@
 
     $arrData["data"] = array();
 
-    while($row = mysqli_fetch_array($result)) {
+    while($result) {
       array_push($arrData["data"], array(
           "label" => $row["criacao"],
           "value" => $row["resultado"]
