@@ -68,3 +68,25 @@ function delete($id = null) {
   $relatorio = remove('relatorios', $id);
   header('location: index.php');
 }
+
+function findLast($id = null){
+  
+  $database = open_database();
+  $found = null;
+
+  try {
+  
+    if ($id) {
+      $sql = "SELECT * FROM avaliacoes WHERE id = " . $id . "ORDER BY DESC LIMIT 10";
+      $result = $database->query($sql);
+    }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+  return $found;
+
+}
