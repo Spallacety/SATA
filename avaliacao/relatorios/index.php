@@ -10,11 +10,7 @@
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-<?php 
-
-findLast(2);
-
-?>
+<?php $result = findLast(2); ?>
 
 <script type="text/javascript">
 
