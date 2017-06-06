@@ -6,6 +6,8 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 <script type="text/javascript">
 
       // Carregar a API de visualizacao e os pacotes necessarios.
@@ -36,7 +38,7 @@
 
         // Instanciar o objeto de geracao de graficos de pizza,
         // informando o elemento HTML onde o grafico sera desenhado.
-        var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
+        var chart = new google.visualization.PieChart(document.getElementById('area_grafico'));
 
         // Desenhar o grafico (usando os dados e as configuracoes criadas)
         chart.draw(dados, config);
@@ -44,7 +46,5 @@
     </script>
 
     <div id="area_grafico"></div>
-
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <?php include(FOOTER_TEMPLATE); ?>
