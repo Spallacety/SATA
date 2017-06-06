@@ -19,16 +19,16 @@
       function drawLastResults() {
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Gênero');
-        data.addColumn('float', 'Quantidades');
+        data.addColumn('number', 'Quantidades');
         data.addRows([
-          ['23', 1],
-          ['25', 4]
+          ['Masculino', 1],
+          ['Feminino', 4]
         ]);
 
         var config = {
-          'title': 'Quantidade de alunos por gênero',
-          'width': 600,
-          'height': 400,
+          'title':'Quantidade de alunos por gênero',
+          'width':600,
+          'height':400,
           'legend': { position: "none" }
         };
 
