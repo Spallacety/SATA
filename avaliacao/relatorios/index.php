@@ -19,7 +19,7 @@
       function drawLastResults() {
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Gênero');
-        data.addColumn('number', 'Quantidades');
+        data.addColumn('float', 'Quantidades');
         data.addRows([
           ['23', 1],
           ['24', 1.5],
