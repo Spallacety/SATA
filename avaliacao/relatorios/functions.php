@@ -111,8 +111,8 @@ function findLast($id = null){
 
   close_database($database);
 
-  $fp = fopen('lastResults.json', 'w');
-  fwrite($fp, json_encode($grafico));
-  fclose($fp);
+#  $fp = fopen('lastResults.json', 'w');
+#  fwrite($fp, json_encode($grafico));
+#  fclose($fp);
 
 }

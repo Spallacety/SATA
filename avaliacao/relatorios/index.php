@@ -12,8 +12,6 @@
 
 <?php $result = findLast(2); ?>
 
-
-
 <div id="area_grafico"></div>
 
 <?php include(FOOTER_TEMPLATE); ?>
