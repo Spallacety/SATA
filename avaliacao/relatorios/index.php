@@ -6,37 +6,45 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<?php
+<script type="text/javascript">
 
-  $result = findLast(2);
+      // Carregar a API de visualizacao e os pacotes necessarios.
+      google.load('visualization', '1.0', {'packages':['corechart']});
 
-  if ($result) {
-    $arrData = array(
-      "chart" => array(
-        "caption" => "Teste",
-        "showValues" => "0",
-        "theme" => "zune"
-      )
-    );
+      // Especificar um callback para ser executado quando a API for carregada.
+      google.setOnLoadCallback(drawLastResults);
 
-    $arrData["data"] = array();
+      /**
+       * Funcao que preenche os dados do grafico
+       */
+      function drawLastResults() {
+        // Montar os dados usados pelo grafico
+        var dados = new google.visualization.DataTable();
+        dados.addColumn('string', 'Gênero');
+        dados.addColumn('number', 'Quantidades');
+        dados.addRows([
+          ['Masculino', 14],
+          ['Feminino', 20]
+        ]);
 
-    while($result) {
-      array_push($arrData["data"], array(
-          "label" => $row["criacao"],
-          "value" => $row["resultado"]
-          )
-      );
-    }
+        // Configuracoes do grafico
+        var config = {
+            'title':'Quantidade de alunos por gênero',
+            'width':400,
+            'height':300
+        };
 
-    $jsonEncodedData = json_encode($arrData);
-    $columnChart = new FusionCharts("column2D", "myFirstChart" , 600, 300, "chart-1", "json", $jsonEncodedData);
-    $columnChart->render();
+        // Instanciar o objeto de geracao de graficos de pizza,
+        // informando o elemento HTML onde o grafico sera desenhado.
+        var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
 
-  }
+        // Desenhar o grafico (usando os dados e as configuracoes criadas)
+        chart.draw(dados, config);
+      }
+    </script>
 
-?>
+    <div id="area_grafico"></div>
 
-<div id="chart-1"></div>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <?php include(FOOTER_TEMPLATE); ?>
