@@ -15,23 +15,23 @@
       google.setOnLoadCallback(drawLastResults);
 
       function drawLastResults() {
-        var dados = new google.visualization.DataTable();
-        dados.addColumn('string', 'Gênero');
-        dados.addColumn('number', 'Quantidades');
-        dados.addRows([
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Gênero');
+        data.addColumn('number', 'Quantidades');
+        data.addRows([
           ['Masculino', 14],
           ['Feminino', 20]
         ]);
 
         var config = {
             'title':'Quantidade de alunos por gênero',
-            'width':400,
-            'height':300
+            'width':600,
+            'height':400
         };
 
-        var chart = new google.visualization.BarChart(document.getElementById('area_grafico'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
 
-        chart.draw(dados, config);
+        chart.draw(data, config);
       }
     </script>
 
