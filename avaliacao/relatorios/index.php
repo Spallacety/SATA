@@ -28,10 +28,10 @@
         ]);
 
         var config = {
-          'title':'Quantidade de alunos por gênero',
-          'width':600,
-          'height':400
-          'legend': { position: "none" },
+          'title': 'Quantidade de alunos por gênero',
+          'width': 600,
+          'height': 400,
+          'legend': { position: "none" }
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
