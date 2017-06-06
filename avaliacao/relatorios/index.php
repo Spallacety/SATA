@@ -22,9 +22,7 @@
         data.addColumn('float', 'Quantidades');
         data.addRows([
           ['23', 1],
-          ['24', 1.5],
-          ['25', 4],
-          ['26', 2.5]
+          ['25', 4]
         ]);
 
         var config = {
