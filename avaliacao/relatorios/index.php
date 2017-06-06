@@ -6,6 +6,8 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<br>
+
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <script type="text/javascript">
@@ -19,14 +21,17 @@
         data.addColumn('string', 'Gênero');
         data.addColumn('number', 'Quantidades');
         data.addRows([
-          ['Masculino', 14],
-          ['Feminino', 20]
+          ['23', 1],
+          ['24', 1.5],
+          ['25', 4],
+          ['26', 2.5]
         ]);
 
         var config = {
-            'title':'Quantidade de alunos por gênero',
-            'width':600,
-            'height':400
+          'title':'Quantidade de alunos por gênero',
+          'width':600,
+          'height':400
+          'legend': { position: "none" },
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
