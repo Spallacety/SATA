@@ -29,7 +29,8 @@
           'title':'Quantidade de alunos por gênero',
           'width':600,
           'height':400,
-          'legend': { position: "none" }
+          'legend': { position: "none" },
+          'tooltip': null
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
