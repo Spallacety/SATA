@@ -73,6 +73,22 @@ function findLast($id = null){
   
   $database = open_database();
   $found = null;
+  $paciente = find('pacientes', $id)
+
+  $grafico = array(
+      'dados' => array(
+          'cols' => array(
+              array('type' => 'string', 'label' => 'Data'),
+              array('type' => 'number', 'label' => 'Resultado')
+          ),  
+          'rows' => array()
+      ),
+      'config' => array(
+          'title' => 'Últimas avaliações de ' . $paciente['nome'] . '',
+          'width' => 400,
+          'height' => 300
+      )
+  );
 
   try {
   
@@ -80,8 +96,11 @@ function findLast($id = null){
       $sql = "SELECT * FROM avaliacoes WHERE id = " . $id . "ORDER BY DESC LIMIT 10";
       $result = $database->query($sql);
       
-      if ($result->num_rows > 0) {
-        $found = $result->fetch_assoc();
+      while ($obj = $result->fetchObject()) {
+        $grafico['dados']['rows'][] = array('c' => array(
+          array('v' => $obj->criacao),
+          array('v' => (float)$obj->resultado)
+        ));
       }
     }
 
@@ -89,8 +108,11 @@ function findLast($id = null){
     $_SESSION['message'] = $e->GetMessage();
     $_SESSION['type'] = 'danger';
   }
-  
+
   close_database($database);
-  return $found;
+
+  $fp = fopen('lastResults.json', 'w');
+  fwrite($fp, json_encode($grafico));
+  fclose($fp);
 
 }

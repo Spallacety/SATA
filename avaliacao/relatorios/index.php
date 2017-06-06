@@ -10,35 +10,26 @@
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
+<?php 
+
+findLast(2);
+
+?>
+
 <script type="text/javascript">
 
-      google.load('visualization', '1.0', {'packages':['corechart']});
+  google.load('visualization', '1.0', {'packages':['corechart']});
+  google.setOnLoadCallback(function(){
+  
+    var json_text = $.ajax({url: "lastResults.json", dataType:"json", async: false}).responseText;
+    var json = eval("(" + json_text + ")");
+    var dados = new google.visualization.DataTable(json.dados);
 
-      google.setOnLoadCallback(drawLastResults);
+    var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
+    chart.draw(dados, json.config);
+  }
+</script>
 
-      function drawLastResults() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Gênero');
-        data.addColumn('number', 'Quantidades');
-        data.addRows([
-          ['Masculino', 1],
-          ['Feminino', 4]
-        ]);
-
-        var config = {
-          'title':'Quantidade de alunos por gênero',
-          'width':600,
-          'height':400,
-          'legend': { position: "none" },
-          'tooltip': null
-        };
-
-        var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
-
-        chart.draw(data, config);
-      }
-    </script>
-
-    <div id="area_grafico"></div>
+<div id="area_grafico"></div>
 
 <?php include(FOOTER_TEMPLATE); ?>
