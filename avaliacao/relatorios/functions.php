@@ -9,7 +9,7 @@ $relatorio = null;
  */
 function index() {
 	global $relatorios;
-	$relatorios = findLast(2);
+	$relatorios = findLast('2');
 }
 
 /**
