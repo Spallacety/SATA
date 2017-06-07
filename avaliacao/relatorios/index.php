@@ -8,46 +8,27 @@
 
 <br>
 
-<script src="/js/fusioncharts.js"></script>
-  
-<?php
-
-  $database = open_database();
-  
-  $query = "SELECT * FROM avaliacoes WHERE id_paciente = 2 ORDER BY criacao DESC LIMIT 10";
-
-  $result = $database->query($query) or exit("Error code ({$database->errno}): {$database->error}");
-
-  if ($result) {
-      $arrData = array(
-          "chart" => array(
-              "caption" => "Top 10 Most Populous Countries",
-              "showValues" => "0",
-              "theme" => "zune"
-            )
-        );
-
-      $arrData["data"] = array();
-
-      while($row = mysqli_fetch_array($result)) {
-        array_push($arrData["data"], array(
-            "label" => $row["criacao"],
-            "value" => $row["resultado"]
-            )
-        );
-      }
-
-      $jsonEncodedData = json_encode($arrData);
-
-      $columnChart = new FusionCharts("column2D", "myFirstChart" , 600, 300, "chart-1", "json", $jsonEncodedData);
-
-      $columnChart->render();
-
-      close_database($database);
-  }
-
-?>
-
-<div id="chart-1"></div>
+<table class="highlight">
+  <thead>
+    <tr>
+      <th width="60%">Descrição</th>
+      <th width="40%" class="right-align"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php if ($relatorios) : ?>
+    <?php foreach ($relatorios as $relatorio) : ?>
+      <tr>
+        <td><?php echo $relatorio['resultado']; ?></td>   
+        <td><?php echo $relatorio['criacao']; ?></td>
+      </tr>
+    <?php endforeach; ?>
+    <?php else : ?>
+    <tr>
+      <td colspan="6">Nenhum registro encontrado.</td>
+    </tr>
+    <?php endif; ?>
+  </tbody>
+</table>
 
 <?php include(FOOTER_TEMPLATE); ?>

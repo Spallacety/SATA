@@ -9,7 +9,7 @@ $relatorio = null;
  */
 function index() {
 	global $relatorios;
-	$relatorios = find_all('relatorios');
+	$relatorios = findLast(2);
 }
 
 /**
@@ -72,46 +72,24 @@ function delete($id = null) {
 function findLast($id = null){
   
   $database = open_database();
-  $paciente = find('pacientes', $id)
-
-  $grafico = array(
-      'dados' => array(
-          'cols' => array(
-              array('type' => 'string', 'label' => 'Data'),
-              array('type' => 'number', 'label' => 'Resultado')
-          ),  
-          'rows' => array()
-      ),
-      'config' => array(
-          'title' => 'Últimas avaliações de ' . $paciente['nome'] . '',
-          'width' => 400,
-          'height' => 300
-      )
-  );
+  $found = null;
 
   try {
-  
     if ($id) {
-      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . "ORDER BY DESC LIMIT 10";
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY criacao DESC LIMIT 10";
       $result = $database->query($sql);
       
-      while ($obj = $result->fetchObject()) {
-        $grafico['dados']['rows'][] = array('c' => array(
-          array('v' => $obj->criacao),
-          array('v' => (float)$obj->resultado)
-        ));
+      if ($result->num_rows > 0) {
+        $found = $result->fetch_assoc();
       }
+      
     }
 
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
     $_SESSION['type'] = 'danger';
   }
-
+  
   close_database($database);
-
-#  $fp = fopen('lastResults.json', 'w');
-#  fwrite($fp, json_encode($grafico));
-#  fclose($fp);
-
+  return $found;
 }
