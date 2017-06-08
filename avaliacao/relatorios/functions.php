@@ -69,15 +69,14 @@ function delete($id = null) {
   header('location: index.php');
 }
 
-function findLast($id = null){
+function findLast( $id = null ){
   
   $database = open_database();
   $found = null;
 
   try {
     if ($id) {
-      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = 2 ORDER BY modificacao DESC";
-      #$sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY DESC LIMIT 10";
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id;
       $result = $database->query($sql);
       
       if ($result->num_rows > 0) {
