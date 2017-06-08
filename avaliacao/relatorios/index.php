@@ -11,14 +11,16 @@
 <table class="highlight">
   <thead>
     <tr>
-      <th width="60%">Descrição</th>
-      <th width="40%" class="right-align"></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <?php if ($relatorios) : ?>
     <?php foreach ($relatorios as $relatorio) : ?>
       <tr>
+        <td><?php echo $relatorio['id_paciente']; ?></td>
         <td><?php echo $relatorio['resultado']; ?></td>   
         <td><?php echo $relatorio['modificacao']; ?></td>
       </tr>
