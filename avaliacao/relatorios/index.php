@@ -20,7 +20,7 @@
     <?php foreach ($relatorios as $relatorio) : ?>
       <tr>
         <td><?php echo $relatorio['resultado']; ?></td>   
-        <td><?php echo $relatorio['criacao']; ?></td>
+        <td><?php echo $relatorio['modificacao']; ?></td>
       </tr>
     <?php endforeach; ?>
     <?php else : ?>

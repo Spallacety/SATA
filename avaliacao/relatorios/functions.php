@@ -76,7 +76,7 @@ function findLast($id = null){
 
   try {
     if ($id) {
-      $sql = "SELECT resultado, modificacao FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY modificacao DESC LIMIT 10";
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY modificacao DESC LIMIT 10";
       $result = $database->query($sql);
       
       if ($result->num_rows > 0) {
