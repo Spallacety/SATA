@@ -9,7 +9,7 @@ $relatorio = null;
  */
 function index() {
 	global $relatorios;
-	$relatorios = findLast('2');
+	$relatorios = find_all('avaliacoes');
 }
 
 /**
@@ -76,7 +76,7 @@ function findLast($id = null){
 
   try {
     if ($id) {
-      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY criacao DESC LIMIT 10";
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = 2 ORDER BY criacao DESC LIMIT 10";
       $result = $database->query($sql);
       
       if ($result->num_rows > 0) {
