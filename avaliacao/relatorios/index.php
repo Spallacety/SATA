@@ -41,14 +41,13 @@ function drawChart() {
       ));
     endforeach;
   endif;
-
   ?>
 
-  var jsonData = <?php echo json_encode($grafico) ?>;
+  var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
       
   var data = new google.visualization.DataTable(jsonData);
 
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
   chart.draw(data, {width: 400, height: 240});
 }
 
