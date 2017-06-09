@@ -31,10 +31,11 @@
     ]);
 
     var config = {
-        'title':'Ultimas 10 avaliações',
-        'width':700,
-        'height':300,
-        'legend': { position: "none" },
+        title:'Ultimas 10 avaliações',
+        width:100%,
+        height:300,
+        legend: { position: "none" },
+        colors: ['#1a237e'],
     };
 
     var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
@@ -51,7 +52,7 @@
   function desenharGrafico() {
     var dados = new google.visualization.DataTable();
     dados.addColumn('string', 'Data');
-    dados.addColumn('number', 'Total');
+    dados.addColumn('number', 'Resposta');
     dados.addRows([
       <?php
         if ($relatorios) :
@@ -63,10 +64,11 @@
     ]);
 
     var config = {
-        'title':'Ultimas 10 avaliações',
-        'width':700,
-        'height':300,
-        'legend': { position: "none" },
+        title:'Relacionamento interpessoal (Questão 1/15)',
+        width:100%,
+        height:300,
+        legend: { position: "none" },
+        colors: ['#1a237e'],
     };
 
     var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico2'));
