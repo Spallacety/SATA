@@ -31,7 +31,8 @@
         var config = {
             'title':'Ultimas 10 avaliações do paciente',
             'width':700,
-            'height':300
+            'height':300,
+            'legend': { position: "none" },
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
