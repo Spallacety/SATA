@@ -22,7 +22,7 @@
           <?php
             if ($relatorios) :
               foreach ($relatorios as $relatorio) :
-                echo "['" . $relatorio['modificacao'] . "', " . $relatorio['resultado'] . "],";
+                echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . "],";
               endforeach;
             endif;
           ?>
