@@ -35,11 +35,12 @@ function drawChart() {
 
   if ($relatorios) :
     foreach ($relatorios as $relatorio) : 
-      while ($relatorio) {
+      if ($relatorio) {
         $grafico['dados']['rows'][] = array('c' => array(
             array('v' => $relatorio->modificacao),
             array('v' => (float)$relatorio->resultado)
         ));
+      endif;
     endforeach;
   endif; 
   }
