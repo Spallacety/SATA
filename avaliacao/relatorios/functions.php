@@ -9,7 +9,7 @@ $relatorio = null;
  */
 function index() {
 	global $relatorios;
-	$relatorios = findLast(7);
+	$relatorios = findLast(2);
 }
 
 /**
@@ -69,14 +69,14 @@ function delete($id = null) {
   header('location: index.php');
 }
 
-function findLast( $id = null ){
+function findLast(){
   
   $database = open_database();
   $found = null;
 
   try {
     if ($id) {
-      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = 2 ORDER BY modificacao DESC LIMIT 10";
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = '12' ORDER BY modificacao DESC LIMIT 10";
       $result = $database->query($sql);
       
       if ($result->num_rows > 0) {
