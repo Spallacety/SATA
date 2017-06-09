@@ -24,7 +24,7 @@
         ]);
 
         var config = {
-            'title':'Ultimas 10 avaliações do paciente ' + <?php $paciente = find('pacientes', 2); echo $paciente['nome']; ?>,
+            'title':'Ultimas 10 avaliações do paciente',
             'width':400,
             'height':300
         };
