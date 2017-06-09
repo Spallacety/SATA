@@ -28,8 +28,8 @@
   if ($relatorios) :
     foreach ($relatorios as $relatorio) :
       $grafico['dados']['rows'][] = array('c' => array(
-          array('v' => $relatorio->modificacao),
-          array('v' => (float)$relatorio->resultado)
+          array('v' => $relatorio['modificacao']),
+          array('v' => (float)$relatorio['resultado'])
       ));
     endforeach;
   endif;
