@@ -26,7 +26,7 @@
   );
 
   if ($relatorios) :
-    foreach ($relatorios as $relatorio) 
+    foreach ($relatorios as $relatorio) :
       $grafico['dados']['rows'][] = array('c' => array(
           array('v' => $relatorio->modificacao),
           array('v' => (float)$relatorio->resultado)
