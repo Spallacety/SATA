@@ -313,3 +313,35 @@ function cars15to14(){
   document.getElementById('q14div').style.display = 'block';
   document.getElementById('q15div').style.display = 'none';
 }
+
+function drawChartLastResult(){
+  google.load('visualization', '1.0', {'packages':['corechart']});
+
+  google.setOnLoadCallback(desenharGrafico);
+
+  function desenharGrafico() {
+    var dados = new google.visualization.DataTable();
+    dados.addColumn('string', 'Data');
+    dados.addColumn('number', 'Total');
+    dados.addRows([
+      <?php
+        if ($relatorios) :
+          foreach ($relatorios as $relatorio) :
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['resultado'] . "],";
+          endforeach;
+        endif;
+      ?>
+    ]);
+
+    var config = {
+        'title':'Ultimas 10 avaliações',
+        'width':700,
+        'height':300,
+        'legend': { position: "none" },
+    };
+
+    var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
+
+    chart.draw(dados, config);
+  }
+}

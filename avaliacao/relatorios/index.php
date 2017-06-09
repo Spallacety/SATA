@@ -11,34 +11,8 @@
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
 
-      google.load('visualization', '1.0', {'packages':['corechart']});
-
-      google.setOnLoadCallback(desenharGrafico);
-      function desenharGrafico() {
-        var dados = new google.visualization.DataTable();
-        dados.addColumn('string', 'Data');
-        dados.addColumn('number', 'Resultado');
-        dados.addRows([
-          <?php
-            if ($relatorios) :
-              foreach ($relatorios as $relatorio) :
-                echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . "],";
-              endforeach;
-            endif;
-          ?>
-        ]);
-
-        var config = {
-            'title':'Ultimas 10 avaliações do paciente',
-            'width':700,
-            'height':300,
-            'legend': { position: "none" },
-        };
-
-        var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico'));
-
-        chart.draw(dados, config);
-      }
+    drawChartLastResult();
+    
     </script>
 
     <div id="area_grafico"></div>
