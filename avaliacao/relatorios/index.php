@@ -41,10 +41,10 @@ function drawChart() {
       ));
     endforeach;
   endif;
-  
+
   ?>
 
-  var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
+  var jsonData = <?php echo json_encode($grafico) ?>;
       
   var data = new google.visualization.DataTable(jsonData);
 
