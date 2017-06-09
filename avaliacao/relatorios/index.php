@@ -16,15 +16,15 @@
       google.setOnLoadCallback(desenharGrafico);
       function desenharGrafico() {
         var dados = new google.visualization.DataTable();
-        dados.addColumn('string', 'Gênero');
-        dados.addColumn('number', 'Quantidades');
+        dados.addColumn('string', 'Data');
+        dados.addColumn('number', 'Resultado');
         dados.addRows([
           ['Masculino', 14],
           ['Feminino', 20]
         ]);
 
         var config = {
-            'title':'Quantidade de alunos por gênero',
+            'title':'Ultimas 10 avaliações do paciente ' + <?php $paciente = find('pacientes', 2); echo $paciente['nome']; ?>,
             'width':400,
             'height':300
         };
