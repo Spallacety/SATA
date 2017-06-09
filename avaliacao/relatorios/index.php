@@ -6,16 +6,8 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript">
+<br>
 
-google.charts.load('current', {'packages':['corechart']});
-  
-google.charts.setOnLoadCallback(drawChart);
-  
-function drawChart() {
-  
   <?php
 
   $grafico = array(
@@ -42,21 +34,9 @@ function drawChart() {
     endforeach;
   endif; 
   }
+
+  echo json_encode($grafico);
   ?>
-
-  var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
-      
-  var data = new google.visualization.DataTable(jsonData);
-
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-  chart.draw(data, {width: 400, height: 240});
-}
-
-</script>
-
-<div id="chart_div"></div>
-
-<br>
 
 <table class="highlight">
   <thead>
