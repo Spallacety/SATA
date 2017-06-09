@@ -6,9 +6,10 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 <br>
 
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 
   google.load('visualization', '1.0', {'packages':['corechart']});
@@ -74,32 +75,9 @@
   }
 </script>
 
-<div id="area_grafico"></div>
-<div id="area_grafico2"></div>
-
-<table class="highlight">
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php if ($relatorios) : ?>
-    <?php foreach ($relatorios as $relatorio) : ?>
-      <tr>
-        <td></td>
-        <td><?php echo $relatorio['resultado']; ?></td>   
-        <td><?php echo $relatorio['modificacao']; ?></td>
-      </tr>
-    <?php endforeach; ?>
-    <?php else : ?>
-    <tr>
-      <td colspan="6">Nenhum registro encontrado.</td>
-    </tr>
-    <?php endif; ?>
-  </tbody>
-</table>
+<div class="row center">
+  <div class="col l6 m6 s12" id="area_grafico"></div>
+  <div class="col l6 m6 s12" id="area_grafico2"></div>
+</div>
 
 <?php include(FOOTER_TEMPLATE); ?>
