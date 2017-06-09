@@ -35,23 +35,19 @@ function drawChart() {
 
   if ($relatorios) :
     foreach ($relatorios as $relatorio) : 
-      if ($relatorio) {
+      while ($relatorio) {
         $grafico['dados']['rows'][] = array('c' => array(
-            array('v' => $relatorio->modificacao),
-            array('v' => (float)$relatorio->resultado)
+            array('v' => $relatorio['modificacao']),
+            array('v' => (float)$relatorio['resultado'])
         ));
-      endif;
     endforeach;
   endif; 
   }
   ?>
 
   var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
-      
-  var data = new google.visualization.DataTable(jsonData);
-
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-  chart.draw(data, {width: 400, height: 240});
+  
+  alert(jsonData);      
 }
 
 </script>
