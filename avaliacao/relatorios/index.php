@@ -6,8 +6,16 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<br>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
 
+google.charts.load('current', {'packages':['corechart']});
+  
+google.charts.setOnLoadCallback(drawChart);
+  
+function drawChart() {
+  
   <?php
 
   $grafico = array(
@@ -33,9 +41,22 @@
       ));
     endforeach;
   endif;
-
-  echo json_encode($grafico);
+  
   ?>
+
+  var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
+      
+  var data = new google.visualization.DataTable(jsonData);
+
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+  chart.draw(data, {width: 400, height: 240});
+}
+
+</script>
+
+<div id="chart_div"></div>
+
+<br>
 
 <table class="highlight">
   <thead>
