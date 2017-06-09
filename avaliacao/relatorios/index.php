@@ -6,6 +6,57 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+google.charts.load('current', {'packages':['corechart']});
+  
+google.charts.setOnLoadCallback(drawChart);
+  
+function drawChart() {
+  
+  <?php
+
+  $grafico = array(
+      'dados' => array(
+          'cols' => array(
+              array('type' => 'string', 'label' => 'Data'),
+              array('type' => 'number', 'label' => 'Resultado')
+          ),  
+          'rows' => array()
+      ),
+      'config' => array(
+          'title' => 'Ultimos 10 resultados do paciente',
+          'width' => 400,
+          'height' => 300
+      )
+  );
+
+  if ($relatorios) :
+    foreach ($relatorios as $relatorio) : 
+      while ($relatorio) {
+        $grafico['dados']['rows'][] = array('c' => array(
+            array('v' => $relatorio->modificacao),
+            array('v' => (float)$relatorio->resultado)
+        ));
+    endforeach;
+  endif; 
+  }
+  ?>
+
+  var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
+      
+  var data = new google.visualization.DataTable(jsonData);
+
+  var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+  chart.draw(data, {width: 400, height: 240});
+}
+
+</script>
+
+<div id="chart_div"></div>
+
 <br>
 
 <table class="highlight">
