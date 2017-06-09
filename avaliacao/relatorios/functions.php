@@ -79,8 +79,9 @@ function findLast($id){
       $sql = "SELECT * FROM avaliacoes WHERE id_paciente = 12";
       $result = $database->query($sql);
       
-      if ($result->num_rows > 0) {
-        $found = $result->fetch_assoc();
+      $found = array();
+      while ($row = $result->fetch_assoc()) {
+        array_push($found, $row);
       }
       
     }
