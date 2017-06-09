@@ -25,6 +25,15 @@
       )
   );
 
+  if ($relatorios) :
+    foreach ($relatorios as $relatorio) 
+      $grafico['dados']['rows'][] = array('c' => array(
+          array('v' => $relatorio->modificacao),
+          array('v' => (float)$relatorio->resultado)
+      ));
+    endforeach;
+  endif;
+
   echo json_encode($grafico);
   ?>
 
