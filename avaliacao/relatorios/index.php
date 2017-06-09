@@ -6,52 +6,23 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript">
 
-google.charts.load('current', {'packages':['corechart']});
-  
-google.charts.setOnLoadCallback(drawChart);
-  
-function drawChart() {
-  
-  <?php
+    <!-- Carregar a API do google -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-  $grafico = array(
-      'dados' => array(
-          'cols' => array(
-              array('type' => 'string', 'label' => 'Data'),
-              array('type' => 'number', 'label' => 'Resultado')
-          ),  
-          'rows' => array()
-      ),
-      'config' => array(
-          'title' => 'Ultimos 10 resultados do paciente',
-          'width' => 400,
-          'height' => 300
-      )
-  );
+    <!-- Preparar a geracao do grafico -->
+    <script type="text/javascript">
 
-  if ($relatorios) :
-    foreach ($relatorios as $relatorio) :
-      $grafico['dados']['rows'][] = array('c' => array(
-          array('v' => $relatorio['modificacao']),
-          array('v' => (float)$relatorio['resultado'])
-      ));
-    endforeach;
-  endif;
-  ?>
+      // Carregar a API de visualizacao e os pacotes necessarios.
+      google.load('visualization', '1.0', {'packages':['corechart']});
 
-  var jsonData = eval("(" + <?php echo json_encode($grafico) ?> + ")");
-      
-  var data = new google.visualization.DataTable(jsonData);
+      // Especificar um callback para ser executado quando a API for carregada.
+      google.setOnLoadCallback(desenharGrafico);
 
-  var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-
-  chart.draw(data, {width: 400, height: 240});
-
-  function desenharGrafico() {
+      /**
+       * Funcao que preenche os dados do grafico
+       */
+      function desenharGrafico() {
         // Montar os dados usados pelo grafico
         var dados = new google.visualization.DataTable();
         dados.addColumn('string', 'Gênero');
@@ -75,13 +46,9 @@ function drawChart() {
         // Desenhar o grafico (usando os dados e as configuracoes criadas)
         chart.draw(dados, config);
       }
-}
-
-</script>
-
-<div id="chart_div"></div>
-
-<div id="area_grafico"></div>
+    </script>
+    
+    <div id="area_grafico"></div>
 
 <br>
 
@@ -97,7 +64,7 @@ function drawChart() {
     <?php if ($relatorios) : ?>
     <?php foreach ($relatorios as $relatorio) : ?>
       <tr>
-        <td><?php echo json_encode($relatorio); ?></td>
+        <td></td>
         <td><?php echo $relatorio['resultado']; ?></td>   
         <td><?php echo $relatorio['modificacao']; ?></td>
       </tr>
