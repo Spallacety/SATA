@@ -19,13 +19,18 @@
         dados.addColumn('string', 'Data');
         dados.addColumn('number', 'Resultado');
         dados.addRows([
-          ['Masculino', 14],
-          ['Feminino', 20]
+          <?php
+            if ($relatorios) :
+              foreach ($relatorios as $relatorio) :
+                echo "['" . $relatorio['modificacao'] . "', " . $relatorio['resultado'] . "],";
+              endforeach;
+            endif;
+          ?>
         ]);
 
         var config = {
             'title':'Ultimas 10 avaliações do paciente',
-            'width':400,
+            'width':700,
             'height':300
         };
 
