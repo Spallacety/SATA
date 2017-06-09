@@ -32,7 +32,7 @@
 
     var config = {
         title:'Ultimas 10 avaliações',
-        width:100%,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -65,7 +65,7 @@
 
     var config = {
         title:'Relacionamento interpessoal (Questão 1/15)',
-        width:100%,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
