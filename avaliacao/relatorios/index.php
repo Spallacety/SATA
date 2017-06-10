@@ -69,6 +69,10 @@
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
+        vAxis: {
+          minValue: 0, 
+          ticks: [0, 1, 2, 3, 4, 5]
+        },
     };
 
     var chart = new google.visualization.ColumnChart(document.getElementById('area_grafico2'));
