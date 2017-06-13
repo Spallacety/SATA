@@ -75,7 +75,7 @@ function findAwnswer($questao, $valor){
 
   try {
     if ($id) {
-      $sql = "SELECT significado FROM cars-respostas WHERE questao = " . $questao . " AND valor = " . $valor;
+      $sql = "SELECT * FROM cars-respostas WHERE questao = " . $questao . " AND valor = " . $valor;
       $result = $database->query($sql);
       $found = $result->fetch_assoc();
     }
@@ -86,7 +86,7 @@ function findAwnswer($questao, $valor){
   }
   
   close_database($database);
-  return $found;
+  return $found['significado'];
 }
 
 function findLast($id){
