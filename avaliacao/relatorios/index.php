@@ -14,9 +14,23 @@
 
   google.load('visualization', '1.0', {'packages':['corechart']});
 
-  google.setOnLoadCallback(desenharGrafico);
+  google.setOnLoadCallback(desenharGraficos);
 
-  function desenharGrafico() {
+  function desenharGraficos(){
+    desenharGrafico1(config)
+  }
+  var config = {
+    width:700,
+    height:300,
+    legend: { position: "none" },
+    colors: ['#1a237e'],
+    vAxis: {
+      minValue: 0, 
+      ticks: [0, 1, 2, 3, 4]
+    },
+  };
+
+  function desenharGrafico1(config) {
     var dados = new google.visualization.DataTable();
     dados.addColumn('string', 'Data');
     dados.addColumn('number', 'Total');
@@ -31,17 +45,7 @@
       ?>
     ]);
 
-    var config = {
-        title:'Relacionamento interpessoal (Questão 1/15)',
-        width:700,
-        height:300,
-        legend: { position: "none" },
-        colors: ['#1a237e'],
-        vAxis: {
-          minValue: 0, 
-          ticks: [0, 1, 2, 3, 4]
-        },
-    };
+    config += {title:'Relacionamento interpessoal (Questão 1/15)',};
 
     var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
 
