@@ -76,7 +76,10 @@ function findAnswer($questao, $valor){
   try {
     $sql = "SELECT * FROM carsrespostas WHERE questao = " . $questao . " AND valor = " . $valor;
     $result = $database->query($sql);
-    $found = $result->fetch_assoc();
+    
+    if ($result->num_rows > 0) {
+      $found = $result->fetch_assoc();
+    }
   }
 
   } catch (Exception $e) {
