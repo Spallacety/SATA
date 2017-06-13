@@ -32,7 +32,7 @@
 
     var config = {
         title:'Resultado total',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -47,43 +47,7 @@
     chart.draw(dados, config);
   }
 </script>
-<script type="text/javascript">
 
-  google.load('visualization', '1.0', {'packages':['corechart']});
-
-  google.setOnLoadCallback(desenharGrafico);
-
-  function desenharGrafico() {
-    var dados = new google.visualization.DataTable();
-    dados.addColumn('string', 'Data');
-    dados.addColumn('number', 'Resposta');
-    dados.addRows([
-      <?php
-        if ($relatorios) :
-          foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . "],";
-          endforeach;
-        endif;
-      ?>
-    ]);
-
-    var config = {
-        title:'Relacionamento interpessoal (Questão 1/15)',
-        width:500,
-        height:300,
-        legend: { position: "none" },
-        colors: ['#1a237e'],
-        vAxis: {
-          minValue: 0, 
-          ticks: [0, 1, 2, 3, 4]
-        },
-    };
-
-    var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
-
-    chart.draw(dados, config);
-  }
-</script>
 <script type="text/javascript">
 
   google.load('visualization', '1.0', {'packages':['corechart']});
@@ -106,7 +70,7 @@
 
     var config = {
         title:'Imitação (Questão 2/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -143,7 +107,7 @@
 
     var config = {
         title:'Resposta emocional (Questão 3/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -180,7 +144,7 @@
 
     var config = {
         title:'Expressão corporal (Questão 4/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -217,7 +181,7 @@
 
     var config = {
         title:'Uso do objeto (Questão 5/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -254,7 +218,7 @@
 
     var config = {
         title:'Adaptação a mudanças (Questão 6/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -291,7 +255,7 @@
 
     var config = {
         title:'Uso do olhar (Questão 7/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -328,7 +292,7 @@
 
     var config = {
         title:'Uso da audição (Questão 8/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -365,7 +329,7 @@
 
     var config = {
         title:'Uso do paladar, olfato e do tato (Questão 9/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -402,7 +366,7 @@
 
     var config = {
         title:'Medo e nervosismo (Questão 10/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -439,7 +403,7 @@
 
     var config = {
         title:'Comunicação verbal (Questão 11/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -476,7 +440,7 @@
 
     var config = {
         title:'Comunicação não-verbal (Questão 12/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -513,7 +477,7 @@
 
     var config = {
         title:'Atividade (Questão 13/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -550,7 +514,7 @@
 
     var config = {
         title:'Grau e consistência das respostas da inteligência (Questão 14/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -587,7 +551,7 @@
 
     var config = {
         title:'Impressão geral (Questão 15/15)',
-        width:500,
+        width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -603,37 +567,20 @@
   }
 </script>
 
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_total"></div>
-  <div class="col l6 m6 s12" id="grafico_q1"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q2"></div>
-  <div class="col l6 m6 s12" id="grafico_q3"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q4"></div>
-  <div class="col l6 m6 s12" id="grafico_q5"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q6"></div>
-  <div class="col l6 m6 s12" id="grafico_q7"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q8"></div>
-  <div class="col l6 m6 s12" id="grafico_q9"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q10"></div>
-  <div class="col l6 m6 s12" id="grafico_q11"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q12"></div>
-  <div class="col l6 m6 s12" id="grafico_q13"></div>
-</div>
-<div class="row center">
-  <div class="col l6 m6 s12" id="grafico_q14"></div>
-  <div class="col l6 m6 s12" id="grafico_q15"></div>
-</div>
+<div class="row center" id="grafico_q1"></div>
+<div class="row center" id="grafico_q2"></div>
+<div class="row center" id="grafico_q3"></div>
+<div class="row center" id="grafico_q4"></div>
+<div class="row center" id="grafico_q5"></div>
+<div class="row center" id="grafico_q6"></div>
+<div class="row center" id="grafico_q7"></div>
+<div class="row center" id="grafico_q8"></div>
+<div class="row center" id="grafico_q9"></div>
+<div class="row center" id="grafico_q10"></div>
+<div class="row center" id="grafico_q11"></div>
+<div class="row center" id="grafico_q12"></div>
+<div class="row center" id="grafico_q13"></div>
+<div class="row center" id="grafico_q14"></div>
+<div class="row center" id="grafico_q15"></div>
 
 <?php include(FOOTER_TEMPLATE); ?>
