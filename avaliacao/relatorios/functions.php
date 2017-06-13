@@ -77,12 +77,7 @@ function findAwnswer($questao, $valor){
     if ($id) {
       $sql = "SELECT significado FROM cars-resultados WHERE questao = " . $questao . " AND valor = " . $valor;
       $result = $database->query($sql);
-      
-      $found = array();
-      while ($row = $result->fetch_assoc()) {
-        array_push($found, $row);
-      }
-      
+      $found = $result->fetch_assoc();
     }
 
   } catch (Exception $e) {
