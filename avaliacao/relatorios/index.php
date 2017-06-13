@@ -26,7 +26,7 @@
 
         if ($relatorios) :
           foreach ($relatorios as $relatorio) :
-            $string = 'findAwnswer(1, $relatorio['q1'])';
+            $string = "findAwnswer(1, " . $relatorio['q1'] . ")";
             echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . $string . "'],";
           endforeach;
         endif;
