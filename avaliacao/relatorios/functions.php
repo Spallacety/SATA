@@ -85,7 +85,7 @@ function findAnswer($questao, $valor){
   }
   
   close_database($database);
-  return $found['significado'];
+  return $found;
 }
 
 function findLast($id){
