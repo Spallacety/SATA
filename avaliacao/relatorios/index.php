@@ -24,25 +24,25 @@
       <?php
         if ($relatorios) :
           foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['resultado'] . "],";
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . "],";
           endforeach;
         endif;
       ?>
     ]);
 
     var config = {
-        title:'Resultado total',
+        title:'Relacionamento interpessoal (Questão 1/15)',
         width:700,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
-          ticks: [0, 15, 30, 45, 60]
+          ticks: [0, 1, 2, 3, 4]
         },
     };
 
-    var chart = new google.visualization.ColumnChart(document.getElementById('grafico_total'));
+    var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
 
     chart.draw(dados, config);
   }
