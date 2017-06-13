@@ -14,12 +14,8 @@
 
   google.load('visualization', '1.0', {'packages':['corechart']});
 
-  google.setOnLoadCallback(desenharGraficos);
-
-  function desenharGraficos(){
-    desenharGrafico1(config)
-  }
-  var config = {
+  var conf = {
+    title:'Relacionamento interpessoal (Questão 1/15)',
     width:700,
     height:300,
     legend: { position: "none" },
@@ -30,7 +26,9 @@
     },
   };
 
-  function desenharGrafico1(config) {
+  google.setOnLoadCallback(desenharGrafico(conf));
+
+  function desenharGrafico(config) {
     var dados = new google.visualization.DataTable();
     dados.addColumn('string', 'Data');
     dados.addColumn('number', 'Total');
@@ -39,13 +37,11 @@
       <?php
         if ($relatorios) :
           foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . "findAwnswer(1, relatorio)" . "'],";
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . findAwnswer(1, $relatorio['q1']) . "'],";
           endforeach;
         endif;
       ?>
     ]);
-
-    config += {title:'Relacionamento interpessoal (Questão 1/15)',};
 
     var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
 
