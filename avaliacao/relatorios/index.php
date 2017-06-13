@@ -32,7 +32,7 @@
 
     var config = {
         title:'Resultado total',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -69,7 +69,7 @@
 
     var config = {
         title:'Relacionamento interpessoal (Questão 1/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -106,7 +106,7 @@
 
     var config = {
         title:'Imitação (Questão 2/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -143,7 +143,7 @@
 
     var config = {
         title:'Resposta emocional (Questão 3/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -180,7 +180,7 @@
 
     var config = {
         title:'Expressão corporal (Questão 4/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -217,7 +217,7 @@
 
     var config = {
         title:'Uso do objeto (Questão 5/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -254,7 +254,7 @@
 
     var config = {
         title:'Adaptação a mudanças (Questão 6/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -291,7 +291,7 @@
 
     var config = {
         title:'Uso do olhar (Questão 7/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -328,7 +328,7 @@
 
     var config = {
         title:'Uso da audição (Questão 8/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -365,7 +365,7 @@
 
     var config = {
         title:'Uso do paladar, olfato e do tato (Questão 9/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -402,7 +402,7 @@
 
     var config = {
         title:'Medo e nervosismo (Questão 10/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -439,7 +439,7 @@
 
     var config = {
         title:'Comunicação verbal (Questão 11/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -476,7 +476,7 @@
 
     var config = {
         title:'Comunicação não-verbal (Questão 12/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -513,7 +513,7 @@
 
     var config = {
         title:'Atividade (Questão 13/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -550,7 +550,7 @@
 
     var config = {
         title:'Grau e consistência das respostas da inteligência (Questão 14/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
@@ -587,7 +587,7 @@
 
     var config = {
         title:'Impressão geral (Questão 15/15)',
-        width:700,
+        width:500,
         height:300,
         legend: { position: "none" },
         colors: ['#1a237e'],
