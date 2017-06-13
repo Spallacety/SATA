@@ -36,7 +36,8 @@
         title:'Relacionamento interpessoal (Questão 1/15)',
         width:700,
         height:300,
-        legend: { position: "none" },
+        legend: "none",
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
