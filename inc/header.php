@@ -18,6 +18,7 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownRelatorios">Relatórios<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-menu">
@@ -38,6 +39,10 @@
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
       <li><a href="/avaliacao/cars/" class="main-text">CARS</a></li>
+    </ul>
+
+    <ul id="dropdownRelatorios" class="dropdown-content">
+      <li><a href="/avaliacao/relatorios/" class="main-text">CARS</a></li>
     </ul>
 
     <ul id="dropdownGeral" class="dropdown-content">
