@@ -75,7 +75,7 @@ function findAwnswer($questao, $valor){
 
   try {
     if ($id) {
-      $sql = "SELECT significado FROM cars-resultados WHERE questao = " . $questao . " AND valor = " . $valor;
+      $sql = "SELECT significado FROM cars-respostas WHERE questao = " . $questao . " AND valor = " . $valor;
       $result = $database->query($sql);
       $found = $result->fetch_assoc();
     }
