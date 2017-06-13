@@ -69,16 +69,15 @@ function delete($id = null) {
   header('location: index.php');
 }
 
-function findAwnswer($questao, $valor){
+function findAnswer($questao, $valor){
   $database = open_database();
   $found = null;
 
   try {
-    if ($id) {
-      $sql = "SELECT * FROM carsrespostas WHERE questao = " . $questao . " AND valor = " . $valor;
-      $result = $database->query($sql);
-      $found = $result->fetch_assoc();
-    }
+    $sql = "SELECT * FROM carsrespostas WHERE questao = " . $questao . " AND valor = " . $valor;
+    $result = $database->query($sql);
+    $found = $result->fetch_assoc();
+  }
 
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
@@ -86,7 +85,7 @@ function findAwnswer($questao, $valor){
   }
   
   close_database($database);
-  return $found;
+  return $found['significado'];
 }
 
 function findLast($id){
