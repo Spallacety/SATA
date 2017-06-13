@@ -25,7 +25,7 @@
       <?php
         if ($relatorios) :
           foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . "toooooooooooooltip" . "'],";
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . findAwnswer(1, $relatorio['q1']) . "'],";
           endforeach;
         endif;
       ?>

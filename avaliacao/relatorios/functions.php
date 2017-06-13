@@ -69,6 +69,31 @@ function delete($id = null) {
   header('location: index.php');
 }
 
+function findAwnswer($questao, $valor){
+  $database = open_database();
+  $found = null;
+
+  try {
+    if ($id) {
+      $sql = "SELECT significado FROM cars-resultados WHERE questao = " . $questao . " AND valor = " . $valor;
+      $result = $database->query($sql);
+      
+      $found = array();
+      while ($row = $result->fetch_assoc()) {
+        array_push($found, $row);
+      }
+      
+    }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+  return $found;
+}
+
 function findLast($id){
   
   $database = open_database();
