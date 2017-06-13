@@ -26,27 +26,25 @@
     },
   };
 
-  google.setOnLoadCallback(desenharGrafico(conf));
+  var dados = new google.visualization.DataTable();
+  
+  dados.addColumn('string', 'Data');
+  dados.addColumn('number', 'Total');
+  dados.addColumn({type: 'string', role: 'tooltip'});
+  dados.addRows([
+    <?php
+      if ($relatorios) :
+        foreach ($relatorios as $relatorio) :
+          echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . findAwnswer(1, $relatorio['q1']) . "'],";
+        endforeach;
+      endif;
+    ?>
+  ]);
 
-  function desenharGrafico(config) {
-    var dados = new google.visualization.DataTable();
-    dados.addColumn('string', 'Data');
-    dados.addColumn('number', 'Total');
-    dados.addColumn({type: 'string', role: 'tooltip'});
-    dados.addRows([
-      <?php
-        if ($relatorios) :
-          foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . findAwnswer(1, $relatorio['q1']) . "'],";
-          endforeach;
-        endif;
-      ?>
-    ]);
+  var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
 
-    var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
+  chart.draw(dados, conf);
 
-    chart.draw(dados, config);
-  }
 </script>
 
 <script type="text/javascript">
