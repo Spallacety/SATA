@@ -20,11 +20,12 @@
     var dados = new google.visualization.DataTable();
     dados.addColumn('string', 'Data');
     dados.addColumn('number', 'Total');
+    dados.addColumn({type: 'string', role: 'tooltip'});
     dados.addRows([
       <?php
         if ($relatorios) :
           foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . "],";
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . "toooooooooooooltip" . "'],";
           endforeach;
         endif;
       ?>
