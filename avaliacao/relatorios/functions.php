@@ -80,7 +80,6 @@ function findAnswer($questao, $valor){
     if ($result->num_rows > 0) {
       $found = $result->fetch_assoc();
     }
-  }
 
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
