@@ -14,37 +14,41 @@
 
   google.load('visualization', '1.0', {'packages':['corechart']});
 
-  var conf = {
-    title:'Relacionamento interpessoal (Questão 1/15)',
-    width:700,
-    height:300,
-    legend: { position: "none" },
-    colors: ['#1a237e'],
-    vAxis: {
-      minValue: 0, 
-      ticks: [0, 1, 2, 3, 4]
-    },
-  };
+  google.setOnLoadCallback(desenharGrafico);
 
-  var dados = new google.visualization.DataTable();
-  
-  dados.addColumn('string', 'Data');
-  dados.addColumn('number', 'Total');
-  dados.addColumn({type: 'string', role: 'tooltip'});
-  dados.addRows([
-    <?php
-      if ($relatorios) :
-        foreach ($relatorios as $relatorio) :
-          echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . findAwnswer(1, $relatorio['q1']) . "'],";
-        endforeach;
-      endif;
-    ?>
-  ]);
+  function desenharGrafico() {
+    var dados = new google.visualization.DataTable();
+    dados.addColumn('string', 'Data');
+    dados.addColumn('number', 'Total');
+    dados.addColumn({type: 'string', role: 'tooltip'});
+    dados.addRows([
+      <?php
 
-  var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
+        if ($relatorios) :
+          foreach ($relatorios as $relatorio) :
+            $string = findAwnswer(1, $relatorio['q1']);
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q1'] . ", '" . $string . "'],";
+          endforeach;
+        endif;
+      ?>
+    ]);
 
-  chart.draw(dados, conf);
+    var config = {
+        title:'Relacionamento interpessoal (Questão 1/15)',
+        width:700,
+        height:300,
+        legend: { position: "none" },
+        colors: ['#1a237e'],
+        vAxis: {
+          minValue: 0, 
+          ticks: [0, 1, 2, 3, 4]
+        },
+    };
 
+    var chart = new google.visualization.ColumnChart(document.getElementById('grafico_q1'));
+
+    chart.draw(dados, config);
+  }
 </script>
 
 <script type="text/javascript">
