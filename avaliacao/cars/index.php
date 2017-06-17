@@ -24,7 +24,7 @@
 		<?php foreach ($resultados as $resultado) : ?>
 		<tr>
 			<td> 
-        <?php echo $resultado['id_paciente']; ?>
+        <?php echo $resultado['nome']; ?>
       </td>
    		<td>
    			<?php $profissional = find('profissionais', $_COOKIE['id_profissional']);?>
