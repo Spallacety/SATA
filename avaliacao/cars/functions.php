@@ -12,14 +12,12 @@ function index() {
   $found = null;
 
   try {
-    if ($id) {
-      $sql = "SELECT * FROM profissionais2pacientes WHERE id_profissional = " . $_COOKIE['id_profissional'] . "";
-      $result = $database->query($sql);
-
-      if ($result->num_rows > 0) {
-        $found = $result->fetch_all(MYSQLI_ASSOC);
-      }
-      
+    $sql = "SELECT * FROM profissionais2pacientes WHERE id_profissional = " . $_COOKIE['id_profissional'] . " AND status = 1";
+    $result = $database->query($sql);
+    
+    $found = array();
+    while ($row = $result->fetch_assoc()) {
+      array_push($found, $row);
     }
 
   } catch (Exception $e) {
@@ -27,12 +25,12 @@ function index() {
     $_SESSION['type'] = 'danger';
   }
   
-  foreach ($found as $paciente) :
-    $p = find('pacientes', $paciente['id_paciente']);
-    array_push($pacientes, $p);
-  endforeach;
-
   close_database($database);
+
+  foreach ($found as $paciente) :
+    array_push($pacientes, find('pacientes', $paciente['id_paciente']))
+
+  endforeach;
 }
 
 function initAttr($id = null){
