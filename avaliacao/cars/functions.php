@@ -2,13 +2,37 @@
 require_once('../../config.php');
 require_once('../../auth.php');
 require_once(DBAPI);
-$resultados = null;
+$pacientes = null;
 $resultado = null;
 $paciente = null;
 
 function index() {
-  global $resultados;
-  $resultados = find_all('avaliacoes');
+  global $pacientes;
+  $database = open_database();
+  $found = null;
+
+  try {
+    if ($id) {
+      $sql = "SELECT * FROM profissionais2pacientes WHERE id_profissional = " . $_COOKIE['id_profissional'] . " AND status = 1";
+      $result = $database->query($sql);
+      
+      $found = array();
+      while ($row = $result->fetch_assoc()) {
+        array_push($found, $row);
+      }
+      
+    }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+
+  foreach ($found as $paciente) :
+    array_push($pacientes, find('pacientes', $paciente['id_paciente']));
+  endforeach;
 }
 
 function initAttr($id = null){
