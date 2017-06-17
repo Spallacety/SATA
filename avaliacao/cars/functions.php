@@ -8,7 +8,7 @@ $paciente = null;
 
 function index() {
   global $resultados;
-  $resultados = find_all('avaliacoes');
+  $resultados = find_all('pacientes2profissionais');
 }
 
 function initAttr($id = null){
