@@ -28,7 +28,7 @@ function index() {
   close_database($database);
 
   foreach ($found as $paciente) :
-    array_push($pacientes, find('pacientes', $paciente['id_paciente']))
+    array_push($pacientes, find('pacientes', $paciente['id_paciente']));
 
   endforeach;
 }
