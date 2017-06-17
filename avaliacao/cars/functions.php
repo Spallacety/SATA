@@ -8,7 +8,7 @@ $paciente = null;
 
 function index() {
   global $pacientes;
-  
+
   $database = open_database();
   $found = null;
 
@@ -19,8 +19,7 @@ function index() {
     $found = array();
 
     while ($row = $result->fetch_assoc()) {
-      $p = find('pacientes', $row['id_paciente']);
-      array_push($pacientes, $p);
+      array_push($pacientes, $row);
     }
 
   } catch (Exception $e) {
