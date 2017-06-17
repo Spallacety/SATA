@@ -2,13 +2,19 @@
 require_once('../../config.php');
 require_once('../../auth.php');
 require_once(DBAPI);
-$resultados = null;
+$resultados = array();
 $resultado = null;
 $paciente = null;
 
 function index() {
   global $resultados;
-  $resultados = find_all('profissionais2pacientes');
+  $temp = null;
+  $temp = find_all('profissionais2pacientes');
+
+  foreach ($temp as $paciente) {
+    array_push($resultados, find('pacientes', $paciente['id_profissional']));
+  }
+
 }
 
 function initAttr($id = null){
