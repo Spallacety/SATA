@@ -20,11 +20,11 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php if ($pacientes) : ?>
-		<?php foreach ($pacientes as $paciente) : ?>
+		<?php if ($resultados) : ?>
+		<?php foreach ($resultados as $resultado) : ?>
 		<tr>
 			<td> 
-        <?php echo $paciente['id_paciente']; ?>
+        <?php echo $resultado['id_paciente']; ?>
       </td>
    		<td>
    			<?php $profissional = find('profissionais', $_COOKIE['id_profissional']);?>
