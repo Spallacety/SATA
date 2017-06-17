@@ -2,7 +2,7 @@
 require_once('../../config.php');
 require_once('../../auth.php');
 require_once(DBAPI);
-$resultados = array();
+$resultados = null;
 $resultado = null;
 $paciente = null;
 
