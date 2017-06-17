@@ -17,8 +17,6 @@
 		<tr>
 			<th width="40%">Paciente</th>
 			<th width="40%">Profissional</th>
-      <th width="15%">Data</th>
-			<th width="5%" class"right-align"></th>
 		</tr>
 	</thead>
 	<tbody>

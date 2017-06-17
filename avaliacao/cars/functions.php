@@ -8,6 +8,7 @@ $paciente = null;
 
 function index() {
   global $pacientes;
+  
   $database = open_database();
   $found = null;
 
@@ -16,8 +17,10 @@ function index() {
     $result = $database->query($sql);
     
     $found = array();
+
     while ($row = $result->fetch_assoc()) {
-      array_push($found, $row);
+      $p = find('pacientes', $row['id_paciente']);
+      array_push($pacientes, $p);
     }
 
   } catch (Exception $e) {
@@ -26,11 +29,6 @@ function index() {
   }
   
   close_database($database);
-
-  foreach ($found as $paciente) :
-    array_push($pacientes, find('pacientes', $paciente['id_paciente']));
-
-  endforeach;
 }
 
 function initAttr($id = null){
