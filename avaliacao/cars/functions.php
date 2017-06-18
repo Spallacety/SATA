@@ -131,3 +131,24 @@ function findAllCars( $id ){
   return $allcars;
 
 }
+
+function findAnswer($questao, $valor){
+  $database = open_database();
+  $found = null;
+
+  try {
+    $sql = "SELECT * FROM carsrespostas WHERE questao = " . $questao . " AND valor = " . $valor;
+    $result = $database->query($sql);
+    
+    if ($result->num_rows > 0) {
+      $found = $result->fetch_assoc();
+    }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+  return $found;
+}
