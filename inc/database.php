@@ -130,8 +130,8 @@ function remove( $table = null, $id = null ) {
 
 function verifyIfAdmin( $id ){
   $user = find('profissionais', $id);
-  if ($user['nivelacesso'] == 1){
-    return 1;
+  if ($user['nivelacesso'] == '1'){
+    return '1';
   }
-  return 0;
+  return '0';
 }
