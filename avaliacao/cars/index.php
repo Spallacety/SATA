@@ -5,11 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<div class="row valign-wrapper">
-	<div class="col s12 m6 valign left-align">
-		<h4 class="main-text">Avaliações CARS</h4>
-	</div>
-</div>
+<h4 class="main-text">Avaliações CARS</h4>
 <hr>
 
 <table class="highlight">
@@ -20,7 +16,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php if ($resultados) : ?>
+		<?php if ($oacientes) : ?>
 		<?php foreach ($pacientes as $paciente) : ?>
 		<tr>
 			<td> 
