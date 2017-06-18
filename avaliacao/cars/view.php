@@ -44,20 +44,20 @@
           endforeach;
         endif;
         echo "['1', " . round(($geral['q1']/$counter)*2)/2 . ", 'ao vivo'],";
-        echo "['2', " . $geral['q2'] . ", 'ao vivo'],";
-        echo "['3', " . $geral['q3'] . ", 'ao vivo'],";
-        echo "['4', " . $geral['q4'] . ", 'ao vivo'],";
-        echo "['5', " . $geral['q5'] . ", 'ao vivo'],";
-        echo "['6', " . $geral['q6'] . ", 'ao vivo'],";
-        echo "['7', " . $geral['q7'] . ", 'ao vivo'],";
-        echo "['8', " . $geral['q8'] . ", 'ao vivo'],";
-        echo "['9', " . $geral['q9'] . ", 'ao vivo'],";
-        echo "['10', " . $geral['q10'] . ", 'ao vivo'],";
-        echo "['11', " . $geral['q11'] . ", 'ao vivo'],";
-        echo "['12', " . $geral['q12'] . ", 'ao vivo'],";
-        echo "['13', " . $geral['q13'] . ", 'ao vivo'],";
-        echo "['14', " . $geral['q14'] . ", 'ao vivo'],";
-        echo "['15', " . $geral['q15'] . ", 'ao vivo'],";
+        echo "['2', " . round(($geral['q2']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['3', " . round(($geral['q3']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['4', " . round(($geral['q4']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['5', " . round(($geral['q5']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['6', " . round(($geral['q6']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['7', " . round(($geral['q7']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['8', " . round(($geral['q8']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['9', " . round(($geral['q9']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['10', " . round(($geral['q10']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['11', " . round(($geral['q11']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['12', " . round(($geral['q12']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['13', " . round(($geral['q13']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['14', " . round(($geral['q14']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['15', " . round(($geral['q15']/$counter)*2)/2 . ", 'ao vivo'],";
 
       ?>
     ]);
