@@ -29,7 +29,7 @@
       <td class="row vallign right-align">
         <div class="btn-group-h">
           <a href="/avaliacao/cars/add.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nova Avaliação"><i class="material-icons blue-text">add</i></a>
-          <a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver Relatórios"><i class="material-icons green-text">pie_chart</i></a>
+          <a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn-flat img-btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver Relatórios"><i class="material-icons green-text">show_chart</i></a>
         </div>
       </td>
     </tr>
