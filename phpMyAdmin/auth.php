@@ -1,5 +1,7 @@
 <?php 
 
+require_once DBAPI;
+
 $verify = verifyIfAdmin($_COOKIE['id_profissional']);
 
 if ($verify != 1){
