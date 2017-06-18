@@ -12,7 +12,7 @@ function index() {
   $temp = find_all('profissionais2pacientes');
 
   foreach ($temp as $paciente) {
-    if ($paciente['status'] == 1){
+    if ($paciente['status'] == 1 && $paciente['id_profissional'] == $_COOKIE['id_profissional']){
       array_push($resultados, find('pacientes', $paciente['id_paciente']));
     }
   }
