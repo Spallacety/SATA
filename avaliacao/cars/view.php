@@ -78,7 +78,7 @@
 <h4 class="main-text center">Relatórios de <?php echo $paciente['nome'] ?></h2>
 <hr>
 
-<div class="chart" id="grafico_geral" style="align: center;"></div>
+<div class="chart" id="grafico_geral"></div>
 
 <div class="container">
   <div class="row center">
