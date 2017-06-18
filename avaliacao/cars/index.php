@@ -11,8 +11,7 @@
 <table class="highlight">
 	<thead>
 		<tr>
-			<th width="40%">Paciente</th>
-			<th width="40%">Profissional</th>
+			<th>Paciente</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -22,9 +21,6 @@
 			<td> 
         <?php echo $paciente['nome']; ?>
       </td>
-   		<td>
-   			<?php $profissional = find('profissionais', $_COOKIE['id_profissional']);?>
-   			<?php echo $profissional['nome']; ?>
    		</td>
       <td class="row vallign right-align">
         <div class="btn-group-h">
