@@ -43,7 +43,7 @@
             $counter += 1;
           endforeach;
         endif;
-        echo "['1', " . round(($geral['q1']/$counter)*2)/2 . ", 'ao vivo'],";
+        echo "['1', " . round(($geral['q1']/$counter)*2)/2 . ", '" . findAnswer(1, round(($geral['q1']/$counter)*2)/2) . "'],";
         echo "['2', " . round(($geral['q2']/$counter)*2)/2 . ", 'ao vivo'],";
         echo "['3', " . round(($geral['q3']/$counter)*2)/2 . ", 'ao vivo'],";
         echo "['4', " . round(($geral['q4']/$counter)*2)/2 . ", 'ao vivo'],";
@@ -64,7 +64,7 @@
 
     var config = {
         title:'Média geral das avaliações',
-        width:700,
+        width:939,
         height:300,
         legend: "none",
         tooltip: {isHtml: true},
