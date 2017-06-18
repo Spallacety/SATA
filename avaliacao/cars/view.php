@@ -43,6 +43,7 @@
         echo "['Questão 3', " . $geral['q3'] . ", 'ao vivo'],";
       ?>
     ]);
+    dados.addRows(['Questão', '1']);
 
     var config = {
         title:'Média geral das avaliações',
