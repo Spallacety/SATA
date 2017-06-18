@@ -44,6 +44,19 @@
         echo "['1', " . $geral['q1'] . ", 'ao vivo'],";
         echo "['2', " . $geral['q2'] . ", 'ao vivo'],";
         echo "['3', " . $geral['q3'] . ", 'ao vivo'],";
+        echo "['4', " . $geral['q4'] . ", 'ao vivo'],";
+        echo "['5', " . $geral['q5'] . ", 'ao vivo'],";
+        echo "['6', " . $geral['q6'] . ", 'ao vivo'],";
+        echo "['7', " . $geral['q7'] . ", 'ao vivo'],";
+        echo "['8', " . $geral['q8'] . ", 'ao vivo'],";
+        echo "['9', " . $geral['q9'] . ", 'ao vivo'],";
+        echo "['10', " . $geral['q10'] . ", 'ao vivo'],";
+        echo "['11', " . $geral['q11'] . ", 'ao vivo'],";
+        echo "['12', " . $geral['q12'] . ", 'ao vivo'],";
+        echo "['13', " . $geral['q13'] . ", 'ao vivo'],";
+        echo "['14', " . $geral['q14'] . ", 'ao vivo'],";
+        echo "['15', " . $geral['q15'] . ", 'ao vivo'],";
+
       ?>
     ]);
 
