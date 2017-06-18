@@ -12,6 +12,10 @@ $( window ).on( "load", function() {
   });
 });
 
+$(window).resize(function(){
+  desenharGrafico();
+});
+
 $(document).ready(function() {
   $('.modal').modal({
     dismissible: false
