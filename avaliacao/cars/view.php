@@ -66,9 +66,6 @@
         legend: "none",
         tooltip: {isHtml: true},
         colors: ['#1a237e'],
-        vAxis: {
-          minValue: 0, 
-          ticks: [0, 1, 2, 3, 4]
         },
     };
 
@@ -76,6 +73,10 @@
 
     chart.draw(dados, config);
   }
+
+  $(window).resize(function(){
+    desenharGrafico();
+  });
 
 </script>
 
