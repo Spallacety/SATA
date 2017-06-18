@@ -41,8 +41,8 @@
             $geral['q15'] += (float) $avaliacao['q15'];
           endforeach;
         endif;
-        echo "['1', " . echo round($geral['q1']*2)/2 . ", 'ao vivo'],";
-        echo "['2', " . echo round($geral['q2']*2)/2 . ", 'ao vivo'],";
+        echo "['1', " . round($geral['q1']*2)/2 . ", 'ao vivo'],";
+        echo "['2', " . $geral['q2'] . ", 'ao vivo'],";
         echo "['3', " . $geral['q3'] . ", 'ao vivo'],";
         echo "['4', " . $geral['q4'] . ", 'ao vivo'],";
         echo "['5', " . $geral['q5'] . ", 'ao vivo'],";
