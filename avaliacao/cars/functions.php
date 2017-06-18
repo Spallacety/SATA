@@ -2,18 +2,18 @@
 require_once('../../config.php');
 require_once('../../auth.php');
 require_once(DBAPI);
-$pacientes = array();
+$resultados = array();
 $resultado = null;
 $paciente = null;
 
 function index() {
-  global $pacientes;
+  global $resultados;
   $temp = null;
   $temp = find_all('profissionais2pacientes');
 
   foreach ($temp as $paciente) {
     if ($paciente['status'] == 1 && $paciente['id_profissional'] == $_COOKIE['id_profissional']){
-      array_push($pacientes, find('pacientes', $paciente['id_paciente']));
+      array_push($resultados, find('pacientes', $paciente['id_paciente']));
     }
   }
 

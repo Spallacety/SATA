@@ -16,8 +16,8 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php if ($oacientes) : ?>
-		<?php foreach ($pacientes as $paciente) : ?>
+		<?php if ($resultados) : ?>
+		<?php foreach ($resultados as $paciente) : ?>
 		<tr>
 			<td> 
         <?php echo $paciente['nome']; ?>
