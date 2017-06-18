@@ -36,7 +36,7 @@
       <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
       <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
       <?php
-        if ($_COOKIE['nivel_acesso'] != '1') : ?>
+        if ($_COOKIE['nivel_acesso'] == '1') : ?>
         <li><a href="/" class="main-text">Adicionar relação</a></li>
       <?php endif; ?>
       
