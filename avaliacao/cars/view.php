@@ -73,11 +73,6 @@
 
     chart.draw(dados, config);
   }
-
-  $(window).resize(function(){
-    desenharGrafico();
-  });
-
 </script>
 
 <h4 class="main-text center">Relatórios de <?php echo $paciente['nome'] ?></h2>

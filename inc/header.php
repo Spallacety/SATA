@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="/css/materialize.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="/js/jquery-2.1.1.min.js"></script>
+  <script src="/js/materialize.min.js"></script>
+  <script src="/js/jquery-mask.min.js"></script>
+  <script src="/js/custom.js"></script>
 </head>
 
 <body>
