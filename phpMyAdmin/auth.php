@@ -1,6 +1,8 @@
 <?php 
 
-if ($_COOKIE['id_profissional'] != '1'){
+require_once('/inc/database.php');
+
+if (!verifyAcess($_COOKIE['id_profissional'])){
   header("Location: /login.php");
   exit;
 }

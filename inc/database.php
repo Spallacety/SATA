@@ -1,5 +1,7 @@
 <?php
+
 mysqli_report(MYSQLI_REPORT_STRICT);
+
 function open_database() {
 	try {
 		$conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -17,9 +19,6 @@ function close_database($conn) {
 	}
 }
 
-/**
- *  Pesquisa um Registro pelo ID em uma Tabela
- */
 function find( $table = null, $id = null ) {
   
 	$database = open_database();
@@ -57,18 +56,10 @@ function find( $table = null, $id = null ) {
 	return $found;
 }
 
-/**
- *  Pesquisa Todos os Registros de uma Tabela
- */
-
 function find_all( $table ) {
   return find($table);
 }
 
-
-/**
-*  Insere um registro no BD
-*/
 function save($table = null, $data = null) {
   $database = open_database();
   $columns = null;
@@ -96,9 +87,6 @@ function save($table = null, $data = null) {
   close_database($database);
 }
 
-/**
- *  Atualiza um registro em uma tabela, por ID
- */
 function update($table = null, $id = 0, $data = null) {
   $database = open_database();
   $items = null;
@@ -121,10 +109,6 @@ function update($table = null, $id = 0, $data = null) {
   close_database($database);
 }
 
-
-/**
- *  Remove uma linha de uma tabela pelo ID do registro
- */
 function remove( $table = null, $id = null ) {
   $database = open_database();
 	
@@ -142,4 +126,11 @@ function remove( $table = null, $id = null ) {
     $_SESSION['type'] = 'danger';
   }
   close_database($database);
+}
+
+function verifyAdmin( $id ){
+  $user = find('profissionais', $_COOKIE['id_profissional']);
+  if ($user['nivelacesso'] == 1){
+    return true;
+  }
 }
