@@ -18,7 +18,33 @@
     dados.addColumn('string', 'Questao');
     dados.addColumn('number', 'Media');
     dados.addColumn({type: 'string', role: 'tooltip'});
-    dados.addRows([['Questão', 1, 'ao vivo'], ['Questao', 2, 'oloko'], ]);
+    dados.addRows([
+      <?php
+        $geral = null;
+        if ($allcars) :
+          foreach ($allcars as $avaliacao) :
+            $geral['q1'] += $avaliacao['q1'];
+            $geral['q2'] += $avaliacao['q2'];
+            $geral['q3'] += $avaliacao['q3'];
+            $geral['q4'] += $avaliacao['q4'];
+            $geral['q5'] += $avaliacao['q5'];
+            $geral['q6'] += $avaliacao['q6'];
+            $geral['q7'] += $avaliacao['q7'];
+            $geral['q8'] += $avaliacao['q8'];
+            $geral['q9'] += $avaliacao['q9'];
+            $geral['q10'] += $avaliacao['q10'];
+            $geral['q11'] += $avaliacao['q11'];
+            $geral['q12'] += $avaliacao['q12'];
+            $geral['q13'] += $avaliacao['q13'];
+            $geral['q14'] += $avaliacao['q14'];
+            $geral['q15'] += $avaliacao['q15'];
+          endforeach;
+        endif;
+        echo "['Questão 1', " . $geral['q1'] . ", 'ao vivo'],";
+        echo "['Questão 2', " . $geral['q2'] . ", 'ao vivo'],";
+        echo "['Questão 3', " . $geral['q3'] . ", 'ao vivo'],";
+      ?>
+    ]);
 
     var config = {
         title:'Média geral das avaliações',
@@ -63,10 +89,9 @@
       <label for="nome" class="main-text">Data</label>
     </div>
   </div>
-
-  <div class="row center" id="grafico_geral"></div>
-
 </div>
+
+<div class="row center" id="grafico_geral"></div>
 
 <div class="container">
   <div class="row center">
