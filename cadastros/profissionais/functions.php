@@ -31,6 +31,7 @@ function add() {
     $profissional['modificacao'] = $profissional['criacao'] = $today->format("Y-m-d H:i:s");
     $pass = md5($_POST['senhaSemHash']);
     $profissional['senha'] = $pass;
+    $profissional['nivelacesso'] = '0';
     
     save('profissionais', $profissional);
     header('location: index.php');

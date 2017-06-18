@@ -127,11 +127,3 @@ function remove( $table = null, $id = null ) {
   }
   close_database($database);
 }
-
-function verifyIfAdmin( $id ){
-  $user = find('profissionais', $id);
-  if ($user['nivelacesso'] == '1'){
-    return '1';
-  }
-  return '0';
-}
