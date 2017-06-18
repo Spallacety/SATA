@@ -21,23 +21,24 @@
     dados.addRows([
       <?php
         $geral = null;
+        findAllCars($_GET['id']);
         if ($allcars) :
           foreach ($allcars as $avaliacao) :
-            $geral['q1'] += $avaliacao['q1'];
-            $geral['q2'] += $avaliacao['q2'];
-            $geral['q3'] += $avaliacao['q3'];
-            $geral['q4'] += $avaliacao['q4'];
-            $geral['q5'] += $avaliacao['q5'];
-            $geral['q6'] += $avaliacao['q6'];
-            $geral['q7'] += $avaliacao['q7'];
-            $geral['q8'] += $avaliacao['q8'];
-            $geral['q9'] += $avaliacao['q9'];
-            $geral['q10'] += $avaliacao['q10'];
-            $geral['q11'] += $avaliacao['q11'];
-            $geral['q12'] += $avaliacao['q12'];
-            $geral['q13'] += $avaliacao['q13'];
-            $geral['q14'] += $avaliacao['q14'];
-            $geral['q15'] += $avaliacao['q15'];
+            $geral['q1'] += (float) $avaliacao['q1'];
+            $geral['q2'] += (float) $avaliacao['q2'];
+            $geral['q3'] += (float) $avaliacao['q3'];
+            $geral['q4'] += (float) $avaliacao['q4'];
+            $geral['q5'] += (float) $avaliacao['q5'];
+            $geral['q6'] += (float) $avaliacao['q6'];
+            $geral['q7'] += (float) $avaliacao['q7'];
+            $geral['q8'] += (float) $avaliacao['q8'];
+            $geral['q9'] += (float) $avaliacao['q9'];
+            $geral['q10'] += (float) $avaliacao['q10'];
+            $geral['q11'] += (float) $avaliacao['q11'];
+            $geral['q12'] += (float) $avaliacao['q12'];
+            $geral['q13'] += (float) $avaliacao['q13'];
+            $geral['q14'] += (float) $avaliacao['q14'];
+            $geral['q15'] += (float) $avaliacao['q15'];
           endforeach;
         endif;
         echo "['Questão 1', " . $geral['q1'] . ", 'ao vivo'],";
