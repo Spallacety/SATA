@@ -5,8 +5,6 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-
 <script type="text/javascript">
 
   google.load('visualization', '1.0', {'packages':['corechart']});
@@ -80,16 +78,12 @@
     chart.draw(dados, config);
   }
 
-
-  $(window).resize(function(){
-    desenharGrafico();
-  });
 </script>
 
 <h4 class="main-text center">Relatórios de <?php echo $paciente['nome'] ?></h2>
 <hr>
 
-<div class="chart" id="grafico_geral" style="align: center;"></div>
+<div class="row center" id="grafico_geral" style="align: center;"></div>
 
 <div class="container">
   <div class="row center">
