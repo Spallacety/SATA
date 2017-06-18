@@ -24,8 +24,8 @@
         findAllCars($_GET['id']);
         if ($allcars) :
           foreach ($allcars as $avaliacao) :
-            $geral['q1'] = round( ((float) $geral['q1'] + (float) $avaliacao['q1']) *2) / 2;
-            $geral['q2'] = round( ((float) $geral['q2'] + (float) $avaliacao['q2']) *2) / 2;
+            $geral['q1'] = ( (float) $avaliacao['q1'] + $geral['q1'] ) / 2;
+            $geral['q2'] += (float) $avaliacao['q2'];
             $geral['q3'] += (float) $avaliacao['q3'];
             $geral['q4'] += (float) $avaliacao['q4'];
             $geral['q5'] += (float) $avaliacao['q5'];
