@@ -2,7 +2,7 @@
 
 require_once DBAPI;
 
-if (!verifyIfAdmin($_COOKIE['id_profissional'])){
+if (true){
   header("Location: /login.php");
   exit;
 }

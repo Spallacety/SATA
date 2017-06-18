@@ -133,4 +133,5 @@ function verifyIfAdmin( $id ){
   if ($user['nivelacesso'] == 1){
     return true;
   }
+  return false;
 }
