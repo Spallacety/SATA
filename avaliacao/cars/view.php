@@ -22,6 +22,7 @@
       <?php
         $geral = null;
         findAllCars($_GET['id']);
+        $counter = 0;
         if ($allcars) :
           foreach ($allcars as $avaliacao) :
             $geral['q1'] += (float) $avaliacao['q1'];
@@ -39,9 +40,10 @@
             $geral['q13'] += (float) $avaliacao['q13'];
             $geral['q14'] += (float) $avaliacao['q14'];
             $geral['q15'] += (float) $avaliacao['q15'];
+            $counter += 1;
           endforeach;
         endif;
-        echo "['1', " . round($geral['q1']*2)/2 . ", 'ao vivo'],";
+        echo "['1', " . round(($geral['q1']/$counter)*2)/2 . ", 'ao vivo'],";
         echo "['2', " . $geral['q2'] . ", 'ao vivo'],";
         echo "['3', " . $geral['q3'] . ", 'ao vivo'],";
         echo "['4', " . $geral['q4'] . ", 'ao vivo'],";
