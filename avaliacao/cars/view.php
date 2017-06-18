@@ -5,6 +5,8 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 <script type="text/javascript">
 
   google.load('visualization', '1.0', {'packages':['corechart']});
