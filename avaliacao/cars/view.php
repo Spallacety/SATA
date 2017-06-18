@@ -24,8 +24,8 @@
         findAllCars($_GET['id']);
         if ($allcars) :
           foreach ($allcars as $avaliacao) :
-            $geral['q1'] += (float) $avaliacao['q1'];
-            $geral['q2'] += (float) $avaliacao['q2'];
+            $geral['q1'] = round( ((float) $geral['q1'] + (float) $avaliacao['q1']) *2) / 2;
+            $geral['q2'] += round( ((float) $geral['q2'] + (float) $avaliacao['q2']) *2) / 2;
             $geral['q3'] += (float) $avaliacao['q3'];
             $geral['q4'] += (float) $avaliacao['q4'];
             $geral['q5'] += (float) $avaliacao['q5'];
@@ -41,9 +41,9 @@
             $geral['q15'] += (float) $avaliacao['q15'];
           endforeach;
         endif;
-        echo "['Questão 1', " . $geral['q1'] . ", 'ao vivo'],";
-        echo "['Questão 2', " . $geral['q2'] . ", 'ao vivo'],";
-        echo "['Questão 3', " . $geral['q3'] . ", 'ao vivo'],";
+        echo "['1', " . $geral['q1'] . ", 'ao vivo'],";
+        echo "['2', " . $geral['q2'] . ", 'ao vivo'],";
+        echo "['3', " . $geral['q3'] . ", 'ao vivo'],";
       ?>
     ]);
 
