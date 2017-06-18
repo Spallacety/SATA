@@ -5,6 +5,7 @@ require_once(DBAPI);
 $resultados = array();
 $resultado = null;
 $paciente = null;
+$allcars = null;
 
 function index() {
   global $resultados;
@@ -97,4 +98,36 @@ function delete($id = null) {
   global $resultado;
   $resultado = remove('avaliacoes', $id);
   header('location: /avaliacao/cars/');
+}
+
+function findAllCars( $id ){
+  global $allcars;
+
+  $database = open_database();
+  $found = null;
+
+  try {
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id;
+      $result = $database->query($sql);
+      
+      if ($result->num_rows > 0) {
+        $found = $result->fetch_all(MYSQLI_ASSOC);
+        
+        /* Metodo alternativo
+        $found = array();
+        while ($row = $result->fetch_assoc()) {
+          array_push($found, $row);
+        } */
+      }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+
+  $allcars = $found;
+  return $allcars;
+
 }
