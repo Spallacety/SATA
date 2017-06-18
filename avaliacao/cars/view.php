@@ -63,7 +63,7 @@
     ]);
 
     var config = {
-        title:'Média geral das avaliações',
+        title:'Média geral das avaliações',   
         height:300,
         legend: "none",
         tooltip: {isHtml: true},
