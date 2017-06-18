@@ -5,6 +5,8 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
 <script type="text/javascript">
 
   google.load('visualization', '1.0', {'packages':['corechart']});
@@ -62,10 +64,14 @@
 
     var config = {
         title:'Média geral das avaliações',
+        width:939,
         height:300,
         legend: "none",
         tooltip: {isHtml: true},
         colors: ['#1a237e'],
+        vAxis: {
+          minValue: 0, 
+          ticks: [0, 1, 2, 3, 4]
         },
     };
 
@@ -78,7 +84,7 @@
 <h4 class="main-text center">Relatórios de <?php echo $paciente['nome'] ?></h2>
 <hr>
 
-<div class="chart" id="grafico_geral"></div>
+<div class="row center" id="grafico_geral"></div>
 
 <div class="container">
   <div class="row center">
