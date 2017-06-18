@@ -128,7 +128,7 @@ function remove( $table = null, $id = null ) {
   close_database($database);
 }
 
-function verifyAdmin( $id ){
+function verifyIfAdmin( $id ){
   $user = find('profissionais', $id);
   if ($user['nivelacesso'] == 1){
     return true;

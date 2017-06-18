@@ -1,8 +1,8 @@
 <?php 
 
-require_once('/inc/database.php');
+require_once DBAPI;
 
-if (!verifyAccess($_COOKIE['id_profissional'])){
+if (!verifyIfAdmin($_COOKIE['id_profissional'])){
   header("Location: /login.php");
   exit;
 }
