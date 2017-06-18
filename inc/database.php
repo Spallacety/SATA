@@ -129,7 +129,7 @@ function remove( $table = null, $id = null ) {
 }
 
 function verifyAdmin( $id ){
-  $user = find('profissionais', $_COOKIE['id_profissional']);
+  $user = find('profissionais', $id);
   if ($user['nivelacesso'] == 1){
     return true;
   }
