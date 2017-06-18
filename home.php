@@ -12,7 +12,7 @@
 
 <div class="row center">
   <br>
-  <?php if ($_COOKIE['id_profissional'] == '1') echo '<div class="row center"><a href="phpMyAdmin/index.php" class="btn orange white-text btn-default">phpMyAdmin</a></div>'; ?>
+  <?php if ($_COOKIE['nivel_acesso'] == '1') echo '<div class="row center"><a href="phpMyAdmin/index.php" class="btn orange white-text btn-default">phpMyAdmin</a></div>'; ?>
   <a href="logout.php" class="btn red white-text btn-default">Logout</a>
 </div>
 
