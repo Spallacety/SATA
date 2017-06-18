@@ -89,8 +89,8 @@ function edit() {
 }
 
 function view($id = null) {
-  global $resultado;
-  $resultado = find('avaliacoes', $id);
+  global $paciente;
+  $paciente = find('pacientes', $id);
 }
 
 function delete($id = null) {

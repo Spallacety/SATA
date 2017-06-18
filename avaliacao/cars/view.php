@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h4 class="main-text center">Resultados da Avaliação</h2>
+<h4 class="main-text center">Relatórios de $paciente['nome']</h2>
 <hr>
 
 <div class="row">
