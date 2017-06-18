@@ -64,7 +64,6 @@
 
     var config = {
         title:'Média geral das avaliações',
-        width:939,
         height:300,
         legend: "none",
         tooltip: {isHtml: true},
@@ -78,7 +77,7 @@
     var chart = new google.visualization.ColumnChart(document.getElementById('grafico_geral'));
 
     chart.draw(dados, config);
-    
+
   }
 </script>
 
