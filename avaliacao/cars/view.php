@@ -18,7 +18,7 @@
     dados.addColumn('string', 'Questão');
     dados.addColumn('number', 'Média');
     dados.addColumn({type: 'string', role: 'tooltip'});
-    dados.addRows(['Questão', '1', 'ao vivo']);
+    dados.addRows(['Questão', 1, 'ao vivo']);
 
     var config = {
         title:'Média geral das avaliações',
