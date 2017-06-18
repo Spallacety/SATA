@@ -62,7 +62,6 @@
 
     var config = {
         title:'Média geral das avaliações',
-        width:939,
         height:300,
         legend: "none",
         tooltip: {isHtml: true},

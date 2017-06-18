@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/material-icons.css">
   <link rel="stylesheet" href="/css/materialize.min.css">
   <link rel="stylesheet" href="/css/style.css">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </head>
 
 <body>
