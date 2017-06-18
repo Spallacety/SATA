@@ -78,13 +78,14 @@
     var chart = new google.visualization.ColumnChart(document.getElementById('grafico_geral'));
 
     chart.draw(dados, config);
+    
   }
 </script>
 
 <h4 class="main-text center">Relatórios de <?php echo $paciente['nome'] ?></h2>
 <hr>
 
-<div class="row center" id="grafico_geral"></div>
+<div class="chart" id="grafico_geral"></div>
 
 <div class="container">
   <div class="row center">
