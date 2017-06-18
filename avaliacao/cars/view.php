@@ -15,10 +15,10 @@
 
   function desenharGrafico() {
     var dados = new google.visualization.DataTable();
-    dados.addColumn('string', 'Questão');
-    dados.addColumn('number', 'Média');
+    dados.addColumn('string', 'Questao');
+    dados.addColumn('number', 'Media');
     dados.addColumn({type: 'string', role: 'tooltip'});
-    dados.addRows(['Questão', 1, 'ao vivo']);
+    dados.addRows([['Questão', 1, 'ao vivo'], ['Questao', 2, 'oloko'], ]);
 
     var config = {
         title:'Média geral das avaliações',
