@@ -7,7 +7,7 @@ $relacao = null;
 function index() {
   if (!empty($_POST['relacao'])) {
     
-    $relacao = $_POST['instituicao'];
+    $relacao = $_POST['relacao'];
     $relacao['status'] = 1;
     
     save('relacoes', $relacao);
