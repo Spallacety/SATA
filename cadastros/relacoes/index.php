@@ -28,6 +28,10 @@
       </div>
     </div>    
   </div>
+
+  <div class="row center">
+    <button type="submit" class="btn green white-text btn-primary">Salvar</button>
+  </div>
 </form>
 
 
