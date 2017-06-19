@@ -5,11 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<div class="row valign-wrapper">
-	<div class="col s12 m6 valign left-align">
-		<h4 class="main-text">Relações</h4>
-	</div>
-</div>
+<h4 class="main-text">Relações</h4>
 <hr>
 
 <form action="index.php" method="post">
