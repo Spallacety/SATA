@@ -10,7 +10,7 @@ $allcars = null;
 function index() {
   global $resultados;
   $temp = null;
-  $temp = find_all('profissionais2pacientes');
+  $temp = find_all('relacoes');
 
   foreach ($temp as $paciente) {
     if ($paciente['status'] == 1 && $paciente['id_profissional'] == $_COOKIE['id_profissional']){
@@ -91,7 +91,9 @@ function edit() {
 
 function view($id = null) {
   global $paciente;
+  global $allcars;
   $paciente = find('pacientes', $id);
+  findAllCars($id);
 }
 
 function delete($id = null) {

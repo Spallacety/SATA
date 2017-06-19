@@ -21,7 +21,6 @@
     dados.addRows([
       <?php
         $geral = null;
-        findAllCars($_GET['id']);
         $counter = 0;
         if ($allcars) :
           foreach ($allcars as $avaliacao) :
@@ -58,7 +57,6 @@
         echo "['13', " . round(($geral['q13']/$counter)*2)/2 . ", '" . findAnswer(13, round(($geral['q13']/$counter)*2)/2)['significado'] . "'],";
         echo "['14', " . round(($geral['q14']/$counter)*2)/2 . ", '" . findAnswer(14, round(($geral['q14']/$counter)*2)/2)['significado'] . "'],";
         echo "['15', " . round(($geral['q15']/$counter)*2)/2 . ", '" . findAnswer(15, round(($geral['q15']/$counter)*2)/2)['significado'] . "'],";
-
       ?>
     ]);
 
