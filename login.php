@@ -27,7 +27,7 @@ if(isset($_POST["login-button"])){
 			echo  "<br>";
 			echo "<div class='row center'><p class='center'>Usuário e/ou senha inválidos.</p></div>
 			<div class='row center'>
-			    <a class='btn waves-effect waves-light main-color' href='index.php'>Voltar</a>
+			    <a class='btn waves-effect waves-light main-color' href='/'>Voltar</a>
       		</div>";
       echo  "<br>";
 			
@@ -53,7 +53,7 @@ else{
 	echo  "<br>";
 	echo "<div class='row center'><p class='center'>Você não tem permissão para visualizar esta página.</p></div>
 	<div class='row center'>
-	    <a class='btn waves-effect waves-light main-color' href='index.php'>Fazer login</a>
+	    <a class='btn waves-effect waves-light main-color' href='/'>Fazer login</a>
   		</div>";
   echo  "<br>";
 	
