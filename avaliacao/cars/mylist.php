@@ -1,6 +1,6 @@
 <?php
-    require_once('functions.php');
-    myList($_GET['id']);
+  require_once('functions.php');
+  myList($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
@@ -18,7 +18,7 @@
 		<?php if ($minhasavaliacoes) : ?>
 		<?php foreach ($minhasavaliacoes as $avaliacao) : ?>
 		<tr>
-			<td> 
+			<td>
         <?php echo $avaliacao['modificacao']; ?>
    		</td>
       <td class="row vallign right-align">
