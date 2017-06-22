@@ -11,7 +11,7 @@
 <div class="row">
   <div class="col s12 m8 l8">
     <div class="input-field">
-      <input disabled class="black-text" type="text" id="paciente" value="<?php find('pacientes', $resultado['id_paciente'])['nome']; ?>" required>
+      <input disabled class="black-text" type="text" id="paciente" value="<?php echo find('pacientes', $resultado['id_paciente'])['nome']; ?>" required>
       <label for="paciente" class="main-text">Paciente</label>
     </div>
   </div>
@@ -27,7 +27,7 @@
 <div class="row">
   <div class="col s12">
     <div class="input-field">
-      <input disabled class="black-text" type="text" id="q1" value="<?php findAnswer(1, $resultado)['significado'] ?>" required>
+      <input disabled class="black-text" type="text" id="q1" value="<?php echo findAnswer(1, $resultado)['significado'] ?>" required>
       <label for="q1" class="main-text">Relacionamento interpessoal</label>
     </div>
   </div> 
