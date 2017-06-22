@@ -33,7 +33,7 @@ if ($_COOKIE){
     </div>
     <br>
     <div class="row center">
-      <input id="login-button" class="btn waves-effect waves-light main-color" name="login-button" type="submit" value="Acessar"></input>
+      <button type="submit" class="btn waves-effect waves-light main-color">Acessar</button>
     </div>
     <br>
   </form>
