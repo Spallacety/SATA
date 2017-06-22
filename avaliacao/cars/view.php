@@ -87,6 +87,7 @@
 <div class="container">
   <div class="row center">
     <br>
+    <a href="mylist.php?id=<?php echo $_GET['id']; ?>" class="btn blue white-text btn-default">Minhas avaliações</a>
     <a href="index.php" class="btn blue white-text btn-default">Voltar</a>
   </div>
 </div>
