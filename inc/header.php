@@ -16,16 +16,22 @@
     <div class="nav-wrapper container">
       <a href="/home.php" class="brand-logo secondary-text">SATA</a>
       <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
-      </ul>
+      <?php if ($_COOKIE['nivel_acesso']) : ?>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
+            <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
+          <?php endif; ?>
+          <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
+        </ul>
+      <?php endif; ?>
       <ul class="side-nav" id="mobile-menu">
-        <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
-        <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
-        <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
-        <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
+        <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
+          <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
+          <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
+          <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
+          <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
+        <?php endif; ?>
         <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
       </ul>
     </div>
@@ -35,11 +41,7 @@
       <li><a href="/cadastros/profissionais/" class="main-text">Profissionais</a></li>
       <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
       <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
-      <?php
-        if ($_COOKIE['nivel_acesso'] == '1') : ?>
-        <li><a href="/cadastros/relacoes/" class="main-text">Relações</a></li>
-      <?php endif; ?>
-      
+      <li><a href="/cadastros/relacoes/" class="main-text">Relações</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
