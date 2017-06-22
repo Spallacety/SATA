@@ -82,14 +82,15 @@
 <h4 class="main-text center">Relatórios de <?php echo $paciente['nome'] ?></h2>
 <hr>
 
+<div class="row center">
+  <a href="mylist.php?id=<?php echo $_GET['id']; ?>" class="btn-flat main-text btn-default">Minhas avaliações</a>
+</div>
+
 <div class="chart" id="grafico_geral"></div>
 
-<div class="container">
-  <div class="row center">
-    <br>
-    <a href="mylist.php?id=<?php echo $_GET['id']; ?>" class="btn blue white-text btn-default">Minhas avaliações</a>
-    <a href="index.php" class="btn blue white-text btn-default">Voltar</a>
-  </div>
+<div class="row center">
+  <br>
+  <a href="index.php" class="btn main-color white-text btn-default">Voltar</a>
 </div>
 
 <?php include(FOOTER_TEMPLATE); ?>

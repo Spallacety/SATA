@@ -187,7 +187,7 @@
     </p>
     <p>
       <input class="with-gap" name="q5" type="radio" id="q5-2" value="2" <?php echo ($resultado['q5'] == '2')?'checked':'' ?> />
-      <label for="q5-2" class="black-text">A criança apresenta menos interesse pelo brinquedo que acriança normal ou há um uso inapropriado para a idade (bater o brinquedo no chão ou colocá-lo na boca).</label>
+      <label for="q5-2" class="black-text">A criança apresenta menos interesse pelo brinquedo que a criança normal ou há um uso inapropriado para a idade (bater o brinquedo no chão ou colocá-lo na boca).</label>
     </p>
     <p>
       <input class="with-gap" name="q5" type="radio" id="q5-i2" value="2.5" <?php echo ($resultado['q5'] == '2.5')?'checked':'' ?> />
@@ -599,7 +599,7 @@
     <div class="row center">
       <br>
       <a href="#!" onClick="cars15to14();" class="btn orange white-text btn-primary">Voltar</a>
-      <button type="submit" class="btn blue white-text btn-primary">Salvar</button>
+      <button type="submit" class="btn green white-text btn-primary">Salvar</button>
     </div>
   </div>
 </form>
