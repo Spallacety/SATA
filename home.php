@@ -5,10 +5,10 @@
 <?php include(HEADER_TEMPLATE); ?>
 
 <div class="row center">
-  <h4 class="main-text center">Dashboard</h4>
+  <h4 class="main-text center">Sistema de Acompanhamento ao Tratamento de Autismo</h4>
   <hr>
 </div>
-<h5 class="center">Bem vindo, <a class="grey-text"><?php echo $_COOKIE['nome']?></a></h5>
+<h5 class="center">Bem vindo, <a class="grey-text"><?php echo $_COOKIE['nome']?></a>!</h5>
 
 <div class="row center">
   <br>
