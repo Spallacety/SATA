@@ -85,6 +85,12 @@
 <div class="row center">
   <a href="mylist.php?id=<?php echo $_GET['id']; ?>" class="btn-flat main-text btn-default">Minhas avaliações</a>
 </div>
+<div class="row center">
+  <a href="otherlist.php?id=<?php echo $_GET['id']; ?>" class="btn-flat main-text btn-default">Avaliações de outros profissionais</a>
+</div>
+<div class="row center">
+  <a href="/" class="btn-flat main-text btn-default">Relatórios</a>
+</div>
 
 <div class="chart" id="grafico_geral"></div>
 
