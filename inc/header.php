@@ -29,15 +29,17 @@
           <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
         </ul>
       <?php endif; ?>
-      <ul class="side-nav" id="mobile-menu">
-        <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
-          <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
-          <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
-          <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
-          <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
-        <?php endif; ?>
-        <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
-      </ul>
+      <?php if ($_COOKIE['nivel_acesso']) : ?>
+        <ul class="side-nav" id="mobile-menu">
+          <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
+            <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
+            <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
+            <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
+            <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
+          <?php endif; ?>
+          <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
+        </ul>
+      <?php endif; ?>
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
