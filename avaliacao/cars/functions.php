@@ -6,7 +6,6 @@ $resultados = array();
 $resultado = null;
 $paciente = null;
 $allcars = null;
-$minhasavaliacoes = null;
 
 function index() {
   global $resultados;
@@ -153,25 +152,4 @@ function findAnswer($questao, $valor){
   
   close_database($database);
   return $found;
-}
-
-function myList($id){
-  global $minhasavaliacoes;
-
-  $database = open_database();
-
-  try {
-      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " AND id_profissional = " . $_COOKIE['id_profissional'] " ORDER BY modificacao DESC";
-      $result = $database->query($sql);
-      
-      if ($result->num_rows > 0) {
-        $minhasavaliacoes = $result->fetch_all(MYSQLI_ASSOC);
-      }
-
-  } catch (Exception $e) {
-    $_SESSION['message'] = $e->GetMessage();
-    $_SESSION['type'] = 'danger';
-  }
-  
-  close_database($database);
 }
