@@ -24,7 +24,11 @@
   </div>    
 </div>
 
-<div class="row">
+<div id="botaodetalhes" class="row center">
+  <a href="#!" onClick="showDetails();" class="btn main-color white-text btn-default">Detalhes</a>
+</div>
+
+<div id="detalhes" class="row" style="display:none">
   <div class="col s12">
     <div class="input-field">
       <textarea disabled class="black-text materialize-textarea" type="text" id="q1"><?php echo $resultado['q1'] . ' - ' .findAnswer(1, $resultado['q1'])['significado'] ?></textarea>

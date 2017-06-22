@@ -317,3 +317,8 @@ function cars15to14(){
   document.getElementById('q14div').style.display = 'block';
   document.getElementById('q15div').style.display = 'none';
 }
+
+function showDetails(){
+  document.getElementById('detalhes').style.display = 'block';
+  document.getElementById('botaodetalhes').style.display = 'none';
+}
