@@ -37,6 +37,36 @@
       <label for="q2" class="main-text">Imitação (Questão 2/15)</label>
     </div>
   </div>
+  <div class="col s12">
+    <div class="input-field">
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q3"><?php echo $resultado['q3'] . ' - ' .findAnswer(3, $resultado['q3'])['significado'] ?></textarea>
+      <label for="q3" class="main-text"></label>
+    </div>
+  </div>
+  <div class="col s12">
+    <div class="input-field">
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q4"><?php echo $resultado['q4'] . ' - ' .findAnswer(4, $resultado['q4'])['significado'] ?></textarea>
+      <label for="q4" class="main-text"></label>
+    </div>
+  </div>
+  <div class="col s12">
+    <div class="input-field">
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q5"><?php echo $resultado['q5'] . ' - ' .findAnswer(5, $resultado['q5'])['significado'] ?></textarea>
+      <label for="q5" class="main-text"></label>
+    </div>
+  </div>
+  <div class="col s12">
+    <div class="input-field">
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q6"><?php echo $resultado['q6'] . ' - ' .findAnswer(6, $resultado['q6'])['significado'] ?></textarea>
+      <label for="q6" class="main-text"></label>
+    </div>
+  </div>
+  <div class="col s12">
+    <div class="input-field">
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q7"><?php echo $resultado['q7'] . ' - ' .findAnswer(7, $resultado['q7'])['significado'] ?></textarea>
+      <label for="q7" class="main-text"></label>
+    </div>
+  </div>
 </div>
   
   <div class="container">
