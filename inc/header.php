@@ -18,8 +18,8 @@
         <a href="/home.php" class="brand-logo center secondary-text">SATA</a>
       <?php else : ?>
         <a href="/home.php" class="brand-logo secondary-text">SATA</a>
+        <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
       <?php endif; ?>
-      <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
       <?php if ($_COOKIE['nivel_acesso']) : ?>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
@@ -29,17 +29,15 @@
           <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
         </ul>
       <?php endif; ?>
-      <?php if ($_COOKIE['nivel_acesso']) : ?>
-        <ul class="side-nav" id="mobile-menu">
-          <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
-            <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
-            <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
-            <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
-            <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
-          <?php endif; ?>
-          <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
-        </ul>
-      <?php endif; ?>
+      <ul class="side-nav" id="mobile-menu">
+        <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
+          <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
+          <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
+          <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
+          <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
+        <?php endif; ?>
+        <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
+      </ul>
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
