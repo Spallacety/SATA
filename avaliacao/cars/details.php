@@ -27,13 +27,13 @@
 <div class="row">
   <div class="col s12">
     <div class="input-field">
-      <textarea disabled class="black-text materialize-textarea" type="text" id="q1" value="<?php echo $resultado['q1'] . ' - ' .findAnswer(1, $resultado['q1'])['significado'] ?>" required>
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q1" value="<?php echo findAnswer(1, $resultado['q1'])['significado'] ?>" required>
       <label for="q1" class="main-text">Relacionamento interpessoa (Questão 1/15)</label>
     </div>
   </div>
   <div class="col s12">
     <div class="input-field">
-      <textarea disabled class="black-text materialize-textarea" type="text" id="q2" value="<?php echo $resultado['q2'] . ' - ' .findAnswer(2, $resultado['q2'])['significado'] ?>" required>
+      <textarea disabled class="black-text materialize-textarea" type="text" id="q2" value="<?php echo findAnswer(2, $resultado['q2'])['significado'] ?>" required>
       <label for="q2" class="main-text">Imitação (Questão 2/15)</label>
     </div>
   </div>
