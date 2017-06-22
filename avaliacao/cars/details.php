@@ -117,11 +117,8 @@
   </div>
 </div>
   
-  <div class="container">
-    <div class="row center">
-      <br>
-      <a href="index.php" class="btn main-text white-text btn-default">Voltar</a>
-    </div>
-  </div>
+<div class="row center">
+  <a href="index.php" class="btn main-color white-text btn-default">Voltar</a>
+</div>
 
 <?php include(FOOTER_TEMPLATE); ?>
