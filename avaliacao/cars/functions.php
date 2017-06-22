@@ -176,3 +176,8 @@ function myList($id){
 
   return $minhasavaliacoes;
 }
+
+function details($id){
+  global $resultado;
+  $resultado = find('avaliacoes', $id);
+}
