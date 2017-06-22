@@ -14,7 +14,11 @@
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <nav class="main-color" role="navigation">
     <div class="nav-wrapper container">
-      <a href="/home.php" class="brand-logo secondary-text">SATA</a>
+      <?php if (!$_COOKIE['nivel_acesso']) : ?>
+        <a href="/home.php" class="brand-logo center secondary-text">SATA</a>
+      <?php else : ?>
+        <a href="/home.php" class="brand-logo secondary-text">SATA</a>
+      <?php endif; ?>
       <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
       <?php if ($_COOKIE['nivel_acesso']) : ?>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
