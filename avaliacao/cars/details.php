@@ -38,7 +38,7 @@
 <div class="row">
   <div class="col s12">
     <div class="input-field">
-      <input disabled class="black-text" type="text" id="resultado" value="<?php echo $resultado['resultado'] . ' - ' . result($resultado['resultado']); ?>" required>
+      <input disabled class="black-text" type="text" id="resultado" value="<?php echo $resultado['resultado'] . ' - '; ?>" required>
       <label for="resultado" class="main-text">Resultado</label>
     </div>
   </div>
