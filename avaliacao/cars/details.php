@@ -38,7 +38,7 @@
 <div class="row">
   <div class="col s12">
     <div class="input-field">
-      <input disabled class="black-text" type="text" id="resultado" value="<?php echo $resultado['resultado']; ?>" required>
+      <input disabled class="black-text" type="text" id="resultado" value="<?php echo $resultado['resultado'] . ' - ' . result($resultado['resultado']); ?>" required>
       <label for="resultado" class="main-text">Resultado</label>
     </div>
   </div>
@@ -142,7 +142,11 @@
 </div>
   
 <div class="row center">
-  <a href="index.php" class="btn main-color white-text btn-default">Voltar</a>
+  <?php if ($resultado['id_profissional'] != $_COOKIE['id_profissional']) : ?>
+    <a href="otherlist.php" class="btn main-color white-text btn-default">Voltar</a>
+  <?php else: ?>
+    <a href="mylist.php" class="btn main-color white-text btn-default">Voltar</a>
+  <?php endif; ?>
 </div>
 
 <?php include(FOOTER_TEMPLATE); ?>

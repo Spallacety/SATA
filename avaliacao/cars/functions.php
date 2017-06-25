@@ -204,3 +204,12 @@ function details($id){
   global $resultado;
   $resultado = find('avaliacoes', $id);
 }
+
+function result($resultado){
+  if (int($resultado) >= 15 && int($resultado) =< 30){
+    return "Sem autismo";
+  }
+  else{
+    return "Autismo";
+  }
+}
