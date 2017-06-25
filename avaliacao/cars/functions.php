@@ -153,7 +153,7 @@ function findAnswer($questao, $valor){
   }
   
   close_database($database);
-  return $found;
+  return $found['significado'];
 }
 
 function myList($id){
