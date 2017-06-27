@@ -206,7 +206,7 @@ function details($id){
 }
 
 function result($resultado){
-  if (true){
+  if (float($resultado) < 30){
     return "Sem autismo";
   }
   else{
