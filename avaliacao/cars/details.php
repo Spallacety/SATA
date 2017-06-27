@@ -38,7 +38,7 @@
 <div class="row">
   <div class="col s12">
     <div class="input-field">
-      <input disabled class="black-text" type="text" id="resultado" value="<?php echo $resultado['resultado'] . ' - '; ?>" required>
+      <input disabled class="black-text" type="text" id="resultado" value="<?php echo $resultado['resultado'] . ' - ' . result($resultado['resultado']); ?>" required>
       <label for="resultado" class="main-text">Resultado</label>
     </div>
   </div>
@@ -52,7 +52,7 @@
   <div class="col s12">
     <div class="input-field">
       <textarea disabled class="black-text materialize-textarea" type="text" id="q1"><?php echo $resultado['q1'] . ' - ' .findAnswer(1, $resultado['q1']) ?></textarea>
-      <label for="q1" class="main-text">Relacionamento interpessoa (Questão 1/15)</label>
+      <label for="q1" class="main-text">Relacionamento interpessoal (Questão 1/15)</label>
     </div>
   </div>
   <div class="col s12">
