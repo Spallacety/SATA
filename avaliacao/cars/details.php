@@ -18,7 +18,7 @@
 
   <div class="col s12 m4 l4">
     <div class="input-field">
-      <input disabled class="black-text" type="text" id="data" value="<?php echo $resultado['modificacao']; ?>" required>
+      <input disabled class="black-text" type="text" id="data" value="<?php echo date("d/m/Y", strtotime($resultado['modificacao'])); ?>" required>
       <label for="data" class="main-text">Data</label>
     </div>
   </div>
