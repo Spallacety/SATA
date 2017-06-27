@@ -209,9 +209,6 @@ function result($resultado){
   if ($resultado >= 15 && $resultado =< 30){
     return "Sem autismo";
   }
-  elseif ($resultado >= 31 && $resultado =< 36){
-    return "Autismo leve";
-  }
   else{
     return "Autismo severo";
   }
