@@ -206,10 +206,10 @@ function details($id){
 }
 
 function result($resultado){
-  if ($resultado =< 30){
+  if ($resultado <= 30){
     return "Sem autismo";
   }
-  if ($resultado =< 36){
+  if ($resultado <= 36){
     return "Autismo leve";
   }
   else{
