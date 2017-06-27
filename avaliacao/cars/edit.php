@@ -148,7 +148,7 @@
     </p>
     <p>
       <input class="with-gap" name="q4" type="radio" id="q4-2" value="2" <?php echo ($resultado['q4'] == '2')?'checked':'' ?> />
-      <label for="q4-2" class="black-text"> Algumas peculiaridades “menores” podem estar presentes como movimentos desajeitados, repetitivos, coordenação motora pobre, ou presença rara de movimentos não usuais descritos no próximo item.</label>
+      <label for="q4-2" class="black-text">Algumas peculiaridades "menores" podem estar presentes como movimentos desajeitados, repetitivos, coordenação motora pobre, ou presença rara de movimentos não usuais descritos no próximo item.</label>
     </p>
     <p>
       <input class="with-gap" name="q4" type="radio" id="q4-i2" value="2.5" <?php echo ($resultado['q4'] == '2.5')?'checked':'' ?> />
