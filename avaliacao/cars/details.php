@@ -25,7 +25,7 @@
 </div>
 
 <div id="botaodetalhes" class="row center">
-  <a href="#!" onClick="showDetails();" class="btn main-color white-text btn-default">Detalhes</a>
+  <a href="#!" onClick="showDetails();" class="btn-flat main-text btn-default">Detalhes</a>
 </div>
 
 <div id="detalhes" class="row" style="display:none">
