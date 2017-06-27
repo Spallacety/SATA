@@ -20,7 +20,7 @@
 		<?php foreach ($outrasavaliacoes as $avaliacao) : ?>
 		<tr>
 			<td>
-        <?php echo $avaliacao['modificacao']; ?>
+        <?php echo date("d/m/Y", strtotime($avaliacao['modificacao'])); ?>
    		</td>
       <td>
         <?php echo find('profissionais', $avaliacao['id_profissional'])['nome']; ?>

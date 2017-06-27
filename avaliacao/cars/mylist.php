@@ -19,7 +19,7 @@
 		<?php foreach ($minhasavaliacoes as $avaliacao) : ?>
 		<tr>
 			<td>
-        <?php echo $avaliacao['modificacao']; ?>
+        <?php echo date("d/m/Y", strtotime($avaliacao['modificacao'])); ?>
    		</td>
       <td class="row vallign right-align">
         <div class="btn-group-h">
