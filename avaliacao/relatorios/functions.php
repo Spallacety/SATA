@@ -9,7 +9,7 @@ $relatorio = null;
  */
 function index() {
 	global $relatorios;
-	$relatorios = findLast(2);
+	$relatorios = findLast(2, 7);
 }
 
 /**
@@ -90,14 +90,14 @@ function findAnswer($questao, $valor){
   return $found;
 }
 
-function findLast($id){
+function findLast($id, $limit){
   
   $database = open_database();
   $found = null;
 
   try {
     if ($id) {
-      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY modificacao DESC LIMIT 5";
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY modificacao DESC LIMIT " . $limit;
       $result = $database->query($sql);
       
       $found = array();

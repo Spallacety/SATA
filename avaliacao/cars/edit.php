@@ -203,7 +203,7 @@
     </p>
     <p>
       <input class="with-gap" name="q5" type="radio" id="q5-4" value="4" <?php echo ($resultado['q5'] == '4')?'checked':'' ?> />
-      <label for="q5-4" class="black-text">A criança pode apresentar os sintomas descritos acima porém com uma intensidade e frequência maior. Há significativa dificuldade em distrair a criança quando está “ocupada” com estas atividades inadequadas e é extremamente difícil modificar o uso inadequado do uso dos objetos.</label>
+      <label for="q5-4" class="black-text">A criança pode apresentar os sintomas descritos acima porém com uma intensidade e frequência maior. Há significativa dificuldade em distrair a criança quando está "ocupada" com estas atividades inadequadas e é extremamente difícil modificar o uso inadequado do uso dos objetos.</label>
     </p>
 
     <div class="row center">
