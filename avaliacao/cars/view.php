@@ -89,7 +89,8 @@
   <a href="otherlist.php?id=<?php echo $_GET['id']; ?>" class="btn-flat main-text btn-default">Avaliações de outros profissionais</a>
 </div>
 <div class="row center">
-  <a href="../relatorios/index.php?id=<?php echo $_GET['id']; ?>" class="btn-flat main-text btn-default">Relatórios</a>
+  <a href="../relatorios/index.php?id=<?php echo $_GET['id']; ?>&limit=5" class="btn-flat main-text btn-default">Relatórios 5 ultimas</a>
+  <a href="../relatorios/index.php?id=<?php echo $_GET['id']; ?>&limit=10" class="btn-flat main-text btn-default">Relatórios 10 ultimas</a>
 </div>
 
 <div class="chart" id="grafico_geral"></div>

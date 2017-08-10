@@ -54,9 +54,9 @@ function edit() {
 /**
  *  Visualização de um Relatório
  */
-function view($id = null) {
-  global $relatorio;
-  $relatorio = find('relatorios', $id);
+function view($id = null, $limit = null) {
+  global $relatorios;
+  $relatorios = findLast($id, $limit);
 }
 
 
