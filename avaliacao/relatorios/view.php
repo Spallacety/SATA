@@ -61,11 +61,13 @@
     var dados = new google.visualization.DataTable();
     dados.addColumn('string', 'Data');
     dados.addColumn('number', 'Resposta');
+    dados.addColumn({type: 'string', role: 'tooltip'});
     dados.addRows([
       <?php
         if ($relatorios) :
           foreach ($relatorios as $relatorio) :
-            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q2'] . "],";
+            $string = findAnswer(2, $relatorio['q2']);
+            echo "['" . $relatorio['modificacao'] . "', " . $relatorio['q2'] . ", '" . $string['significado'] . "'],";
           endforeach;
         endif;
       ?>
