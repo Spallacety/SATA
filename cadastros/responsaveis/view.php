@@ -42,14 +42,10 @@
 <div class="row">
   <div class="col s12 m10 l10">
     <div class="input-field">
-    	<?php if ($profissoes) : ?>
-      <?php foreach ($profissoes as $profissao) : ?>
-      <?php if ($responsavel['id_profissao'] == $profissao['id']) : ?>
-	      <input disabled type="text" class="black-text" id="profissao" name="responsavel['profissao']" value="<?php echo $profissao['descricao']; ?>" required>
-	      <label for="profissao" class="main-text">Profissão</label>
-      <?php endif; ?>
-      <?php endforeach; ?>
-      <?php endif; ?>
+      <?php $relacao = find_relacao($_GET['id']); ?>
+      <?php $paciente = find('pacientes', $relacao['id_paciente']); ?>
+      <input disabled type="text" class="black-text" id="paciente" name="relacao['id_paciente']" value="<?php echo $paciente['nome']; ?>" required>
+      <label for="paciente" class="main-text">Telefone</label>
     </div>
   </div>
 
