@@ -29,7 +29,6 @@
 	<tbody>
 		<?php if ($profissoes) : ?>
 		<?php foreach ($profissoes as $profissao) : ?>
-		<?php if ($profissao['id'] > 1) : ?>
 		<tr>
 			<td><?php echo $profissao['descricao']; ?></td>
 			<td class="row vallign right-align">
@@ -40,7 +39,6 @@
 				</div>
 			</td>
 		</tr>
-		<?php endif; ?>
 		<?php endforeach; ?>
 		<?php else : ?>
 		<tr>
