@@ -46,7 +46,9 @@
         <option></option>
         <?php if ($profissoes) : ?>
         <?php foreach ($profissoes as $profissao) : ?>
+        <?php if ($profissao['id'] > 2 ) : ?>
           <option <?php if ($profissional['id_profissao'] == $profissao['id']) echo ' selected '; ?> value="<?php echo $profissao['id']; ?>"><?php echo $profissao['descricao']; ?></option>
+        <?php endif; ?>
         <?php endforeach; ?>
         <?php endif; ?>
       </select>
@@ -58,7 +60,9 @@
         <option></option>
         <?php if ($instituicoes) : ?>
         <?php foreach ($instituicoes as $instituicao) : ?>
+        <?php if ($instituicao['id'] > 2 ) : ?>
           <option <?php if ($profissional['id_instituicao'] == $instituicao['id']) echo ' selected '; ?> value="<?php echo $instituicao['id']; ?>"><?php echo $instituicao['descricao']; ?></option>
+        <?php endif; ?>
         <?php endforeach; ?>
         <?php endif; ?>
       </select>

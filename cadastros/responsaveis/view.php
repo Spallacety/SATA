@@ -45,7 +45,7 @@
       <?php $relacao = find_relacao($_GET['id']); ?>
       <?php $paciente = find('pacientes', $relacao['id_paciente']); ?>
       <input disabled type="text" class="black-text" id="paciente" name="relacao['id_paciente']" value="<?php echo $paciente['nome']; ?>" required>
-      <label for="paciente" class="main-text">Telefone</label>
+      <label for="paciente" class="main-text">Paciente</label>
     </div>
   </div>
 
