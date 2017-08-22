@@ -133,7 +133,7 @@ function get_last_id( $table = null ){
   $found = null;
   try {
     $sql = "SELECT * FROM " . $table . " ORDER BY DESC LIMIT 1";
-    $result = $database->query($sql)->fetch_assoc();      
+    $result = $database->query($sql);      
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
     $_SESSION['type'] = 'danger';
