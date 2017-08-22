@@ -31,6 +31,7 @@
 	<tbody>
 		<?php if ($profissionais) : ?>
 		<?php foreach ($profissionais as $profissional) : ?>
+    <?php if ($profissional['id_profissao'] > 2 ) : ?>
 		<tr>
 			<td><?php echo $profissional['nome']; ?></td>		
    		<td>
@@ -45,6 +46,7 @@
 				</div>
 			</td>
 		</tr>
+    <?php endif; ?>
 		<?php endforeach; ?>
 		<?php else : ?>
 		<tr>
