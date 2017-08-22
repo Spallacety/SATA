@@ -88,22 +88,11 @@ function find_responsaveis() {
   $database = open_database();
   $found = null;
   try {
-    if ($id) {
-      $sql = "SELECT * FROM profissionais WHERE id_profissao = '2'";
-      $result = $database->query($sql);
-      
-      if ($result->num_rows > 0) {
-        $found = $result->fetch_assoc();
-      }
-      
-    } else {
-      
-      $sql = "SELECT * FROM " . $table;
-      $result = $database->query($sql);
-      
-      if ($result->num_rows > 0) {
-        $found = $result->fetch_all(MYSQLI_ASSOC);
-      }
+    $sql = "SELECT * FROM profissionais WHERE id_profissao = 2";
+    $result = $database->query($sql);
+    
+    if ($result->num_rows > 0) {
+      $found = $result->fetch_assoc();
     }
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
