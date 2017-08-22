@@ -88,12 +88,14 @@ function find_responsaveis() {
   $database = open_database();
   $found = null;
   try {
-    $sql = "SELECT * FROM profissionais WHERE id_profissao = '2'";
+    $sql = "SELECT * FROM profissionais WHERE id_profissao = 2";
     $result = $database->query($sql);
     
-    if ($result->num_rows > 0) {
-      $found = $result->fetch_assoc();
+    $found = array();
+    while ($row = $result->fetch_assoc()) {
+      array_push($found, $row);
     }
+      
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
     $_SESSION['type'] = 'danger';
