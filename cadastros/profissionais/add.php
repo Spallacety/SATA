@@ -46,7 +46,7 @@
         <option></option>
         <?php if ($profissoes) : ?>
         <?php foreach ($profissoes as $profissao) : ?>
-        <?php if !(in_array($profissao['id'], array('1', '2'))) : ?>
+        <?php if ($profissao['id'] > 2 ) : ?>
           <option value="<?php echo $profissao['id']; ?>"><?php echo $profissao['descricao']; ?></option>
         <?php endif; ?>
         <?php endforeach; ?>
@@ -60,7 +60,9 @@
         <option></option>
         <?php if ($instituicoes) : ?>
         <?php foreach ($instituicoes as $instituicao) : ?>
+        <?php if ($instituicao['id'] > 2 ) : ?>
           <option value="<?php echo $instituicao['id']; ?>"><?php echo $instituicao['descricao']; ?></option>
+        <?php endif; ?>
         <?php endforeach; ?>
         <?php endif; ?>
       </select>
