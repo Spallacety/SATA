@@ -40,6 +40,20 @@
     </div>
   </div>
 
+  <div class="row">   
+    <div class="input-field col s12">
+      <select class="select2" id="profissao" name="relacao['id_paciente']" required>
+        <option></option>
+        <?php if ($pacientes) : ?>
+        <?php foreach ($pacientes as $paciente) : ?>
+          <option value="<?php echo $paciente['id']; ?>"><?php echo $paciente['nome']; ?></option>
+        <?php endforeach; ?>
+        <?php endif; ?>
+      </select>
+      <label for="profissao">Paciente</label>
+    </div>
+  </div>
+
   <fieldset>
     <legend class="grey-text"> Para uso no sistema </legend>
     <div class="row">

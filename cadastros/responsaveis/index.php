@@ -23,8 +23,8 @@
 <table class="highlight">
 	<thead>
 		<tr>
-			<th width="45%">Nome</th>
-			<th width="15%">Paciente</th>
+			<th width="30%">Nome</th>
+			<th width="30%">Paciente</th>
 			<th width="40%" class="right-align"></th>
 		</tr>
 	</thead>
@@ -34,7 +34,7 @@
 		<tr>
 			<td><?php echo $responsavel['nome']; ?></td>		
    		<td>
-   			<?php echo $responsavel['nome']?>
+   			<?php echo $responsavel['nome']; ?>
    		</td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">

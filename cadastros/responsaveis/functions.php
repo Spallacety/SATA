@@ -4,14 +4,11 @@ require_once('../../auth.php');
 require_once(DBAPI);
 $responsaveis = null;
 $responsavel = null;
-$instituicoes = null;
-$profissoes = null;
+$pacientes = null;
 
 function initAttr () {
-  global $instituicoes;
-  $instituicoes = find_all('instituicoes');
-  global $profissoes;
-  $profissoes = find_all('profissoes');
+  global $pacientes;
+  $pacientes = find_all('pacientes');
 }
 
 function index() {
@@ -36,6 +33,13 @@ function add() {
     $responsavel['id_instituicao'] = '2';
     
     save('profissionais', $responsavel);
+
+    $relacao = $_POST['relacao'];
+    $relacao['id_profissional'] = get_last_id('profissionais');
+    $relacao['status'] = 1;
+    
+    save('relacoes', $relacao);
+
     header('location: index.php');
   }
 }

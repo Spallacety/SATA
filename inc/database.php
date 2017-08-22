@@ -127,3 +127,18 @@ function remove( $table = null, $id = null ) {
   }
   close_database($database);
 }
+
+function get_last_id( $table = null ){
+  $database = open_database();
+  $found = null;
+  try {
+    $sql = "SELECT * FROM " . $table . " ORDER BY DESC LIMIT 1";
+    $result = $database->query($sql)->fetch_assoc();      
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+  return $result['id'];
+}

@@ -45,7 +45,7 @@
       <li><a href="/cadastros/profissionais/" class="main-text">Profissionais</a></li>
       <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
       <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
-      <li><a href="/cadastros/responsáveis/" class="main-text">Responsáveis</a></li>
+      <li><a href="/cadastros/responsaveis/" class="main-text">Responsáveis</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
