@@ -109,17 +109,23 @@ function find_responsaveis() {
   return $found;
 }
 
-function find_relacao($id_profissional ){
+function find_relacao( $id_profissional ){
   $database = open_database();
   $found = null;
+  
   try {
     $sql = "SELECT * FROM relacoes WHERE id_profissional = " . $id_profissional;
-    $result = $database->query($sql);      
+    $result = $database->query($sql);
+    
+    if ($result->num_rows > 0) {
+      $found = $result->fetch_assoc();
+    }
+
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
     $_SESSION['type'] = 'danger';
   }
   
   close_database($database);
-  return $result;
+  return $found;
 }
