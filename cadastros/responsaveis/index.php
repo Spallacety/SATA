@@ -34,7 +34,8 @@
 		<tr>
 			<td><?php echo $responsavel['nome']; ?></td>		
    		<td>
-   			<?php echo $responsavel['nome']; ?>
+        <?php $paciente = find('pacientes', $responsavel['id_paciente']);?>
+   			<?php echo $paciente['id_nome']; ?>
    		</td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
