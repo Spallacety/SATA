@@ -46,7 +46,7 @@
         <option></option>
         <?php if ($profissoes) : ?>
         <?php foreach ($profissoes as $profissao) : ?>
-        <?php if !(in_array($profissao['id'], ['1', '2'])) : ?>
+        <?php if !(in_array($profissao['id'], array('1', '2'))) : ?>
           <option value="<?php echo $profissao['id']; ?>"><?php echo $profissao['descricao']; ?></option>
         <?php endif; ?>
         <?php endforeach; ?>
