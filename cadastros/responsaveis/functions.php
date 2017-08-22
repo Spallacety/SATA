@@ -88,7 +88,7 @@ function find_responsaveis() {
   $database = open_database();
   $found = null;
   try {
-    $sql = "SELECT * FROM profissionais WHERE id_profissao = 2";
+    $sql = "SELECT * FROM profissionais WHERE id_profissao = '2'";
     $result = $database->query($sql);
     
     if ($result->num_rows > 0) {

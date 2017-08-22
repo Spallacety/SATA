@@ -31,12 +31,10 @@
 	<tbody>
 		<?php if ($responsaveis) : ?>
 		<?php foreach ($responsaveis as $responsavel) : ?>
-    <?php if ($responsavel['id'] > 1) : ?>
 		<tr>
 			<td><?php echo $responsavel['nome']; ?></td>		
    		<td>
-   			<?php $profissao = find('profissoes', $responsavel['id_profissao']);?>
-   			<?php echo $profissao['descricao']?>
+   			<?php echo $responsavel['nome']?>
    		</td>
 			<td class="row vallign right-align">
 				<div class="btn-group-h">
@@ -46,7 +44,6 @@
 				</div>
 			</td>
 		</tr>
-    <?php endif; ?>
 		<?php endforeach; ?>
 		<?php else : ?>
 		<tr>
