@@ -39,8 +39,6 @@
       </div>
     </div>
   </div>
-
-  </div>
   
   <fieldset>
     <legend class="grey-text"> Para uso no sistema </legend>
