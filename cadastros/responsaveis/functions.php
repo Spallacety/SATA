@@ -17,10 +17,6 @@ function index() {
 	$responsaveis = find_responsaveis('profissionais');
 }
 
-/**
- *  Cadastro de Profissionais
- */
-
 function add() {
   if (!empty($_POST['responsavel'])) {
     
@@ -35,22 +31,16 @@ function add() {
     
     save('profissionais', $responsavel);
 
-    if (!empty($_POST['relacao'])) {
-      $relacao = $_POST['relacao'];
-      $relacao['id_profissional'] = get_last_id('profissionais');
-      $relacao['status'] = 1;
-      
-      save('relacoes', $relacao);
-      header('location: view.php');
-    }
+    $relacao['id_paciente'] = $_POST['id_paciente'];
+    $relacao['id_profissional'] = get_last_id('profissionais');
+    $relacao['status'] = 1;
+    
+    save('relacoes', $relacao);
 
     header('location: index.php');
   }
 }
 
-/**
- *	Atualizacao/Edicao de Profissionais
- */
 function edit() {
   $now = date_create('now', new DateTimeZone('America/Sao_Paulo'));
   if (isset($_GET['id'])) {
@@ -72,19 +62,11 @@ function edit() {
   }
 }
 
-
-/**
- *  Visualização de um responsavel
- */
 function view($id = null) {
   global $responsavel;
   $responsavel = find('profissionais', $id);
 }
 
-
-/**
- *  Exclusão de um responsavel
- */
 function delete($id = null) {
   global $responsavel;
   $responsavel = remove('profissionais', $id);
