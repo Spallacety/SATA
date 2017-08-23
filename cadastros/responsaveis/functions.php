@@ -35,13 +35,13 @@ function add() {
     
     save('profissionais', $responsavel);
 
-    if (!empty($_POST['relacao'])) {
-      $relacao = $_POST['relacao'];
+    if (!empty($_POST['id_paciente'])) {
+      $relacao['id_paciente'] = $_POST['id_paciente'];
       $relacao['id_profissional'] = get_last_id('profissionais');
       $relacao['status'] = 1;
       
       save('relacoes', $relacao);
-      header('location: /');
+      header('location: view.php');
     }
 
     header('location: index.php');
