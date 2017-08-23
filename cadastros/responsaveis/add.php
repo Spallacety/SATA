@@ -42,7 +42,7 @@
 
   <div class="row">   
     <div class="input-field col s12">
-      <select class="select2" id="relacao" name="relacao['id_paciente']" required>
+      <select class="select2" id="relacao" name="id_paciente" required>
         <option></option>
         <?php if ($pacientes) : ?>
         <?php foreach ($pacientes as $paciente) : ?>
