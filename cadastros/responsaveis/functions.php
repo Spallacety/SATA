@@ -31,8 +31,8 @@ function add() {
     
     save('profissionais', $responsavel);
 
-    $relacao['id_paciente'] = $_POST['id_paciente'];
-    $relacao['id_profissional'] = get_last_id('profissionais');
+    $relacao['id_paciente'] = $_POST['idPaciente'];
+    $relacao['id_profissional'] = '1';
     $relacao['status'] = 1;
     
     save('relacoes', $relacao);
