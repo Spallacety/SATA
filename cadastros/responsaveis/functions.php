@@ -5,6 +5,7 @@ require_once(DBAPI);
 $responsaveis = null;
 $responsavel = null;
 $pacientes = null;
+$relacao = null;
 
 function initAttr () {
   global $pacientes;

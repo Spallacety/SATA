@@ -78,6 +78,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -115,6 +116,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -152,6 +154,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -189,6 +192,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -226,6 +230,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -263,6 +268,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -300,6 +306,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -337,6 +344,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -374,6 +382,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -411,6 +420,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -448,6 +458,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -485,6 +496,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -522,6 +534,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
@@ -559,6 +572,7 @@
         width:700,
         height:300,
         legend: { position: "none" },
+        tooltip: {isHtml: true},
         colors: ['#1a237e'],
         vAxis: {
           minValue: 0, 
