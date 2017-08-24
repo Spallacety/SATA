@@ -31,14 +31,18 @@ function add() {
     
     save('profissionais', $responsavel);
 
-    $relacao['id_paciente'] = $_POST['idPaciente'];
-    $relacao['id_profissional'] = '1';
-    $relacao['status'] = 1;
-    
-    save('relacoes', $relacao);
+    makeRelation($_POST['idPaciente']);
 
     header('location: index.php');
   }
+}
+
+function makeRelation($relation){
+  $relacao['id_paciente'] = $relation;
+  $relacao['id_profissional'] = 1;
+  $relacao['status'] = 1;
+  
+  save('relacoes', $relacao);
 }
 
 function edit() {
