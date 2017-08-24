@@ -30,11 +30,18 @@ function add() {
     $responsavel['id_instituicao'] = '2';
     
     save('profissionais', $responsavel);
-
-    makeRelation($_POST['idPaciente']);
-
+  
+  }
+  
+  if (!empty($_POST['relacao'])) {
+    
+    $relacao = $_POST['relacao'];
+    $relacao['status'] = 1;
+    
+    save('relacoes', $relacao);
     header('location: index.php');
   }
+  
 }
 
 function makeRelation($relation){

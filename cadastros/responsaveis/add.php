@@ -42,7 +42,7 @@
 
   <div class="row">   
     <div class="input-field col s12">
-      <select class="select2" id="idPaciente" name="idPaciente" required>
+      <select class="select2" id="id_paciente" name="relacao['id_paciente']" required>
         <option></option>
         <?php if ($pacientes) : ?>
         <?php foreach ($pacientes as $paciente) : ?>
@@ -50,9 +50,16 @@
         <?php endforeach; ?>
         <?php endif; ?>
       </select>
-      <label for="idPaciente">Paciente</label>
+      <label for="id_paciente">Paciente</label>
     </div>
   </div>
+
+    <div class="col s12 m6 l6">
+      <div class="input-field">
+        <input type="text" id="id_profissional" name="relacao['id_profissional']" required>
+        <label for="id_profissional">ID Profissional</label>
+      </div>
+    </div>
 
   <fieldset>
     <legend class="grey-text"> Para uso no sistema </legend>
