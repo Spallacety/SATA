@@ -54,13 +54,6 @@
     </div>
   </div>
 
-    <div class="col s12 m6 l6">
-      <div class="input-field">
-        <input type="text" id="id_profissional" name="relacao['id_profissional']" required>
-        <label for="id_profissional">ID Profissional</label>
-      </div>
-    </div>
-
   <fieldset>
     <legend class="grey-text"> Para uso no sistema </legend>
     <div class="row">

@@ -31,25 +31,15 @@ function add() {
     
     save('profissionais', $responsavel);
   
-  }
-  
-  if (!empty($_POST['relacao'])) {
-    
     $relacao = $_POST['relacao'];
+    $relacao['id_profissional'] = get_last_id('profissionais');
     $relacao['status'] = 1;
     
     save('relacoes', $relacao);
+
     header('location: index.php');
   }
   
-}
-
-function makeRelation($relation){
-  $relacao['id_paciente'] = $relation;
-  $relacao['id_profissional'] = 1;
-  $relacao['status'] = 1;
-  
-  save('relacoes', $relacao);
 }
 
 function edit() {
@@ -97,27 +87,6 @@ function find_responsaveis() {
       array_push($found, $row);
     }
       
-  } catch (Exception $e) {
-    $_SESSION['message'] = $e->GetMessage();
-    $_SESSION['type'] = 'danger';
-  }
-  
-  close_database($database);
-  return $found;
-}
-
-function find_relacao( $id_profissional ){
-  $database = open_database();
-  $found = null;
-  
-  try {
-    $sql = "SELECT * FROM relacoes WHERE id_profissional = " . $id_profissional;
-    $result = $database->query($sql);
-    
-    if ($result->num_rows > 0) {
-      $found = $result->fetch_assoc();
-    }
-
   } catch (Exception $e) {
     $_SESSION['message'] = $e->GetMessage();
     $_SESSION['type'] = 'danger';
