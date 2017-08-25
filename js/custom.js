@@ -59,6 +59,12 @@ function abrirModalApagarProfissional(idItem, nomeItem){
   $('#modal-apagar-profissional').modal('open');
 }
 
+function abrirModalDesvincularProfissional(idItem, nomeItem){
+  document.getElementById("itemApagar").innerHTML = nomeItem;
+  document.getElementById("deleteBtn").href="delete.php?id="+idItem; 
+  $('#modal-desvincular-profissional').modal('open');
+}
+
 function abrirModalApagarResponsavel(idItem, nomeItem){
   document.getElementById("itemApagar").innerHTML = nomeItem;
   document.getElementById("deleteBtn").href="delete.php?id="+idItem; 

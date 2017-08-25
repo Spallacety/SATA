@@ -1,6 +1,6 @@
 <?php 
 	require_once('functions.php'); 
-	view_detail($_GET['id']);
+	view($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
@@ -94,6 +94,9 @@
 <div class="container">
   <div class="row center">
     <br>
+    <a href="list_professionals.php" class="btn blue white-text btn-default">Profissionais</a>
+  </div>
+  <div class="row center">
     <a href="/" class="btn blue white-text btn-default">Voltar</a>
   </div>
 </div>

@@ -96,8 +96,3 @@ function find_responsaveis() {
   close_database($database);
   return $found;
 }
-
-function view_detail($id = null) {
-  global $paciente;
-  $paciente = find('pacientes', $id);
-}
