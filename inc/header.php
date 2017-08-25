@@ -18,15 +18,15 @@
         <a href="/home.php" class="brand-logo center secondary-text">SATA</a>
       <?php else : ?>
         <a href="/home.php" class="brand-logo secondary-text">SATA</a>
-        <a href="#" data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
+        <a data-activates="mobile-menu" class="button-collapse secondary-text"><i class="material-icons">menu</i></a>
       <?php endif; ?>
       <?php if ($_COOKIE['nivel_acesso']) : ?>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
-            <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button secondary-text" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
           <?php endif; ?>
-          <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a class="dropdown-button secondary-text" href="#!" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
+          <li><a class="dropdown-button secondary-text" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button secondary-text" data-activates="dropdownGeral"><i class="material-icons">more_vert</i></a></li>
         </ul>
       <?php endif; ?>
       <ul class="side-nav" id="mobile-menu">
@@ -45,11 +45,15 @@
       <li><a href="/cadastros/profissionais/" class="main-text">Profissionais</a></li>
       <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
       <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
-      <li><a href="/cadastros/responsaveis/" class="main-text">Responsáveis</a></li>
+      <li><a href="/responsavel/" class="main-text">Responsáveis</a></li>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
-      <li><a href="/avaliacao/cars/" class="main-text">CARS</a></li>
+      <?php if ($_COOKIE['id_profissao'] == '2') : ?>
+        <li><a href="/responsavel/cars/" class="main-text">CARS</a></li>
+      <?php else: ?>
+        <li><a href="/avaliacao/cars/" class="main-text">CARS</a></li>
+      <?php endif; ?>
     </ul>
 
     <ul id="dropdownGeral" class="dropdown-content">

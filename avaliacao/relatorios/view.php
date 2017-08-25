@@ -1,6 +1,5 @@
 <?php
     require_once('functions.php');
-    include("../../fusioncharts.php");
     view($_GET['id'], $_GET['limit']);
 ?>
 

@@ -19,7 +19,7 @@
     if ($responsavel['id_profissao'] == '2') {
       $relacao = find_relacao($responsavel['id']);
       $paciente = find('pacientes', $relacao['id_paciente']);
-      echo '<div class="row center"><a href="cadastros/responsaveis/view_detail.php?id=' . $paciente['id'] . '" class="btn green white-text btn-default">Info de ' . $paciente['nome'] . '</a></div>';
+      echo '<div class="row center"><a href="responsavel/view_detail.php?id=' . $paciente['id'] . '" class="btn green white-text btn-default">Info de ' . $paciente['nome'] . '</a></div>';
     }
     ?>
   <a href="logout.php" class="btn red white-text btn-default">Logout</a>

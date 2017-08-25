@@ -1,27 +1,12 @@
 <?php 
 	require_once('functions.php'); 
-	view($_GET['id']);
+	view_detail($_GET['id']);
 ?>
 
 <?php include(HEADER_TEMPLATE); ?>
 
 <h4 class="main-text center">Visualizar Informações</h2>
 <hr>
-
-<div class="row">
-  <div class="col s12">
-    <ul class="tabs">
-      <li class="tab col s3"><a class="active" href="#test1">Dados Gerais</a></li>
-      <li class="tab col s3"><a href="#test2">Dados Clinicos</a></li>
-      <li class="tab col s3"><a href="#test3">Avaliacoes</a></li>
-      <li class="tab col s3"><a href="#test4">Test 4</a></li>
-    </ul>
-  </div>
-</div>
-
-<?php if (!empty($_SESSION['message'])) : ?>
-	<div class="alert alert-<?php echo $_SESSION['type']; ?>"><?php echo $_SESSION['message']; ?></div>
-<?php endif; ?>
 
 <div class="row">
   <div class="col s12 m7 l7">
@@ -109,8 +94,7 @@
 <div class="container">
   <div class="row center">
     <br>
-      <a href="edit.php?id=<?php echo $paciente['id']; ?>" class="btn blue white-text btn-primary">Editar</a>
-      <a href="index.php" class="btn blue white-text btn-default">Voltar</a>
+    <a href="/" class="btn blue white-text btn-default">Voltar</a>
   </div>
 </div>
 

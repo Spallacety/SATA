@@ -1,10 +1,11 @@
 <?php
-require_once('../../config.php');
-require_once('../../auth.php');
+require_once('../config.php');
+require_once('../auth.php');
 require_once(DBAPI);
 $responsaveis = null;
 $responsavel = null;
 $pacientes = null;
+$paciente = null;
 $relacao = null;
 
 function initAttr () {
@@ -94,4 +95,9 @@ function find_responsaveis() {
   
   close_database($database);
   return $found;
+}
+
+function view_detail($id = null) {
+  global $paciente;
+  $paciente = find('pacientes', $id);
 }

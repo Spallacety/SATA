@@ -94,22 +94,6 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col s12 m8 l8">
-      <div class="input-field">
-        <input type="text" id="responsavel" name="paciente['responsavel']" value="<?php echo $paciente['responsavel']; ?>" required>
-        <label for="responsavel">Responsável</label>
-      </div>
-    </div>
-
-    <div class="col s12 m4 l4">
-      <div class="input-field">
-        <input type="text" class="celular" maxlength="2" id="celresp" name="paciente['celresp']" value="<?php echo $paciente['celresp']; ?>" required>
-        <label for="celresp">Cel. Responsável</label>
-      </div>
-    </div>
-  </div>
-  
   <div class="container">
     <div class="row center">
       <br>

@@ -18,14 +18,30 @@ function index() {
  */
 
 function add() {
-  if (!empty($_POST['paciente'])) {
+  if (!empty($_POST['paciente']) and !empty($_POST['responsavel'])) {
     
-    $today = 
-      date_create('now', new DateTimeZone('America/Sao_Paulo'));
+    $today = date_create('now', new DateTimeZone('America/Sao_Paulo'));
     $paciente = $_POST['paciente'];
     $paciente['modificacao'] = $paciente['criacao'] = $today->format("Y-m-d H:i:s");
     
     save('pacientes', $paciente);
+
+    $responsavel = $_POST['responsavel'];
+    $responsavel['modificacao'] = $responsavel['criacao'] = $today->format("Y-m-d H:i:s");
+    $pass = md5($_POST['senhaSemHash']);
+    $responsavel['senha'] = $pass;
+    $responsavel['nivelacesso'] = '2';
+    $responsavel['id_profissao'] = '2';
+    $responsavel['id_instituicao'] = '2';
+    
+    save('profissionais', $responsavel);
+  
+    $relacao['id_paciente'] = get_last_id('pacientes');
+    $relacao['id_profissional'] = get_last_id('profissionais');
+    $relacao['status'] = 1;
+    
+    save('relacoes', $relacao);
+
     header('location: /cadastros/pacientes/');
   }
 }

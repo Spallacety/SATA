@@ -18,6 +18,7 @@ if(isset($_POST["login-button"])){
 			setcookie("id_profissional",$user['id']);
 			setcookie("nome",$user['nome']);
 			setcookie("nivel_acesso",$user['nivelacesso']);
+			setcookie("id_profissao",$user['id_profissao']);
 			header('location: home.php');
 		}
 		
