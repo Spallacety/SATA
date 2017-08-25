@@ -18,18 +18,18 @@ hr {
 }
 
 .input-field input[type=text]:focus + label {
-  color: #1a237e;
+  color: #1a237e !important;
 }
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid #1a237e;
-  box-shadow: 0 1px 0 0 #1a237e;
+  border-bottom: 1px solid #1a237e !important;
+  box-shadow: 0 1px 0 0 #1a237e !important;
 }
 .input-field input[type=password]:focus + label {
-  color: #1a237e;
+  color: #1a237e !important;
 }
 .input-field input[type=password]:focus {
-  border-bottom: 1px solid #1a237e;
-  box-shadow: 0 1px 0 0 #1a237e;
+  border-bottom: 1px solid #1a237e !important;
+  box-shadow: 0 1px 0 0 #1a237e !important;
 }
 
 [type="radio"].with-gap:checked + label:after {
