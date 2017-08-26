@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h4 class="main-text center">Visualizar Informações</h2>
+<h4 class="main-text center">Informações do paciente</h2>
 <hr>
 
 <div class="row">
@@ -93,11 +93,10 @@
 
 <div class="container">
   <div class="row center">
-    <br>
-    <a href="list_professionals.php" class="btn blue white-text btn-default">Profissionais</a>
+    <a href="list_professionals.php" class="btn main-color secondary-text white-text btn-default">Profissionais relacionados</a>
   </div>
   <div class="row center">
-    <a href="/" class="btn blue white-text btn-default">Voltar</a>
+    <a href="/" class="btn main-color secondary-text white-text btn-default">Voltar</a>
   </div>
 </div>
 

@@ -59,6 +59,7 @@ function view($id = null) {
 
 function list_professionals(){
   global $profissionais;
+  global $paciente;
 
   $relacao = find_relacao($_COOKIE['id_profissional']);
 
