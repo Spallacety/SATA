@@ -26,7 +26,7 @@ function add() {
     $responsavel['modificacao'] = $responsavel['criacao'] = $today->format("Y-m-d H:i:s");
     $pass = md5($_POST['senhaSemHash']);
     $responsavel['senha'] = $pass;
-    $responsavel['nivelacesso'] = '2';
+    $responsavel['nivelacesso'] = '1';
     $responsavel['id_profissao'] = '2';
     $responsavel['id_instituicao'] = '2';
     

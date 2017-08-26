@@ -42,7 +42,7 @@
 
 <div class="row center">
   <br>
-  <a href="/responsavel/cars/" class="btn main-color white-text btn-default">Voltar</a>
+  <a href="/responsaveis/cars/" class="btn main-color secondary-text btn-default">Voltar</a>
 </div>
 
 <?php include('modal.php'); ?>

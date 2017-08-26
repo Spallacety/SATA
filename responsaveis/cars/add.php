@@ -599,7 +599,7 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars15to14();" class="btn orange white-text btn-primary">Voltar</a>
+      <a onClick="cars15to14();" class="btn orange white-text btn-primary">Voltar</a>
       <button type="submit" class="btn green white-text btn-primary">Salvar</button>
     </div>
   </div>

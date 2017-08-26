@@ -3,6 +3,8 @@ require_once('../../config.php');
 require_once(DBAPI);
 $relatorios = null;
 $relatorio = null;
+$allcars = null;
+$firstcars = null;
 
 /**
  *  Listagem de Relatórios
@@ -57,6 +59,7 @@ function edit() {
 function view($id = null, $limit = null) {
   global $relatorios;
   $relatorios = findLast($id, $limit);
+  findCars($id);
 }
 
 
@@ -114,4 +117,38 @@ function findLast($id, $limit){
   
   close_database($database);
   return $found;
+}
+
+function findCars( $id ){
+  global $allcars;
+  global $firstcars;
+
+  $database = open_database();
+  $found = null;
+  $found2 = null;
+
+  try {
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id;
+      $result = $database->query($sql);
+      
+      if ($result->num_rows > 0) {
+        $found = $result->fetch_all(MYSQLI_ASSOC);
+      }
+
+      $sql2 = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . " ORDER BY modificacao ASC LIMIT 3";
+      $result2 = $database->query($sql2);
+      
+      if ($result2->num_rows > 0) {
+        $found2 = $result2->fetch_all(MYSQLI_ASSOC);
+      }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+
+  $allcars = $found;
+  $firstcars = $found2;
 }

@@ -2,8 +2,18 @@
 require_once('../../config.php');
 require_once('../../auth.php');
 require_once(DBAPI);
+$instituicoes = null;
+$profissoes = null;
 $profissionais = null;
+$profissional = null;
 $paciente = null;
+
+function initAttr () {
+  global $instituicoes;
+  $instituicoes = find_all('instituicoes');
+  global $profissoes;
+  $profissoes = find_all('profissoes');
+}
 
 function add(){
   global $profissionais;
@@ -85,4 +95,9 @@ function list_professionals(){
   
   $profissionais = $found;
 
+}
+
+function view_professional($id = null) {
+  global $profissional;
+  $profissional = find('profissionais', $id);
 }

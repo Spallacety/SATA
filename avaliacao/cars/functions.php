@@ -115,12 +115,6 @@ function findAllCars( $id ){
       
       if ($result->num_rows > 0) {
         $found = $result->fetch_all(MYSQLI_ASSOC);
-        
-        /* Metodo alternativo
-        $found = array();
-        while ($row = $result->fetch_assoc()) {
-          array_push($found, $row);
-        } */
       }
 
   } catch (Exception $e) {
@@ -132,7 +126,31 @@ function findAllCars( $id ){
 
   $allcars = $found;
   return $allcars;
+}
 
+function findFirstCars( $id ){
+  global $firstcars;
+
+  $database = open_database();
+  $found = null;
+
+  try {
+      $sql = "SELECT * FROM avaliacoes WHERE id_paciente = " . $id . "ORDER BY modificacao DESC LIMIT 3";
+      $result = $database->query($sql);
+      
+      if ($result->num_rows > 0) {
+        $found = $result->fetch_all(MYSQLI_ASSOC);
+      }
+
+  } catch (Exception $e) {
+    $_SESSION['message'] = $e->GetMessage();
+    $_SESSION['type'] = 'danger';
+  }
+  
+  close_database($database);
+
+  $firstcars = $found;
+  return $firstcars;
 }
 
 function findAnswer($questao, $valor){
@@ -216,3 +234,7 @@ function result($resultado){
     return "Autismo severo";
   }
 }
+
+
+
+#SELECT (SUM(q1)/COUNT(*)) AS q1, (SUM(q2)/COUNT(*)) AS q2, (SUM(q3)/COUNT(*)) AS q3, (SUM(q4)/COUNT(*)) AS q4, (SUM(q5)/COUNT(*)) AS q5, (SUM(q6)/COUNT(*)) AS q6, (SUM(q7)/COUNT(*)) AS q7, (SUM(q8)/COUNT(*)) AS q8, (SUM(q9)/COUNT(*)) AS q9, (SUM(q10)/COUNT(*)) AS q10, (SUM(q11)/COUNT(*)) AS q11, (SUM(q12)/COUNT(*)) AS q12, (SUM(q13)/COUNT(*)) AS q13, (SUM(q14)/COUNT(*)) AS q14, (SUM(q15)/COUNT(*)) AS q15, (SUM(resultado)/COUNT(*)) AS resultado FROM avaliacoes WHERE id_paciente = 1

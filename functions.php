@@ -5,7 +5,6 @@
 
 	function open_db(){
 		try{				
-			/*Usando conexão já estabelecida no arquivo database.php*/
 			$connection = open_database();
 			return $connection;
 		}

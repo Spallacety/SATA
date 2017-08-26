@@ -12,14 +12,14 @@
 
 <div class="row center">
   <br>
-  <?php if ($_COOKIE['nivel_acesso'] == '1') echo '<div class="row center"><a href="phpmyadmin/" class="btn orange white-text btn-default">phpMyAdmin</a></div>'; ?>
+  <?php if ($_COOKIE['nivel_acesso'] == '9') echo '<div class="row center"><a href="phpmyadmin/" class="btn orange white-text btn-default">phpMyAdmin</a></div>'; ?>
   <?php 
     $responsavel = find('profissionais', $_COOKIE['id_profissional']);
 
     if ($responsavel['id_profissao'] == '2') {
       $relacao = find_relacao($responsavel['id']);
       $paciente = find('pacientes', $relacao['id_paciente']);
-      echo '<div class="row center"><a href="responsavel/paciente/view.php?id=' . $paciente['id'] . '" class="btn green white-text btn-default">Info de ' . $paciente['nome'] . '</a></div>';
+      echo '<div class="row center"><a href="responsaveis/paciente/view.php?id=' . $paciente['id'] . '" class="btn green white-text btn-default">Info de ' . $paciente['nome'] . '</a></div>';
     }
     ?>
   <a href="logout.php" class="btn red white-text btn-default">Logout</a>

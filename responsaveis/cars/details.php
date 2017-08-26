@@ -143,9 +143,9 @@
   
 <div class="row center">
   <?php if ($resultado['id_profissional'] != $_COOKIE['id_profissional']) : ?>
-    <a href="otherlist.php" class="btn main-color white-text btn-default">Voltar</a>
+    <a href="otherlist.php" class="btn main-color secondary-text btn-default">Voltar</a>
   <?php else: ?>
-    <a href="mylist.php" class="btn main-color white-text btn-default">Voltar</a>
+    <a href="mylist.php" class="btn main-color secondary-text btn-default">Voltar</a>
   <?php endif; ?>
 </div>
 

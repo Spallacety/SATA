@@ -22,7 +22,7 @@
       <?php endif; ?>
       <?php if ($_COOKIE['nivel_acesso']) : ?>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
+          <?php if ($_COOKIE['nivel_acesso'] >= '2') : ?>
             <li><a class="dropdown-button secondary-text" data-activates="dropdownCadastros">Gerenciar<i class="material-icons right">arrow_drop_down</i></a></li>
           <?php endif; ?>
           <li><a class="dropdown-button secondary-text" data-activates="dropdownAvaliacoes">Avaliações<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -30,34 +30,42 @@
         </ul>
       <?php endif; ?>
       <ul class="side-nav" id="mobile-menu">
-        <?php if ($_COOKIE['nivel_acesso'] == '1') : ?>
-          <li><a href="/cadastros/pacientes/">Gerenciar Pacientes</a></li>
-          <li><a href="/cadastros/profissionais/">Gerenciar Profissionais</a></li>
+        <?php if ($_COOKIE['nivel_acesso'] >= '6') : ?>
+          <li><a href="/pacientes/">Gerenciar Pacientes</a></li>
+          <li><a href="/profissionais/">Gerenciar Profissionais</a></li>
           <li><a href="/cadastros/profissoes/">Gerenciar Profissões</a></li>
           <li><a href="/cadastros/instituicoes/">Gerenciar Instituições</a></li>
         <?php endif; ?>
-        <li><a href="/avaliacao/cars/">Avaliações CARS</a></li>
+        <?php if ($_COOKIE['id_profissao'] == '2') : ?>
+          <li><a href="/responsavel/cars/" class="main-text">CARS</a></li>
+        <?php else: ?>
+          <li><a href="/avaliacao/cars/" class="main-text">CARS</a></li>
+        <?php endif; ?>
       </ul>
     </div>
 
     <ul id="dropdownCadastros" class="dropdown-content">
-      <li><a href="/cadastros/pacientes/" class="main-text">Pacientes</a></li>
-      <li><a href="/cadastros/profissionais/" class="main-text">Profissionais</a></li>
-      <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
-      <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
-      <li><a href="/responsavel/" class="main-text">Responsáveis</a></li>
+      <?php if ($_COOKIE['nivel_acesso'] >= '4') : ?>
+        <li><a href="/pacientes/" class="main-text">Pacientes</a></li>
+        <li><a href="/responsaveis/" class="main-text">Responsáveis</a></li>
+      <?php endif; ?>
+      <?php if ($_COOKIE['nivel_acesso'] >= '6') : ?>
+        <li><a href="/profissionais/" class="main-text">Profissionais</a></li>
+        <li><a href="/cadastros/profissoes/" class="main-text">Profissões</a></li>
+        <li><a href="/cadastros/instituicoes/" class="main-text">Instituições</a></li>
+      <?php endif; ?>
     </ul>
 
     <ul id="dropdownAvaliacoes" class="dropdown-content">
       <?php if ($_COOKIE['id_profissao'] == '2') : ?>
-        <li><a href="/responsavel/cars/" class="main-text">CARS</a></li>
+        <li><a href="/responsaveis/cars/" class="main-text">CARS</a></li>
       <?php else: ?>
         <li><a href="/avaliacao/cars/" class="main-text">CARS</a></li>
       <?php endif; ?>
     </ul>
 
     <ul id="dropdownGeral" class="dropdown-content">
-      <li><a href="#!" class="main-text" onClick="abrirModalSobre();">Sobre</a></li>
+      <li><a class="main-text" onClick="abrirModalSobre();">Sobre</a></li>
       <li><a href="/logout.php" class="red-text"><i class="material-icons">clear</i>Sair</a></li>
     </ul>
 

@@ -5,7 +5,7 @@
 
 <?php include(HEADER_TEMPLATE); ?>
 
-<h4 class="main-text center">Novo Responsável</h2>
+<h4 class="main-text center">Vincular profissional</h2>
 <hr>
 
 <form action="add.php" method="post">
@@ -25,7 +25,6 @@
 
   <div class="container">
     <div class="row center">
-      <br>
       <button type="submit" class="btn green white-text btn-primary">Salvar</button>
       <a href="list_professionals.php" class="btn red white-text btn-default">Cancelar</a>
     </div>

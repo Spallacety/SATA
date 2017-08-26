@@ -1,6 +1,6 @@
 <?php
-require_once('../../config.php');
-require_once('../../auth.php');
+require_once('../config.php');
+require_once('../auth.php');
 require_once(DBAPI);
 $profissionais = null;
 $profissional = null;
@@ -31,7 +31,7 @@ function add() {
     $profissional['modificacao'] = $profissional['criacao'] = $today->format("Y-m-d H:i:s");
     $pass = md5($_POST['senhaSemHash']);
     $profissional['senha'] = $pass;
-    $profissional['nivelacesso'] = '2';
+    $profissional['nivelacesso'] = '1';
     
     save('profissionais', $profissional);
     header('location: index.php');
