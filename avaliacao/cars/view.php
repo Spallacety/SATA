@@ -88,10 +88,29 @@
 <div class="row center">
   <a href="otherlist.php?id=<?php echo $_GET['id']; ?>" class="btn-flat main-text btn-default">Avaliações de outros profissionais</a>
 </div>
-<div class="row center">
+<div class="row center" style="display: none;">
   <a href="../relatorios/view.php?id=<?php echo $_GET['id']; ?>&limit=5" class="btn-flat main-text btn-default">Relatórios 5 ultimas</a>
   <a href="../relatorios/view.php?id=<?php echo $_GET['id']; ?>&limit=10" class="btn-flat main-text btn-default">Relatórios 10 ultimas</a>
 </div>
+<form>
+  <div class="row center">
+    <div class="input-field col s12 m10 l10">
+      <select class="select2" id="profissao" name="profissional['id_profissao']" required>
+        <option></option>
+        <option>Ultimas 5 avaliações</option>
+        <option>Ultimas 10 avaliações</option>
+        <option>Avaliações por profissional</option>
+        <option>Avaliações por profissão</option>
+        <option>Avaliações em determinado período de tempo</option>
+      </select>
+      <label for="profissao">Relatório</label>
+    </div>
+    <div class="col s12 m2 l2">
+      <br>
+      <a href="../relatorios/view.php?id=<?php echo $_GET['id']; ?>&limit=10" class="btn-flat main-text btn-default">Visualizar</a>
+    </div>
+  </div>
+</form>
 
 <div class="chart" id="grafico_geral"></div>
 

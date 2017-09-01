@@ -9,10 +9,10 @@ db: heroku_9e3d73128281d5a
 
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$db = 'sata-lims';
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
 define('DB_NAME', $db);
 define('DB_USER', $username);

@@ -398,130 +398,130 @@
   $mesmos = array();
 
   if ($geral['q1'] > $primeiras['q1']):
-    array_push($piores, 'Relacionamento interpessoal (Questão 1/15)');
+    array_push($piores, 'Relacionamento interpessoal');
   elseif ($geral['q1'] < $primeiras['q1']):
-    array_push($melhores, 'Relacionamento interpessoal (Questão 1/15)');
+    array_push($melhores, 'Relacionamento interpessoal');
   else:
-    array_push($mesmos, 'Relacionamento interpessoal (Questão 1/15)');
+    array_push($mesmos, 'Relacionamento interpessoal');
   endif;
 
   if ($geral['q2'] > $primeiras['q2']):
-    array_push($piores, 'Imitação (Questão 2/15)');
+    array_push($piores, 'Imitação');
   elseif ($geral['q2'] < $primeiras['q2']):
-    array_push($melhores, 'Imitação (Questão 2/15)');
+    array_push($melhores, 'Imitação');
   else:
-    array_push($mesmos, 'Imitação (Questão 2/15)');
+    array_push($mesmos, 'Imitação');
   endif;
 
   if ($geral['q3'] > $primeiras['q3']):
-    array_push($piores, 'Resposta emocional (Questão 3/15)');
+    array_push($piores, 'Resposta emocional');
   elseif ($geral['q3'] < $primeiras['q3']):
-    array_push($melhores, 'Resposta emocional (Questão 3/15)');
+    array_push($melhores, 'Resposta emocional');
   else:
-    array_push($mesmos, 'Resposta emocional (Questão 3/15)');
+    array_push($mesmos, 'Resposta emocional');
   endif;
 
   if ($geral['q4'] > $primeiras['q4']):
-    array_push($piores, 'Expressão corporal (Questão 4/15)');
+    array_push($piores, 'Expressão corporal');
   elseif ($geral['q4'] < $primeiras['q4']):
-    array_push($melhores, 'Expressão corporal (Questão 4/15)');
+    array_push($melhores, 'Expressão corporal');
   else:
-    array_push($mesmos, 'Expressão corporal (Questão 4/15)');
+    array_push($mesmos, 'Expressão corporal');
   endif;
 
   if ($geral['q5'] > $primeiras['q5']):
-    array_push($piores, 'Uso do objeto (Questão 5/15)');
+    array_push($piores, 'Uso do objeto');
   elseif ($geral['q5'] < $primeiras['q5']):
-    array_push($melhores, 'Uso do objeto (Questão 5/15)');
+    array_push($melhores, 'Uso do objeto');
   else:
-    array_push($mesmos, 'Uso do objeto (Questão 5/15)');
+    array_push($mesmos, 'Uso do objeto');
   endif;
 
   if ($geral['q6'] > $primeiras['q6']):
-    array_push($piores, 'Adaptação a mudanças (Questão 6/15)');
+    array_push($piores, 'Adaptação a mudanças');
   elseif ($geral['q6'] < $primeiras['q6']):
-    array_push($melhores, 'Adaptação a mudanças (Questão 6/15)');
+    array_push($melhores, 'Adaptação a mudanças');
   else:
-    array_push($mesmos, 'Adaptação a mudanças (Questão 6/15)');
+    array_push($mesmos, 'Adaptação a mudanças');
   endif;
 
   if ($geral['q7'] > $primeiras['q7']):
-    array_push($piores, 'Uso do olhar (Questão 7/15)');
+    array_push($piores, 'Uso do olhar');
   elseif ($geral['q7'] < $primeiras['q7']):
-    array_push($melhores, 'Uso do olhar (Questão 7/15)');
+    array_push($melhores, 'Uso do olhar');
   else:
-    array_push($mesmos, 'Uso do olhar (Questão 7/15)');
+    array_push($mesmos, 'Uso do olhar');
   endif;
 
   if ($geral['q8'] > $primeiras['q8']):
-    array_push($piores, 'Uso da audição (Questão 8/15)');
+    array_push($piores, 'Uso da audição');
   elseif ($geral['q8'] < $primeiras['q8']):
-    array_push($melhores, 'Uso da audição (Questão 8/15)');
+    array_push($melhores, 'Uso da audição');
   else:
-    array_push($mesmos, 'Uso da audição (Questão 8/15)');
+    array_push($mesmos, 'Uso da audição');
   endif;
 
   if ($geral['q9'] > $primeiras['q9']):
-    array_push($piores, 'Uso do paladar, olfato e do tato (Questão 9/15)');
+    array_push($piores, 'Uso do paladar, olfato e do tato');
   elseif ($geral['q9'] < $primeiras['q9']):
-    array_push($melhores, 'Uso do paladar, olfato e do tato (Questão 9/15)');
+    array_push($melhores, 'Uso do paladar, olfato e do tato');
   else:
-    array_push($mesmos, 'Uso do paladar, olfato e do tato (Questão 9/15)');
+    array_push($mesmos, 'Uso do paladar, olfato e do tato');
   endif;
 
   if ($geral['q10'] > $primeiras['q10']):
-    array_push($piores, 'Medo e nervosismo (Questão 10/15)');
+    array_push($piores, 'Medo e nervosismo');
   elseif ($geral['q10'] < $primeiras['q10']):
-    array_push($melhores, 'Medo e nervosismo (Questão 10/15)');
+    array_push($melhores, 'Medo e nervosismo');
   else:
-    array_push($mesmos, 'Medo e nervosismo (Questão 10/15)');
+    array_push($mesmos, 'Medo e nervosismo');
   endif;
 
   if ($geral['q11'] > $primeiras['q11']):
-    array_push($piores, 'Comunicação verbal (Questão 11/15)');
+    array_push($piores, 'Comunicação verbal');
   elseif ($geral['q11'] < $primeiras['q11']):
-    array_push($melhores, 'Comunicação verbal (Questão 11/15)');
+    array_push($melhores, 'Comunicação verbal');
   else:
-    array_push($mesmos, 'Comunicação verbal (Questão 11/15)');
+    array_push($mesmos, 'Comunicação verbal');
   endif;
 
   if ($geral['q12'] > $primeiras['q12']):
-    array_push($piores, 'Comunicação não-verbal (Questão 12/15)');
+    array_push($piores, 'Comunicação não-verbal');
   elseif ($geral['q12'] < $primeiras['q12']):
-    array_push($melhores, 'Comunicação não-verbal (Questão 12/15)');
+    array_push($melhores, 'Comunicação não-verbal');
   else:
-    array_push($mesmos, 'Comunicação não-verbal (Questão 12/15)');
+    array_push($mesmos, 'Comunicação não-verbal');
   endif;
 
   if ($geral['q13'] > $primeiras['q13']):
-    array_push($piores, 'Atividade (Questão 13/15)');
+    array_push($piores, 'Atividade');
   elseif ($geral['q13'] < $primeiras['q13']):
-    array_push($melhores, 'Atividade (Questão 13/15)');
+    array_push($melhores, 'Atividade');
   else:
-    array_push($mesmos, 'Atividade (Questão 13/15)');
+    array_push($mesmos, 'Atividade');
   endif;
 
   if ($geral['q14'] > $primeiras['q14']):
-    array_push($piores, 'Grau e consistência das respostas da inteligência (Questão 14/15)');
+    array_push($piores, 'Grau e consistência das respostas da inteligência');
   elseif ($geral['q14'] < $primeiras['q14']):
-    array_push($melhores, 'Grau e consistência das respostas da inteligência (Questão 14/15)');
+    array_push($melhores, 'Grau e consistência das respostas da inteligência');
   else:
-    array_push($mesmos, 'Grau e consistência das respostas da inteligência (Questão 14/15)');
+    array_push($mesmos, 'Grau e consistência das respostas da inteligência');
   endif;
 
   if ($geral['q15'] > $primeiras['q15']):
-    array_push($piores, 'Impressão geral (Questão 15/15)');
+    array_push($piores, 'Impressão geral');
   elseif ($geral['q15'] < $primeiras['q15']):
-    array_push($melhores, 'Impressão geral (Questão 15/15)');
+    array_push($melhores, 'Impressão geral');
   else:
-    array_push($mesmos, 'Impressão geral (Questão 15/15)');
+    array_push($mesmos, 'Impressão geral');
   endif;
 ?>
 
 <div class="row center">
-  <div class="col s12 m6 l6">
+  <div class="col s12 m4 l4">
     <div class="card-panel green lighten-3">
-      Pontos melhorados:
+      Pontos que obtiveram sucesso:
       <ul>
       <?php
         foreach ($melhores as $melhor):
@@ -530,6 +530,8 @@
       ?>
       </ul>
     </div>
+  </div>
+  <div class="col s12 m4 l4">
     <div class="card-panel grey lighten-3">
       Pontos que permaneceram:
       <ul>
@@ -540,8 +542,10 @@
       ?>
       </ul>
     </div>
+  </div>
+  <div class="col s12 m4 l4">
     <div class="card-panel red lighten-3">
-      Pontos que pioraram:
+      Pontos que obtiveram insucesso:
       <ul>
       <?php
         foreach ($piores as $pior):
@@ -551,23 +555,23 @@
       </ul>
     </div>
   </div>
-  <div class="col s12 m6 l6">
-    <div id="grafico_q1"></div>
-    <div id="grafico_q2"></div>
-    <div id="grafico_q3"></div>
-    <div id="grafico_q4"></div>
-    <div id="grafico_q5"></div>
-    <div id="grafico_q6"></div>
-    <div id="grafico_q7"></div>
-    <div id="grafico_q8"></div>
-    <div id="grafico_q9"></div>
-    <div id="grafico_q10"></div>
-    <div id="grafico_q11"></div>
-    <div id="grafico_q12"></div>
-    <div id="grafico_q13"></div>
-    <div id="grafico_q14"></div>
-    <div id="grafico_q15"></div>
-  </div>
+</div>
+<div class="row center">
+  <div id="grafico_q1"></div>
+  <div id="grafico_q2"></div>
+  <div id="grafico_q3"></div>
+  <div id="grafico_q4"></div>
+  <div id="grafico_q5"></div>
+  <div id="grafico_q6"></div>
+  <div id="grafico_q7"></div>
+  <div id="grafico_q8"></div>
+  <div id="grafico_q9"></div>
+  <div id="grafico_q10"></div>
+  <div id="grafico_q11"></div>
+  <div id="grafico_q12"></div>
+  <div id="grafico_q13"></div>
+  <div id="grafico_q14"></div>
+  <div id="grafico_q15"></div>
 </div>
 
 <?php include(FOOTER_TEMPLATE); ?>
