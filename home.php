@@ -12,7 +12,7 @@
 
 <div class="row center">
   <br>
-  <?php if ($_COOKIE['nivel_acesso'] == '9') echo '<div class="row center"><a href="phpmyadmin/" class="btn orange white-text btn-default">phpMyAdmin</a></div>'; ?>
+  <!--<?php if ($_COOKIE['nivel_acesso'] == '9') echo '<div class="row center"><a href="phpmyadmin/" class="btn orange white-text btn-default">phpMyAdmin</a></div>'; ?> -->
   <?php 
     $responsavel = find('profissionais', $_COOKIE['id_profissional']);
 
