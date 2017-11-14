@@ -28,11 +28,11 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'config';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'us-cdbr-iron-east-03.cleardb.net';
+$cfg['Servers'][$i]['host'] = 'us-cdbr-iron-east-05.cleardb.net';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['user'] = 'b91015b1bbae14';
-$cfg['Servers'][$i]['password'] = 'a8840fc6';
+$cfg['Servers'][$i]['user'] = 'bfe4f880903c27';
+$cfg['Servers'][$i]['password'] = '8e3ba76c';
 $cfg['Lang'] = 'pt_BR';
 
 /**
