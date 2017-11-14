@@ -149,8 +149,8 @@
     <div class="row center">
       <br>
       <br>
-      <button type="submit" class="btn green white-text btn-primary">Salvar</button>
-      <a href="index.php" class="btn red white-text btn-default">Cancelar</a>
+      <button type="submit" class="btn waves-effect waves-light green white-text btn-primary">Salvar</button>
+      <a href="index.php" class="btn waves-effect waves-light red white-text btn-default">Cancelar</a>
     </div>
   </div>
 </form>

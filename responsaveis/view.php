@@ -60,9 +60,10 @@
 <div class="container">
   <div class="row center">
     <br>
-      <a href="edit.php?id=<?php echo $responsavel['id']; ?>" class="btn main-color secondary-text btn-primary">Editar</a>
-      <a href="index.php" class="btn main-color secondary-text btn-default">Voltar</a>
+      <a href="edit.php?id=<?php echo $responsavel['id']; ?>" class="btn waves-effect waves-light main-color secondary-text btn-primary">Editar</a>
+      <a href="index.php" class="btn waves-effect waves-light main-color secondary-text btn-default">Voltar</a>
   </div>
 </div>
 
 <?php include(FOOTER_TEMPLATE); ?>
+  

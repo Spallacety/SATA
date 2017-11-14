@@ -28,7 +28,7 @@ if(isset($_POST["login-button"])){
 			echo  "<br>";
 			echo "<div class='row center'><p class='center'>Usuário e/ou senha inválidos.</p></div>
 			<div class='row center'>
-			    <a class='btn waves-effect waves-light main-color' href='/'>Voltar</a>
+			    <a class='btn waves-effect waves-light main-color secondary-text' href='/'>Voltar</a>
       		</div>";
       echo  "<br>";
 			

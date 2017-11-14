@@ -116,7 +116,7 @@
 
 <div class="row center">
   <br>
-  <a href="index.php" class="btn main-color white-text btn-default">Voltar</a>
+  <a href="index.php" class="btn waves-effect waves-light main-color secondary-text btn-default">Voltar</a>
 </div>
 
 <?php include(FOOTER_TEMPLATE); ?>

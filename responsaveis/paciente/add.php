@@ -25,8 +25,8 @@
 
   <div class="container">
     <div class="row center">
-      <button type="submit" class="btn green white-text btn-primary">Salvar</button>
-      <a href="list_professionals.php" class="btn red white-text btn-default">Cancelar</a>
+      <button type="submit" class="btn waves-effect waves-light green white-text btn-primary">Salvar</button>
+      <a href="list_professionals.php" class="btn waves-effect waves-light red white-text btn-default">Cancelar</a>
     </div>
   </div>
 </form>

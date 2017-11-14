@@ -50,7 +50,7 @@
 
 <div class="row center">
   <br>
-  <a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn main-color secondary-text white-text btn-default">Voltar</a>
+  <a href="view.php?id=<?php echo $paciente['id']; ?>" class="btn waves-effect waves-light main-color secondary-text white-text btn-default">Voltar</a>
 </div>
 
 <?php include('modal.php'); ?>

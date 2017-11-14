@@ -70,7 +70,7 @@
 
 <div class="container">
   <div class="row center">
-    <a href="list_professionals.php" class="btn main-color secondary-text btn-default">Voltar</a>
+    <a href="list_professionals.php" class="btn waves-effect waves-light main-color secondary-text btn-default">Voltar</a>
   </div>
 </div>
 

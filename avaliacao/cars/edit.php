@@ -53,7 +53,7 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars1to2();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars1to2();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -91,8 +91,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars2to1();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars2to3();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars2to1();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars2to3();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -130,8 +130,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars3to2();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars3to4();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars3to2();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars3to4();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -169,8 +169,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars4to3();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars4to5();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars4to3();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars4to5();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -208,8 +208,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars5to4();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars5to6();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars5to4();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars5to6();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -247,8 +247,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars6to5();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars6to7();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars6to5();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars6to7();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -286,8 +286,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars7to6();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars7to8();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars7to6();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars7to8();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -325,8 +325,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars8to7();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars8to9();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars8to7();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars8to9();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -364,8 +364,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars9to8();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars9to10();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars9to8();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars9to10();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -403,8 +403,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars10to9();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars10to11();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars10to9();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars10to11();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -442,8 +442,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars11to10();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars11to12();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars11to10();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars11to12();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -481,8 +481,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars12to11();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars12to13();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars12to11();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars12to13();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -520,8 +520,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars13to12();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars13to14();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars13to12();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars13to14();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -559,8 +559,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars14to13();" class="btn orange white-text btn-primary">Voltar</a>
-      <a href="#!" onClick="cars14to15();" class="btn green white-text btn-primary">Avançar</a>
+      <a href="#!" onClick="cars14to13();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <a href="#!" onClick="cars14to15();" class="btn waves-effect waves-light green white-text btn-primary">Avançar</a>
     </div>
   </div>
 
@@ -598,8 +598,8 @@
 
     <div class="row center">
       <br>
-      <a href="#!" onClick="cars15to14();" class="btn orange white-text btn-primary">Voltar</a>
-      <button type="submit" class="btn green white-text btn-primary">Salvar</button>
+      <a href="#!" onClick="cars15to14();" class="btn waves-effect waves-light orange white-text btn-primary">Voltar</a>
+      <button type="submit" class="btn waves-effect waves-light green white-text btn-primary">Salvar</button>
     </div>
   </div>
 </form>
